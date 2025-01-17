@@ -223,57 +223,54 @@ class IFCtoTTLConverter:
             uri_map: Dictionary mapping IFC GlobalIds to URIs
         """
         damage_count = 0
-        # Iterate through all elements to find damage-related properties
-        for element in ifc_file.by_type("IfcElement"):
-            if element.GlobalId in uri_map:
-                element_uri = uri_map[element.GlobalId]
-                print(f"\nChecking element: {element.GlobalId} ({element.is_a()})")
-                
-                # Check property sets directly through IsDefinedBy relationship
-                if hasattr(element, "IsDefinedBy"):
-                    for definition in element.IsDefinedBy:
-                        if definition.is_a("IfcRelDefinesByProperties"):
-                            property_set = definition.RelatingPropertyDefinition
-                            if property_set.is_a('IfcPropertySet'):
-                                print(f"Checking property set: {property_set.Name}")
-                                
-                                crack_id = None
-                                host_guid = None
-                                
-                                # Look for Crack_ID and Host properties
+        proxies = ifc_file.by_type("IfcBuildingElementProxy")
+        print(f"\nChecking {len(proxies)} IfcBuildingElementProxy elements for damage")
+        
+        for element in proxies:
+            crack_data = {}  # Store all crack-related properties
+            
+            if hasattr(element, "IsDefinedBy"):
+                for definition in element.IsDefinedBy:
+                    if definition.is_a("IfcRelDefinesByProperties"):
+                        property_set = definition.RelatingPropertyDefinition
+                        if property_set.is_a('IfcPropertySet'):
+                            # Check Identity Data for Crack_ID and Host
+                            if property_set.Name == "Identity Data":
                                 for prop in property_set.HasProperties:
                                     if hasattr(prop, "NominalValue"):
                                         if prop.Name == "Crack_ID":
-                                            crack_id = prop.NominalValue.wrappedValue
-                                            print(f"Found Crack_ID: {crack_id}")
+                                            crack_data['crack_id'] = prop.NominalValue.wrappedValue
                                         elif prop.Name == "Host":
-                                            host_guid = prop.NominalValue.wrappedValue
-                                            print(f"Found Host: {host_guid}")
-                                
-                                # If we found a crack, create the damage entity
-                                if crack_id:
-                                    damage_count += 1
-                                    damage_uri = self.generate_uri("damage")
-                                    self.g.add((damage_uri, RDF.type, self.DOT.Damage))
-                                    self.g.add((damage_uri, RDFS.label, Literal(crack_id)))
-                                    
-                                    # Link to host element if found in uri_map
-                                    if host_guid and host_guid in uri_map:
-                                        self.g.add((uri_map[host_guid], self.LFM.hasDamageAssessment, 
-                                                  damage_uri))
-                                    
-                                    # Add other damage properties
-                                    for prop in property_set.HasProperties:
-                                        if (hasattr(prop, "NominalValue") and 
-                                            prop.Name not in ["Crack_ID", "Host"]):
-                                            prop_state = self.generate_uri("property_state")
-                                            self.g.add((prop_state, RDF.type, self.OPM.PropertyState))
-                                            self.g.add((prop_state, self.OPM.propertyName, 
-                                                      Literal(prop.Name)))
-                                            self.g.add((prop_state, self.OPM.value, 
-                                                      Literal(prop.NominalValue.wrappedValue)))
-                                            self.g.add((damage_uri, self.LFM.hasPropertyState, 
-                                                      prop_state))
+                                            crack_data['host_guid'] = prop.NominalValue.wrappedValue
+                            
+                            # Check Dimensions for crack measurements
+                            elif property_set.Name == "Dimensions":
+                                for prop in property_set.HasProperties:
+                                    if hasattr(prop, "NominalValue"):
+                                        if prop.Name in ["Crack Length", "Crack Width", "Crack Depth"]:
+                                            crack_data[prop.Name] = prop.NominalValue.wrappedValue
+
+            # If we found a crack_id, create the damage entity with all properties
+            if 'crack_id' in crack_data:
+                damage_count += 1
+                print(f"\nProcessing damage: {crack_data['crack_id']}")
+                
+                damage_uri = self.generate_uri("damage")
+                self.g.add((damage_uri, RDF.type, self.DOT.Damage))
+                self.g.add((damage_uri, RDFS.label, Literal(crack_data['crack_id'])))
+                
+                # Link to host element if found
+                if 'host_guid' in crack_data and crack_data['host_guid'] in uri_map:
+                    self.g.add((uri_map[crack_data['host_guid']], self.LFM.hasDamageAssessment, damage_uri))
+                
+                # Add crack dimensions as properties
+                for prop_name in ["Crack Length", "Crack Width", "Crack Depth"]:
+                    if prop_name in crack_data:
+                        prop_state = self.generate_uri("property_state")
+                        self.g.add((prop_state, RDF.type, self.OPM.PropertyState))
+                        self.g.add((prop_state, self.OPM.propertyName, Literal(prop_name)))
+                        self.g.add((prop_state, self.OPM.value, Literal(crack_data[prop_name])))
+                        self.g.add((damage_uri, self.LFM.hasPropertyState, prop_state))
         
         print(f"\nTotal damage instances found: {damage_count}")
 
