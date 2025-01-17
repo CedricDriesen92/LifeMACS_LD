@@ -1,0 +1,3349 @@
+@prefix bot: <https://w3id.org/bot#> .
+@prefix ifc: <http://standards.buildingsmart.org/IFC/DEV/IFC4/ADD2/OWL#> .
+@prefix lfm: <https://w3id.org/lfm#> .
+@prefix opm: <http://www.w3.org/ns/opm#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+lfm:observation_020a8b29-1a18-4050-99a1-6b6ea7796309 a sosa:Observation ;
+    sosa:hasSimpleResult 1.042934e+02 ;
+    sosa:madeBySensor lfm:sensor_6e93b588-8c19-407b-a505-9031aa925220 ;
+    sosa:resultTime lfm:instant_754dc3a2-9601-437b-a325-4a9b5a82cdee .
+
+lfm:observation_035e4c57-cd34-484f-baac-2ccf4987e341 a sosa:Observation ;
+    sosa:hasSimpleResult 1.85364e+02 ;
+    sosa:madeBySensor lfm:sensor_cc02bf93-01be-4c9f-8a7e-cccde818d254 ;
+    sosa:resultTime lfm:instant_124f4505-136f-4d81-ab88-b71d617a9bff .
+
+lfm:observation_04548c89-e1ac-4319-8b99-331f11a372c6 a sosa:Observation ;
+    sosa:hasSimpleResult 1.393841e+02 ;
+    sosa:madeBySensor lfm:sensor_0c10fd80-45b3-43a0-9ef5-e2d6b557bd03 ;
+    sosa:resultTime lfm:instant_8c2acf37-eec5-4140-b60e-3313cce31ca5 .
+
+lfm:observation_0bac9dbe-b6d5-489e-ad9a-bf48e6ba2a07 a sosa:Observation ;
+    sosa:hasSimpleResult 7.4232e+01 ;
+    sosa:madeBySensor lfm:sensor_3d671bfb-1e83-4fcd-8000-091fd91d816d ;
+    sosa:resultTime lfm:instant_8e305ae6-862f-4cbd-bfe2-88134811c306 .
+
+lfm:observation_0f2afa63-1af9-402a-bba3-aae189a698f6 a sosa:Observation ;
+    sosa:hasSimpleResult 1.867089e+02 ;
+    sosa:madeBySensor lfm:sensor_aa76ad38-4ac2-488c-8ce5-0bcd016d6305 ;
+    sosa:resultTime lfm:instant_619ebe89-5512-4d66-88e1-a3baa609dac8 .
+
+lfm:observation_0fd104de-fe72-4e13-9e99-313e68454218 a sosa:Observation ;
+    sosa:hasSimpleResult 1.049369e+02 ;
+    sosa:madeBySensor lfm:sensor_fafea34f-4afe-4e9c-8ea1-0f5acc8e3069 ;
+    sosa:resultTime lfm:instant_c5806418-6028-47a4-8949-63048685e37c .
+
+lfm:observation_0fe17d6f-17b7-4256-8bca-db5b5a268223 a sosa:Observation ;
+    sosa:hasSimpleResult 1.900903e+02 ;
+    sosa:madeBySensor lfm:sensor_30a2e6c0-0db3-44be-a575-cc0fdb9e0301 ;
+    sosa:resultTime lfm:instant_e12986a6-908e-4d91-ba8e-90383a4e2894 .
+
+lfm:observation_10077ef0-b3ef-4b20-9f59-bff9b4df4fac a sosa:Observation ;
+    sosa:hasSimpleResult 7.2481e+00 ;
+    sosa:madeBySensor lfm:sensor_da54608f-55f5-4e0f-8551-a607bead5ece ;
+    sosa:resultTime lfm:instant_93b53762-93e9-4af0-b3aa-be0850600737 .
+
+lfm:observation_106b941a-d02d-4b9e-af3f-da02b9a314af a sosa:Observation ;
+    sosa:hasSimpleResult 1.762163e+02 ;
+    sosa:madeBySensor lfm:sensor_69ac32c8-ae7b-4e2f-94ff-39b1a7c0c93f ;
+    sosa:resultTime lfm:instant_436a957b-3a5b-46b7-83fe-4a2ed8a50ab1 .
+
+lfm:observation_11968edb-a697-4604-99ce-2364a8019656 a sosa:Observation ;
+    sosa:hasSimpleResult 1.91319e+02 ;
+    sosa:madeBySensor lfm:sensor_0dce479b-f9d2-46e3-a86e-2bb58908d9d1 ;
+    sosa:resultTime lfm:instant_4aadc189-7972-449a-98e2-1cba0d14a637 .
+
+lfm:observation_131b5876-d4c6-40eb-bdb3-322c551f93f5 a sosa:Observation ;
+    sosa:hasSimpleResult 1.93499e+01 ;
+    sosa:madeBySensor lfm:sensor_384b1472-cd69-4727-aa0e-a2921eb595f2 ;
+    sosa:resultTime lfm:instant_33aa46d2-9628-4b1c-8309-bf562615bc00 .
+
+lfm:observation_140ce845-6da3-48b8-9285-f0c0233d79cd a sosa:Observation ;
+    sosa:hasSimpleResult 1.930091e+02 ;
+    sosa:madeBySensor lfm:sensor_ba91ea57-a3d9-41ab-8e97-be212d1b2afe ;
+    sosa:resultTime lfm:instant_985bd7c3-bd09-4ec7-8a61-66dfc7507f30 .
+
+lfm:observation_178f330c-3c0b-4ca1-8bfc-605b63df1886 a sosa:Observation ;
+    sosa:hasSimpleResult 4.0539e+01 ;
+    sosa:madeBySensor lfm:sensor_26beb015-fd32-44c7-9599-8006045d7b49 ;
+    sosa:resultTime lfm:instant_197cc43d-6e14-4619-8d2b-c033ceecb796 .
+
+lfm:observation_19db6447-bf35-4f81-953d-3a9343a5ff5c a sosa:Observation ;
+    sosa:hasSimpleResult 7.12609e+01 ;
+    sosa:madeBySensor lfm:sensor_2c997fe7-5cf6-45cd-8e5c-497120647367 ;
+    sosa:resultTime lfm:instant_cfd182ac-a3ee-432c-a5fb-ac78efcac845 .
+
+lfm:observation_1ac4f238-4f70-4bb3-a374-4e262341dcb6 a sosa:Observation ;
+    sosa:hasSimpleResult 1.912955e+02 ;
+    sosa:madeBySensor lfm:sensor_9d537ab3-d4dc-43b6-8448-81013333dd25 ;
+    sosa:resultTime lfm:instant_a6f3bf97-c19e-485c-a656-59f6de0eb3f9 .
+
+lfm:observation_1b7af516-8e9e-41c7-b505-ab2f0430558f a sosa:Observation ;
+    sosa:hasSimpleResult 1.886377e+02 ;
+    sosa:madeBySensor lfm:sensor_141c43d4-2086-4db6-8eb9-03231a391a83 ;
+    sosa:resultTime lfm:instant_7f23013b-69d7-4066-a298-cedb88b894ac .
+
+lfm:observation_1c4c8f71-2632-41b3-a734-6e453bab5648 a sosa:Observation ;
+    sosa:hasSimpleResult 1.81789e+02 ;
+    sosa:madeBySensor lfm:sensor_f45c8ebc-9dc6-4c28-8d6e-8d01a1b47a70 ;
+    sosa:resultTime lfm:instant_8d4defde-2f29-423f-bc3c-0a03c1ce34d1 .
+
+lfm:observation_1dafb600-2498-4726-9a00-bdf9c8d52a95 a sosa:Observation ;
+    sosa:hasSimpleResult 1.853873e+02 ;
+    sosa:madeBySensor lfm:sensor_a8605c79-0f9b-4069-b863-db80489956e3 ;
+    sosa:resultTime lfm:instant_bd89412f-18aa-4d09-a96b-4248dc009f26 .
+
+lfm:observation_1e1f17a2-a574-4332-bca6-c5475ebd2f00 a sosa:Observation ;
+    sosa:hasSimpleResult -3.39479e+01 ;
+    sosa:madeBySensor lfm:sensor_74a1eb8a-d1e4-40b8-b3fc-33606face4d2 ;
+    sosa:resultTime lfm:instant_b3cdcbbf-d25f-464e-a61f-a9b740ed8180 .
+
+lfm:observation_1f1e13dd-c3b7-4fa0-8124-eb95ea6c5969 a sosa:Observation ;
+    sosa:hasSimpleResult 1.804855e+02 ;
+    sosa:madeBySensor lfm:sensor_20a2f891-6100-4e1a-b03d-16b035263ed0 ;
+    sosa:resultTime lfm:instant_b143a3b3-aa5c-4b4f-8b64-8045d8418e56 .
+
+lfm:observation_1f7b7561-211f-46d0-9950-a975f8401476 a sosa:Observation ;
+    sosa:hasSimpleResult 1.426675e+02 ;
+    sosa:madeBySensor lfm:sensor_9b937e9c-bf50-47de-bc87-7b6c468cad3d ;
+    sosa:resultTime lfm:instant_8f786432-c5f9-40d6-abe1-05304aea77ed .
+
+lfm:observation_1fa312e4-3d3c-4c45-b5a4-eda13a11af8e a sosa:Observation ;
+    sosa:hasSimpleResult 1.827215e+02 ;
+    sosa:madeBySensor lfm:sensor_06d0a580-7577-4d60-941c-7e605468cce0 ;
+    sosa:resultTime lfm:instant_78e5504f-50a2-49e8-9bb9-fea5302649c2 .
+
+lfm:observation_21f914d4-ceef-4745-a751-9a6b21fcd2c1 a sosa:Observation ;
+    sosa:hasSimpleResult 1.875712e+02 ;
+    sosa:madeBySensor lfm:sensor_a464ae8f-ebba-4bf1-8473-aa6904159cf5 ;
+    sosa:resultTime lfm:instant_327965d0-8541-4566-b697-36cdc537d6ee .
+
+lfm:observation_232c97c0-694b-4cbf-a2a7-31e9019c554d a sosa:Observation ;
+    sosa:hasSimpleResult 1.76281e+02 ;
+    sosa:madeBySensor lfm:sensor_e1e212ba-6048-45de-b69a-c353d99f9153 ;
+    sosa:resultTime lfm:instant_430b02dd-dae6-434c-9ab8-92c27c3745cc .
+
+lfm:observation_2467f634-537c-4256-bcc4-fd5e36e5c450 a sosa:Observation ;
+    sosa:hasSimpleResult 1.90284e+02 ;
+    sosa:madeBySensor lfm:sensor_74d87984-bace-4478-bdbc-9dcaa5afed26 ;
+    sosa:resultTime lfm:instant_d2977b33-6dda-4ef0-a168-e14271ec6b1d .
+
+lfm:observation_246f5045-1aa3-4d4c-b673-24de13600f01 a sosa:Observation ;
+    sosa:hasSimpleResult 1.924823e+02 ;
+    sosa:madeBySensor lfm:sensor_d38e4941-e49e-46a5-820a-d670d48ab1d2 ;
+    sosa:resultTime lfm:instant_dffd76ad-0a33-4d29-b32d-f81ce976285b .
+
+lfm:observation_250b79ee-f22e-4e78-a40a-91259ca75099 a sosa:Observation ;
+    sosa:hasSimpleResult 1.918075e+02 ;
+    sosa:madeBySensor lfm:sensor_75325edf-d7cb-487d-8199-c0437527ecba ;
+    sosa:resultTime lfm:instant_ecb31df9-a92e-46dc-8dcb-b4a992eeb372 .
+
+lfm:observation_258516e2-5de8-444c-93cd-14716b947882 a sosa:Observation ;
+    sosa:hasSimpleResult 1.712501e+02 ;
+    sosa:madeBySensor lfm:sensor_f1a2a608-b61c-475a-9eb5-e4c7cf5ee695 ;
+    sosa:resultTime lfm:instant_d5837fe0-de29-428d-a0aa-96ec5733e566 .
+
+lfm:observation_25889298-219c-46c1-ae1c-679346e6b99b a sosa:Observation ;
+    sosa:hasSimpleResult 1.221815e+02 ;
+    sosa:madeBySensor lfm:sensor_f4b06ccd-dd02-4e53-90a5-a5397d02b41a ;
+    sosa:resultTime lfm:instant_45c11d4f-083b-433b-8f24-f6833effd650 .
+
+lfm:observation_265a04a4-66fd-41d6-9422-5ab00144cafa a sosa:Observation ;
+    sosa:hasSimpleResult 1.820043e+02 ;
+    sosa:madeBySensor lfm:sensor_cb01dd8d-91c4-427b-84ac-f79bc67ea35f ;
+    sosa:resultTime lfm:instant_75c91635-189a-45e9-896f-ce8a53b4d9e6 .
+
+lfm:observation_270bfe72-1db5-4631-96d8-e7b64d3a5236 a sosa:Observation ;
+    sosa:hasSimpleResult 1.934947e+02 ;
+    sosa:madeBySensor lfm:sensor_8dd0b5e4-1d36-46ee-b533-f5caa078f20a ;
+    sosa:resultTime lfm:instant_7c6aeb76-f495-4d57-aa9a-b73278cbeb31 .
+
+lfm:observation_27a374d2-343d-4b69-abea-bb23dffeca5b a sosa:Observation ;
+    sosa:hasSimpleResult 1.842291e+02 ;
+    sosa:madeBySensor lfm:sensor_f494eabc-38dd-4ca4-97e1-608485b9ca72 ;
+    sosa:resultTime lfm:instant_ce8d84f4-e947-459b-a7c8-c1103a8b9d65 .
+
+lfm:observation_2918b915-e433-4c95-a215-ce770d7a29bb a sosa:Observation ;
+    sosa:hasSimpleResult -6.17011e+01 ;
+    sosa:madeBySensor lfm:sensor_077f1f6f-d026-4791-9eab-492ecc05c63d ;
+    sosa:resultTime lfm:instant_3fe4662c-3698-4073-8dc4-047d8503beac .
+
+lfm:observation_29cd05e1-a373-471c-b9db-66cdcbc54edf a sosa:Observation ;
+    sosa:hasSimpleResult 1.866754e+02 ;
+    sosa:madeBySensor lfm:sensor_ef93538c-7151-4c67-9721-1da9dd48e59b ;
+    sosa:resultTime lfm:instant_a2507d7e-d55a-4ce7-8595-191b9973b2bb .
+
+lfm:observation_29d3f4da-fc02-49a9-a697-cddcc423e327 a sosa:Observation ;
+    sosa:hasSimpleResult 1.516748e+02 ;
+    sosa:madeBySensor lfm:sensor_e91df917-9c6a-4031-99e7-e5e59a3574e5 ;
+    sosa:resultTime lfm:instant_1bf9310a-ba2a-4a45-a85b-ab4b435be2ca .
+
+lfm:observation_2bd2e6f7-a1cf-49a5-a437-de083a04f64e a sosa:Observation ;
+    sosa:hasSimpleResult 8.47364e+01 ;
+    sosa:madeBySensor lfm:sensor_f4709eef-c4af-4850-bab8-4b9fd0a4da25 ;
+    sosa:resultTime lfm:instant_eeafc1bc-be46-49bc-a8f5-974d413aab65 .
+
+lfm:observation_2e955f5d-a790-4161-960c-d1acdc2c626f a sosa:Observation ;
+    sosa:hasSimpleResult 1.83507e+02 ;
+    sosa:madeBySensor lfm:sensor_317c6e15-ee64-43bc-9d4f-4635ce0f753e ;
+    sosa:resultTime lfm:instant_c8d72d11-81b0-4c0c-9a8a-42296d665181 .
+
+lfm:observation_2ed232dd-10c3-46fc-88ca-fca067f91886 a sosa:Observation ;
+    sosa:hasSimpleResult 1.97099e+02 ;
+    sosa:madeBySensor lfm:sensor_44d75404-403c-4f68-87ed-5f13db2cbe2c ;
+    sosa:resultTime lfm:instant_9bb42f40-a7de-4d7c-a29c-08331bc00777 .
+
+lfm:observation_2ff1bc69-c269-40a6-8cd2-be15f0272a0c a sosa:Observation ;
+    sosa:hasSimpleResult 1.949328e+02 ;
+    sosa:madeBySensor lfm:sensor_8d49eab6-5669-4b5d-9bc9-6bd11e3fca6e ;
+    sosa:resultTime lfm:instant_7798c8d9-5c5c-4728-ac31-4638217d0daf .
+
+lfm:observation_32b531fe-4cf9-4d3d-9b07-e61d7dd46764 a sosa:Observation ;
+    sosa:hasSimpleResult 1.884781e+02 ;
+    sosa:madeBySensor lfm:sensor_3731f710-28f9-4e0a-9825-5bf9e88cc564 ;
+    sosa:resultTime lfm:instant_a882d38f-459d-49c4-9807-cd28ad9ff4cc .
+
+lfm:observation_330e1d9e-e7fc-4305-ae41-c6e2ca3c7728 a sosa:Observation ;
+    sosa:hasSimpleResult 1.769821e+02 ;
+    sosa:madeBySensor lfm:sensor_c575f500-621a-4474-abda-2708ac2618bf ;
+    sosa:resultTime lfm:instant_cb66f617-b59e-47a1-af8b-4b22f0df2782 .
+
+lfm:observation_348332dc-40de-46cb-a219-9ea6b1aafddf a sosa:Observation ;
+    sosa:hasSimpleResult 1.807987e+02 ;
+    sosa:madeBySensor lfm:sensor_8d711250-2006-4f6c-80f4-edf06963ae9e ;
+    sosa:resultTime lfm:instant_75bd98de-77b2-4ec7-bed1-9a658dd7eb2a .
+
+lfm:observation_348396b9-d0bf-4713-9066-f68f40fc77c5 a sosa:Observation ;
+    sosa:hasSimpleResult 1.792771e+02 ;
+    sosa:madeBySensor lfm:sensor_5854e4c2-c686-482a-b772-06136cf36822 ;
+    sosa:resultTime lfm:instant_67492774-4145-4918-b26a-4b744661ad0b .
+
+lfm:observation_34eb280a-d9c3-42d6-b0d6-dc14256de0bc a sosa:Observation ;
+    sosa:hasSimpleResult -3.24324e+01 ;
+    sosa:madeBySensor lfm:sensor_9241c3ab-5e30-4ba6-85dc-4e4b86fe8739 ;
+    sosa:resultTime lfm:instant_fbe96874-b464-4972-bf75-ae76a30fa183 .
+
+lfm:observation_35cba312-16f2-4f1b-8a6f-31bac0cdb15b a sosa:Observation ;
+    sosa:hasSimpleResult 1.918738e+02 ;
+    sosa:madeBySensor lfm:sensor_3ef297f9-5e3d-44a8-bb82-2c1174d1d96b ;
+    sosa:resultTime lfm:instant_9940c544-5e64-4402-93fe-b0d530a4fb3d .
+
+lfm:observation_3637ab5d-eea6-4357-a98c-5798f53bceec a sosa:Observation ;
+    sosa:hasSimpleResult 6.60242e+01 ;
+    sosa:madeBySensor lfm:sensor_abb25ea0-3bef-4978-b739-0e07c66665c8 ;
+    sosa:resultTime lfm:instant_e792f93f-694b-4250-b998-7a8b7aed1790 .
+
+lfm:observation_364c0fb1-a639-4962-a05a-dab23588656e a sosa:Observation ;
+    sosa:hasSimpleResult 1.549431e+02 ;
+    sosa:madeBySensor lfm:sensor_eb921252-202f-4b9b-baa2-ded9a2bcb416 ;
+    sosa:resultTime lfm:instant_094c11f7-509c-486f-be89-344f3af5dfd6 .
+
+lfm:observation_366ac9fb-f5f2-424d-a376-8ea249ac7234 a sosa:Observation ;
+    sosa:hasSimpleResult 1.957321e+02 ;
+    sosa:madeBySensor lfm:sensor_bfe0ba0d-cbaf-4c5e-bfbf-1df714482a40 ;
+    sosa:resultTime lfm:instant_af08a40e-0c58-4640-bdbe-1b53b6f7ecde .
+
+lfm:observation_379458a1-3efe-4244-bc20-a5171747e541 a sosa:Observation ;
+    sosa:hasSimpleResult 1.780982e+02 ;
+    sosa:madeBySensor lfm:sensor_5dcc25a4-b597-4165-b141-72d80f8f4df5 ;
+    sosa:resultTime lfm:instant_d62b27f8-bfd9-4fc3-9a1d-c6594763cbc0 .
+
+lfm:observation_39947ca0-754e-4f65-b502-ea79de607539 a sosa:Observation ;
+    sosa:hasSimpleResult -5.20802e+01 ;
+    sosa:madeBySensor lfm:sensor_acdba6af-df8f-48f1-b40f-ca9e3f99931d ;
+    sosa:resultTime lfm:instant_16800878-0b64-4226-8402-c76ab7b02ef0 .
+
+lfm:observation_3a18c60a-4f0e-422b-8026-1f74c21814af a sosa:Observation ;
+    sosa:hasSimpleResult -4.77258e+01 ;
+    sosa:madeBySensor lfm:sensor_c8134659-147a-4ebe-b2b5-e3091e60f8f1 ;
+    sosa:resultTime lfm:instant_5511bacb-f578-4314-a38b-4628ec5ed97b .
+
+lfm:observation_3a2c5958-dacf-43e9-96f8-7ce75338d26c a sosa:Observation ;
+    sosa:hasSimpleResult 4.27398e+01 ;
+    sosa:madeBySensor lfm:sensor_73c49218-4b0c-4d6c-abd7-09e65ba8771b ;
+    sosa:resultTime lfm:instant_edc86f7c-886f-4516-bd92-ca21533f1635 .
+
+lfm:observation_3a8f982b-4d57-4c8b-b4ca-b124c6da2876 a sosa:Observation ;
+    sosa:hasSimpleResult 5.091e+01 ;
+    sosa:madeBySensor lfm:sensor_53ddd749-7aa0-4d25-8fe4-d3be8534c8c5 ;
+    sosa:resultTime lfm:instant_e034bc7f-7d99-49d7-b1a1-7811cb6ac3cb .
+
+lfm:observation_3e58c743-0567-46dd-b2cf-c78b43b66a9f a sosa:Observation ;
+    sosa:hasSimpleResult 1.846651e+02 ;
+    sosa:madeBySensor lfm:sensor_6f174315-3c8d-45a2-b941-519404fad98c ;
+    sosa:resultTime lfm:instant_ed6c99ce-1d99-4c9a-bc0a-b46618c644da .
+
+lfm:observation_42084a65-9973-4975-9a2e-fbf7faa8485f a sosa:Observation ;
+    sosa:hasSimpleResult 1.878818e+02 ;
+    sosa:madeBySensor lfm:sensor_701016d2-3cb5-4f9c-b35d-22a59ac35db0 ;
+    sosa:resultTime lfm:instant_8207a1aa-46a4-404c-b222-a10cdfa67192 .
+
+lfm:observation_426e0786-95d7-4529-9f5e-f34cffd4926e a sosa:Observation ;
+    sosa:hasSimpleResult 4.87834e+01 ;
+    sosa:madeBySensor lfm:sensor_0fb9eff9-973b-428a-af3e-f537cebb8fec ;
+    sosa:resultTime lfm:instant_34b5c45a-1dcb-4945-bd33-598954b758f7 .
+
+lfm:observation_43c39f02-a9ce-41f5-a5c2-1be1faa925b0 a sosa:Observation ;
+    sosa:hasSimpleResult 1.908317e+02 ;
+    sosa:madeBySensor lfm:sensor_b58c8fdf-2112-4c1f-86c5-05560111fe32 ;
+    sosa:resultTime lfm:instant_879f0e71-43f5-4140-b21b-794438b62095 .
+
+lfm:observation_44a2d69b-2ff0-4f0f-b772-d575181ea814 a sosa:Observation ;
+    sosa:hasSimpleResult 9.98035e+01 ;
+    sosa:madeBySensor lfm:sensor_c0c15d87-5d31-492c-8e3b-d12b13e23a9f ;
+    sosa:resultTime lfm:instant_5d481a41-0dc3-4d6f-8be3-cf48b13b5231 .
+
+lfm:observation_4518444c-2dff-4ff1-aa5e-27e3fd97b0c3 a sosa:Observation ;
+    sosa:hasSimpleResult 1.954898e+02 ;
+    sosa:madeBySensor lfm:sensor_c8639215-b206-41f4-b356-02edc6e668bd ;
+    sosa:resultTime lfm:instant_f9f278bd-55b6-4f71-8aec-de0b5350e984 .
+
+lfm:observation_46026a8f-10f3-42e8-97cf-b04ab34235bd a sosa:Observation ;
+    sosa:hasSimpleResult -4.0274e+00 ;
+    sosa:madeBySensor lfm:sensor_5e1cacbd-acbb-4bd2-8b21-d551a8bb4759 ;
+    sosa:resultTime lfm:instant_9ef768c8-cbaf-4d98-8194-7a32e6f2ba88 .
+
+lfm:observation_46d10eb6-776f-450d-8f61-4dac029eb026 a sosa:Observation ;
+    sosa:hasSimpleResult 5.22729e+01 ;
+    sosa:madeBySensor lfm:sensor_f7c41a4c-624b-4bbc-90dc-ea11fbff5356 ;
+    sosa:resultTime lfm:instant_9f431b2d-5465-4c02-bc65-2b349073cf06 .
+
+lfm:observation_477b4cdc-56de-40ff-b235-9f7fb3e15e37 a sosa:Observation ;
+    sosa:hasSimpleResult 4.90877e+01 ;
+    sosa:madeBySensor lfm:sensor_114eaef7-8586-40f7-902d-4f18c71bb194 ;
+    sosa:resultTime lfm:instant_d596f87c-6938-4200-add6-0b9e38825a45 .
+
+lfm:observation_493763a2-dacc-4efa-8753-9945f2719876 a sosa:Observation ;
+    sosa:hasSimpleResult 1.629763e+02 ;
+    sosa:madeBySensor lfm:sensor_d896d511-4f3a-4a82-8c54-3a6813a5b3bd ;
+    sosa:resultTime lfm:instant_094f8170-25a1-4883-be4e-13cef3a150be .
+
+lfm:observation_4b1941db-521a-4245-8b8d-464fb906be42 a sosa:Observation ;
+    sosa:hasSimpleResult 1.841243e+02 ;
+    sosa:madeBySensor lfm:sensor_26585355-edc3-42db-93d8-0c2a41512839 ;
+    sosa:resultTime lfm:instant_9f8e5af0-3359-4d03-b548-ca52271bd736 .
+
+lfm:observation_4c2b39fc-3aec-47bc-a1ba-14a3acad340e a sosa:Observation ;
+    sosa:hasSimpleResult 1.835402e+02 ;
+    sosa:madeBySensor lfm:sensor_b335fd53-94e0-49e4-8312-402338514631 ;
+    sosa:resultTime lfm:instant_14a0a2d0-192d-42fc-a4b3-5b4b3a1721f3 .
+
+lfm:observation_4d35e423-cb05-4eb9-8ede-e7da3a977c40 a sosa:Observation ;
+    sosa:hasSimpleResult 1.163689e+02 ;
+    sosa:madeBySensor lfm:sensor_0ebd3e08-2cba-4514-8d46-c93d69198165 ;
+    sosa:resultTime lfm:instant_5cd58752-7f4b-4b64-96d9-9c8f4d49b27e .
+
+lfm:observation_4d6d6a6c-0fcf-4801-9ad8-f16eaa3f022f a sosa:Observation ;
+    sosa:hasSimpleResult 1.916499e+02 ;
+    sosa:madeBySensor lfm:sensor_9254d82e-77eb-4da3-a71b-4a947336e11e ;
+    sosa:resultTime lfm:instant_006b7397-5208-48bf-b8d8-4a75858f8845 .
+
+lfm:observation_4ea99a97-2ef0-47d2-89d2-251b38ad5686 a sosa:Observation ;
+    sosa:hasSimpleResult 1.400991e+02 ;
+    sosa:madeBySensor lfm:sensor_d40f23d5-8fa4-4781-b744-dcd1f96e7317 ;
+    sosa:resultTime lfm:instant_639cfe7b-9e0f-4e2f-a589-7a775440398f .
+
+lfm:observation_4eecb99e-1d32-4dc6-af02-607e6c45ee24 a sosa:Observation ;
+    sosa:hasSimpleResult 1.738183e+02 ;
+    sosa:madeBySensor lfm:sensor_7e874965-01da-4fea-92fa-2482d5c9aef0 ;
+    sosa:resultTime lfm:instant_c2bdb4f8-cb4d-42a4-ae6c-e852c22d33a2 .
+
+lfm:observation_4ff89b0a-5905-44d7-b44a-68fd1f975e3c a sosa:Observation ;
+    sosa:hasSimpleResult 1.891569e+02 ;
+    sosa:madeBySensor lfm:sensor_ae1a2266-feb7-4568-b8f1-1beda94b28a6 ;
+    sosa:resultTime lfm:instant_f551c161-2e31-4550-8dc2-91f629cb6c56 .
+
+lfm:observation_505b8fe4-4ab0-4cb7-b5d4-8d69b9da15b6 a sosa:Observation ;
+    sosa:hasSimpleResult 1.834196e+02 ;
+    sosa:madeBySensor lfm:sensor_e5ff2d2e-ca67-46fe-a2ab-42c4bf471992 ;
+    sosa:resultTime lfm:instant_b0ae081b-dd41-493a-9690-facccb35cf9a .
+
+lfm:observation_52ffc508-3eaf-4d18-9c9a-5418d915671f a sosa:Observation ;
+    sosa:hasSimpleResult 7.00219e+01 ;
+    sosa:madeBySensor lfm:sensor_2c7e584a-a62b-4387-a122-1794675912d7 ;
+    sosa:resultTime lfm:instant_ba45ec2d-44c5-4e60-afee-ddc5212a1cd8 .
+
+lfm:observation_543fa8ed-f6c4-429f-8698-c2c0537e867b a sosa:Observation ;
+    sosa:hasSimpleResult 1.81622e+02 ;
+    sosa:madeBySensor lfm:sensor_3b2daaad-a1b0-41d8-a584-49e4ad439eb8 ;
+    sosa:resultTime lfm:instant_bb5e21a5-b43b-49e4-b6c3-ed78c5ae6f96 .
+
+lfm:observation_54dfeea9-8135-470d-90b8-30893226a0aa a sosa:Observation ;
+    sosa:hasSimpleResult 1.606059e+02 ;
+    sosa:madeBySensor lfm:sensor_3c77a72e-e65e-409e-9135-641f97385de4 ;
+    sosa:resultTime lfm:instant_d33e3fa1-57a0-471f-805e-f5d1149393e5 .
+
+lfm:observation_55fcea07-a593-417b-b7d3-065eb84f46f0 a sosa:Observation ;
+    sosa:hasSimpleResult 1.653528e+02 ;
+    sosa:madeBySensor lfm:sensor_12531205-93bc-4f6a-a6bc-2cc98b58ac6d ;
+    sosa:resultTime lfm:instant_8c3d3a94-fb4b-45ac-a686-9f4af292ac43 .
+
+lfm:observation_57091f0d-2ce3-4375-b59a-7dedae347d11 a sosa:Observation ;
+    sosa:hasSimpleResult 1.800803e+02 ;
+    sosa:madeBySensor lfm:sensor_b03d5475-ddde-453e-a0cc-efbacfeff766 ;
+    sosa:resultTime lfm:instant_e1da8a4d-1ce5-42e9-bce5-74b99d9d3ae7 .
+
+lfm:observation_57e228b7-bad9-4cb9-bf5f-c7e4a9fd23ac a sosa:Observation ;
+    sosa:hasSimpleResult 6.58386e+01 ;
+    sosa:madeBySensor lfm:sensor_a6e32ab9-8cc3-4aa1-998b-1de2346d06f6 ;
+    sosa:resultTime lfm:instant_470c26bc-6151-4a72-af64-8ecf8d32d408 .
+
+lfm:observation_58359d95-bbb8-4ea6-9519-04c7d761d9c4 a sosa:Observation ;
+    sosa:hasSimpleResult 1.898992e+02 ;
+    sosa:madeBySensor lfm:sensor_f03dc83e-f2c3-47ef-ada6-9bd76f93d28e ;
+    sosa:resultTime lfm:instant_abe89228-1af4-480f-96ea-0d71f6625726 .
+
+lfm:observation_59936fdd-4abe-46e4-acdb-43262e0aefef a sosa:Observation ;
+    sosa:hasSimpleResult 1.887673e+02 ;
+    sosa:madeBySensor lfm:sensor_7573998a-63d2-4fc9-aeee-6d5c9e0ec4ae ;
+    sosa:resultTime lfm:instant_95e5f49d-2cdf-485a-beeb-f40a8def7bde .
+
+lfm:observation_59cd3f2d-b1a5-44ee-8211-ee86be8d7f24 a sosa:Observation ;
+    sosa:hasSimpleResult 4.64416e+01 ;
+    sosa:madeBySensor lfm:sensor_f4a80040-391f-4b0b-8c67-f1a905be095f ;
+    sosa:resultTime lfm:instant_2f9d7c05-be79-448c-881e-75f80e48f908 .
+
+lfm:observation_59d3df68-a9f5-4879-b281-6af8c8765b9e a sosa:Observation ;
+    sosa:hasSimpleResult 1.592452e+02 ;
+    sosa:madeBySensor lfm:sensor_58cd5a6d-68a1-474a-bf6d-14ea271fc971 ;
+    sosa:resultTime lfm:instant_178aad7c-c92d-4862-aa06-a1872b03c13a .
+
+lfm:observation_5a177048-3e6d-48b6-bacc-9e496f276f4e a sosa:Observation ;
+    sosa:hasSimpleResult 1.955199e+02 ;
+    sosa:madeBySensor lfm:sensor_a9f1ba31-73c1-47da-8779-e6188b1fdaf3 ;
+    sosa:resultTime lfm:instant_e86a1f92-6491-46ce-b02b-9a3a65840d54 .
+
+lfm:observation_5ad57b86-2844-4590-8818-d2ee65ee417e a sosa:Observation ;
+    sosa:hasSimpleResult 9.90218e+01 ;
+    sosa:madeBySensor lfm:sensor_024557e4-99c2-4d84-8441-031cc0725d52 ;
+    sosa:resultTime lfm:instant_e428851a-6e60-4857-99f2-53ac97a3ea0b .
+
+lfm:observation_5af99b13-d71c-43d0-890f-cef4d005adc2 a sosa:Observation ;
+    sosa:hasSimpleResult -1.040007e+02 ;
+    sosa:madeBySensor lfm:sensor_3f9c8445-3833-4bb8-8fbe-d53ef19a3e39 ;
+    sosa:resultTime lfm:instant_17e5f9d3-cbdf-43d6-b514-14fafb8a952b .
+
+lfm:observation_5b4d315e-2d34-4f6c-9aa4-74ccc7a1eb61 a sosa:Observation ;
+    sosa:hasSimpleResult -3.67515e+01 ;
+    sosa:madeBySensor lfm:sensor_c48bf0bd-1dc1-4036-aab3-27fb7a125af1 ;
+    sosa:resultTime lfm:instant_dfc539a2-bdc2-41cf-a4b5-2c8243cec669 .
+
+lfm:observation_5bb2e5b0-d7f8-4951-88c1-4444a17af9ce a sosa:Observation ;
+    sosa:hasSimpleResult 1.76792e+02 ;
+    sosa:madeBySensor lfm:sensor_4d7df9d6-733c-4252-abc0-c861c89e3025 ;
+    sosa:resultTime lfm:instant_070ed5fa-8ea4-410a-9516-8d9e29798d2a .
+
+lfm:observation_64e252b5-4789-4b59-84c4-7b4edd5aa7ca a sosa:Observation ;
+    sosa:hasSimpleResult 3.20856e+01 ;
+    sosa:madeBySensor lfm:sensor_ba650d72-ec30-46a8-b7b8-4e52957b44e3 ;
+    sosa:resultTime lfm:instant_d052bf8a-02f3-42c9-9c41-9c7ebe8e23d2 .
+
+lfm:observation_6703bcf7-f52c-4661-b19e-da356e9f50fe a sosa:Observation ;
+    sosa:hasSimpleResult 4.44991e+01 ;
+    sosa:madeBySensor lfm:sensor_36eee0bb-1faa-4b4b-b62e-4a714275cb0e ;
+    sosa:resultTime lfm:instant_9dd65152-2c64-4f92-ada9-99d4b7e1dc1d .
+
+lfm:observation_6787ab6c-b74c-4a41-a562-901be5a70695 a sosa:Observation ;
+    sosa:hasSimpleResult -3.83052e+01 ;
+    sosa:madeBySensor lfm:sensor_13cadf3b-4de7-41d6-986d-7778ab66eb45 ;
+    sosa:resultTime lfm:instant_2074cd11-7634-4808-b296-0983092446d4 .
+
+lfm:observation_68e55f96-6a3d-4cb8-ba56-a575412a2395 a sosa:Observation ;
+    sosa:hasSimpleResult 1.885335e+02 ;
+    sosa:madeBySensor lfm:sensor_4fa54277-1159-4cd7-b874-7a40c5e9da28 ;
+    sosa:resultTime lfm:instant_605bf701-72a7-4122-908e-5efc9224def4 .
+
+lfm:observation_69cfd896-e0b1-4b81-bc25-929e5b692906 a sosa:Observation ;
+    sosa:hasSimpleResult 6.55863e+01 ;
+    sosa:madeBySensor lfm:sensor_84f11b24-9a4b-449b-8940-1fd94b66e06e ;
+    sosa:resultTime lfm:instant_6306cb0a-105c-4db4-9aa9-ca5fce12d168 .
+
+lfm:observation_6b80d73f-d03e-4118-9f4a-16ef6fdbe377 a sosa:Observation ;
+    sosa:hasSimpleResult 1.793001e+02 ;
+    sosa:madeBySensor lfm:sensor_c5edc9a1-3b3a-4dcb-b59f-6b332d5e648b ;
+    sosa:resultTime lfm:instant_37f5d3c3-9148-4b8b-ae88-f6a63952c9f8 .
+
+lfm:observation_6cc2edf2-7f74-4b3e-b4b3-6575089c80e8 a sosa:Observation ;
+    sosa:hasSimpleResult -1.077535e+02 ;
+    sosa:madeBySensor lfm:sensor_bb4b7094-aa35-408b-ab98-fdbf73a16b4e ;
+    sosa:resultTime lfm:instant_253aba12-53d5-437a-b90d-d083b6ea1cd6 .
+
+lfm:observation_6d2704df-7cfc-4e81-bcea-32c815259eae a sosa:Observation ;
+    sosa:hasSimpleResult 1.959705e+02 ;
+    sosa:madeBySensor lfm:sensor_3f19c1b7-a249-43d2-ad4b-495e1e65d658 ;
+    sosa:resultTime lfm:instant_441c0ed0-60dc-485a-ac02-5149fcec3508 .
+
+lfm:observation_6d8c555d-0150-4dff-8e1d-22108eaaa379 a sosa:Observation ;
+    sosa:hasSimpleResult 7.98654e+01 ;
+    sosa:madeBySensor lfm:sensor_05ef0c93-965b-45ef-97a2-38c715d194cb ;
+    sosa:resultTime lfm:instant_987fbb3e-1b09-4bb7-ab10-bb51c493f02f .
+
+lfm:observation_6df19ebc-e410-4b61-a1d3-2f0b3fe92101 a sosa:Observation ;
+    sosa:hasSimpleResult -5.1179e+00 ;
+    sosa:madeBySensor lfm:sensor_97daeb45-db3a-4f53-a7a3-7cca7a9a490c ;
+    sosa:resultTime lfm:instant_623a53f4-b81e-44d2-8583-1a251f7394f4 .
+
+lfm:observation_6f0490ed-25db-47df-9412-6ccac812e9cb a sosa:Observation ;
+    sosa:hasSimpleResult 4.40179e+01 ;
+    sosa:madeBySensor lfm:sensor_a63e0a15-151d-424c-b7d8-33ae0081f2c7 ;
+    sosa:resultTime lfm:instant_4ba13462-21c3-4e22-b306-fc9c4ccce32a .
+
+lfm:observation_70d566a5-a10b-4590-8095-90a8b37e8134 a sosa:Observation ;
+    sosa:hasSimpleResult 1.924468e+02 ;
+    sosa:madeBySensor lfm:sensor_b1d004fb-5faa-4290-8c6d-2908a7d3a75b ;
+    sosa:resultTime lfm:instant_af2752e2-5a7e-4beb-9d59-7789bc9f41c7 .
+
+lfm:observation_7147eef9-98fa-47c5-b9e8-7cac0bc5d205 a sosa:Observation ;
+    sosa:hasSimpleResult 1.810305e+02 ;
+    sosa:madeBySensor lfm:sensor_4cabaa9b-dc91-4858-8ac7-ce53718e804e ;
+    sosa:resultTime lfm:instant_ebb94468-f230-405b-9ac1-7c0a09d23014 .
+
+lfm:observation_7190c891-dfd1-4a00-acaf-45d807e3de22 a sosa:Observation ;
+    sosa:hasSimpleResult 1.867926e+02 ;
+    sosa:madeBySensor lfm:sensor_ed858c76-438d-4605-a3d8-f36df35d29a3 ;
+    sosa:resultTime lfm:instant_ac4751a6-9cd2-44ea-bc8e-a5bb5836444b .
+
+lfm:observation_72176d3b-db09-4b97-bdbe-e3df94d5a116 a sosa:Observation ;
+    sosa:hasSimpleResult 6.36845e+01 ;
+    sosa:madeBySensor lfm:sensor_78e39bd4-fa6a-4c1e-828c-213d2c86ea9c ;
+    sosa:resultTime lfm:instant_a236bec2-5df5-4f73-bec8-503fc78bf656 .
+
+lfm:observation_72778afa-dcf2-4d5c-a677-abe81e2e9db5 a sosa:Observation ;
+    sosa:hasSimpleResult 1.916483e+02 ;
+    sosa:madeBySensor lfm:sensor_5c50830c-cf26-4e67-a841-825e8425b4ee ;
+    sosa:resultTime lfm:instant_282cebc7-53c4-423a-90f9-3d26cef675a8 .
+
+lfm:observation_73636789-05c4-4de0-a5ce-fb70077dfc3d a sosa:Observation ;
+    sosa:hasSimpleResult 6.1422e+00 ;
+    sosa:madeBySensor lfm:sensor_5beddde1-6d4f-47b8-970a-fa58a28836a3 ;
+    sosa:resultTime lfm:instant_a4b33f10-3e4e-4b0a-96d5-5ed183edbbf8 .
+
+lfm:observation_749e42c6-f574-4076-9294-e48d4f038d20 a sosa:Observation ;
+    sosa:hasSimpleResult 1.585345e+02 ;
+    sosa:madeBySensor lfm:sensor_ac3fb434-d760-4b33-bc7f-1b6b379b728d ;
+    sosa:resultTime lfm:instant_4857aa9c-453b-4450-9360-53e1b513defc .
+
+lfm:observation_75216950-8d03-4716-8bec-7636f8a6648d a sosa:Observation ;
+    sosa:hasSimpleResult 1.425992e+02 ;
+    sosa:madeBySensor lfm:sensor_2dc948f3-f885-4667-8d79-970c544014ec ;
+    sosa:resultTime lfm:instant_826f53f9-1ab8-4712-9487-c2adf9484302 .
+
+lfm:observation_7550c8cf-21cd-405d-abe7-f2be54570fc1 a sosa:Observation ;
+    sosa:hasSimpleResult 1.947748e+02 ;
+    sosa:madeBySensor lfm:sensor_d78fef22-3e8b-4003-87c3-3b105bb9f738 ;
+    sosa:resultTime lfm:instant_7fd0c7f2-f2f6-4003-afac-8586d1ce9f2d .
+
+lfm:observation_758df9ac-ecf2-445f-ad93-b0139a207857 a sosa:Observation ;
+    sosa:hasSimpleResult -3.13625e+01 ;
+    sosa:madeBySensor lfm:sensor_194900ba-9a83-4cfd-8e15-210d91de97fb ;
+    sosa:resultTime lfm:instant_6f103fb9-35f5-45eb-8e4b-a725a769e220 .
+
+lfm:observation_767b23dc-6db3-44ee-b43f-f7634a650e3a a sosa:Observation ;
+    sosa:hasSimpleResult -7.11708e+01 ;
+    sosa:madeBySensor lfm:sensor_ad1f8f0b-4aea-4bf1-b2cb-224f61bc974c ;
+    sosa:resultTime lfm:instant_73c21d58-3e17-4d4d-b89c-a37af7d578c3 .
+
+lfm:observation_77efbda8-d917-4dcd-8f5d-e251262951bf a sosa:Observation ;
+    sosa:hasSimpleResult -2.74341e+01 ;
+    sosa:madeBySensor lfm:sensor_25358463-f714-42d0-aa66-5241d35d4e8d ;
+    sosa:resultTime lfm:instant_264919b3-9b36-452e-bdae-7e91cc7afab9 .
+
+lfm:observation_78b2801c-1b46-499f-800a-a32aeee58700 a sosa:Observation ;
+    sosa:hasSimpleResult -5.26636e+01 ;
+    sosa:madeBySensor lfm:sensor_b73839b6-c40b-4840-b667-069aa9d6003a ;
+    sosa:resultTime lfm:instant_3be3ddfa-1e22-4c6d-ae96-58c5db0394c0 .
+
+lfm:observation_78c4ba6e-a0ab-4f08-a525-8278fd5ffc48 a sosa:Observation ;
+    sosa:hasSimpleResult 1.990527e+02 ;
+    sosa:madeBySensor lfm:sensor_cc5d4185-9835-4cc4-b570-91dff30a50ad ;
+    sosa:resultTime lfm:instant_c086ae84-308c-4b11-96c5-631674cde514 .
+
+lfm:observation_799214bc-97f6-4657-ac3f-0f99b2758a30 a sosa:Observation ;
+    sosa:hasSimpleResult 1.90859e+02 ;
+    sosa:madeBySensor lfm:sensor_134c822e-e200-4b4c-8c78-510cd5c623d8 ;
+    sosa:resultTime lfm:instant_7e28c220-9a1a-468b-bbfa-482cec3f33d6 .
+
+lfm:observation_7af4bba2-39ce-40cf-ba62-10841bc4d2bc a sosa:Observation ;
+    sosa:hasSimpleResult 1.805761e+02 ;
+    sosa:madeBySensor lfm:sensor_e3e129a1-eb1f-4f40-8500-ae247bc6ad50 ;
+    sosa:resultTime lfm:instant_2a87f39a-26cf-4b85-8e7a-349bff8205bb .
+
+lfm:observation_7bba86e7-881d-4e8e-8a94-11df057d53ea a sosa:Observation ;
+    sosa:hasSimpleResult 1.879348e+02 ;
+    sosa:madeBySensor lfm:sensor_0d49b15b-6fd3-4ed6-92cb-7619cebb9d33 ;
+    sosa:resultTime lfm:instant_d35773c0-2318-4a77-8585-dce365d79fdd .
+
+lfm:observation_7bfa103a-c64d-4e95-a4b4-a5752957a9fe a sosa:Observation ;
+    sosa:hasSimpleResult 1.89843e+01 ;
+    sosa:madeBySensor lfm:sensor_29a74355-809e-4eb7-adaa-eea4cc069729 ;
+    sosa:resultTime lfm:instant_5a7e4777-e980-4c2e-a63b-b2519d483ea7 .
+
+lfm:observation_7c486270-5e83-4d28-8f03-734f3addfca6 a sosa:Observation ;
+    sosa:hasSimpleResult 1.230798e+02 ;
+    sosa:madeBySensor lfm:sensor_20f1460e-b17b-4d19-8ab3-6ed3f298baf0 ;
+    sosa:resultTime lfm:instant_9f4cbbec-434a-4faf-beda-67c4dde79e45 .
+
+lfm:observation_7d924b34-10f4-469d-922b-5e2f190c5ce9 a sosa:Observation ;
+    sosa:hasSimpleResult 1.831257e+02 ;
+    sosa:madeBySensor lfm:sensor_e2a0a54f-4a97-45fe-b1ad-d5831494ecc1 ;
+    sosa:resultTime lfm:instant_2243c61b-bb68-493b-b9e0-86725e9eb03a .
+
+lfm:observation_7e3ff738-7b34-451e-b19d-400e633effb1 a sosa:Observation ;
+    sosa:hasSimpleResult 1.57574e+02 ;
+    sosa:madeBySensor lfm:sensor_cd4f39d3-675c-4fc1-a6d0-e23452f2fdca ;
+    sosa:resultTime lfm:instant_8e1ce4e2-42b1-44e9-b208-17efd501b5fc .
+
+lfm:observation_7feb5511-0eab-4268-8b12-81e9b4af6861 a sosa:Observation ;
+    sosa:hasSimpleResult 1.894237e+02 ;
+    sosa:madeBySensor lfm:sensor_6c8974e0-7062-43bb-a75c-2b92123cfb90 ;
+    sosa:resultTime lfm:instant_af29a128-483d-4e42-8981-85054eab2e39 .
+
+lfm:observation_811f4efa-5baa-4bb8-966c-491c8d055924 a sosa:Observation ;
+    sosa:hasSimpleResult 1.86556e+02 ;
+    sosa:madeBySensor lfm:sensor_4ce3435a-c06d-4cfd-be5e-09b91da4303f ;
+    sosa:resultTime lfm:instant_57c7f4c2-bbb4-4297-bc72-6592f30ba51d .
+
+lfm:observation_81fe43bd-61ec-4433-911f-df7e1b3dda8a a sosa:Observation ;
+    sosa:hasSimpleResult 1.799549e+02 ;
+    sosa:madeBySensor lfm:sensor_e385b923-c5f0-40f1-a0a3-c89aadbc31c7 ;
+    sosa:resultTime lfm:instant_ce2572be-410a-41da-9016-b4dbd5692ce0 .
+
+lfm:observation_840586a3-691e-4174-bdda-78c8c392bf35 a sosa:Observation ;
+    sosa:hasSimpleResult 2.55623e+01 ;
+    sosa:madeBySensor lfm:sensor_8d85c132-a20e-4472-8c30-592de46fc4b7 ;
+    sosa:resultTime lfm:instant_58deedfa-8acd-451a-a097-25e9619bd23f .
+
+lfm:observation_854b1ecd-ec67-4ecc-92da-4ddefadf6d24 a sosa:Observation ;
+    sosa:hasSimpleResult -5.673e+01 ;
+    sosa:madeBySensor lfm:sensor_d4793ed3-f274-4bd9-80a5-ff064b3e7332 ;
+    sosa:resultTime lfm:instant_08b525b4-95c5-468c-a9b3-fcbd40b660cf .
+
+lfm:observation_861995ff-520c-4640-866c-754450a48fea a sosa:Observation ;
+    sosa:hasSimpleResult 1.86072e+02 ;
+    sosa:madeBySensor lfm:sensor_87810c49-5809-49ec-97c7-7594d4890766 ;
+    sosa:resultTime lfm:instant_87adabc7-0ce9-48ae-85b1-f80fdca42d07 .
+
+lfm:observation_86f0e3cc-572e-41e0-b7c8-985310983b40 a sosa:Observation ;
+    sosa:hasSimpleResult 8.31025e+01 ;
+    sosa:madeBySensor lfm:sensor_f8e4901b-7903-491d-ac4f-49431dc4e459 ;
+    sosa:resultTime lfm:instant_29d8e07a-2142-44fa-a901-67317ce5cabb .
+
+lfm:observation_87357da0-2487-49b4-9b88-08a427bd581b a sosa:Observation ;
+    sosa:hasSimpleResult 1.924456e+02 ;
+    sosa:madeBySensor lfm:sensor_7a6a65dc-9b8c-46f9-9abd-ed73997a300b ;
+    sosa:resultTime lfm:instant_7ad84bab-827d-4abe-971d-8f23c91374a9 .
+
+lfm:observation_8793c2ff-3ef3-4fbf-9550-c8c076cd4c9b a sosa:Observation ;
+    sosa:hasSimpleResult 1.854724e+02 ;
+    sosa:madeBySensor lfm:sensor_519087da-740b-4ba2-b569-282b223031ae ;
+    sosa:resultTime lfm:instant_93046985-842f-43af-a69e-ab14754a930a .
+
+lfm:observation_87ac68f3-1fa0-4d6a-86ae-9bbc3b1253ef a sosa:Observation ;
+    sosa:hasSimpleResult 1.251506e+02 ;
+    sosa:madeBySensor lfm:sensor_a3b5190d-0eac-4841-9953-d3855883f267 ;
+    sosa:resultTime lfm:instant_063aba98-6e65-4168-871d-190a279c16f8 .
+
+lfm:observation_87afdff2-d0f7-410f-892c-08290fb07e82 a sosa:Observation ;
+    sosa:hasSimpleResult 1.887308e+02 ;
+    sosa:madeBySensor lfm:sensor_1d87fb0f-3db8-482e-9a5a-2100101c0823 ;
+    sosa:resultTime lfm:instant_95de2f9d-0d2e-4490-8b99-2347015eedee .
+
+lfm:observation_87b4301c-39de-4f88-b628-db6dd731e4f1 a sosa:Observation ;
+    sosa:hasSimpleResult 1.778908e+02 ;
+    sosa:madeBySensor lfm:sensor_83e72f2f-e051-470b-8755-1c2932114970 ;
+    sosa:resultTime lfm:instant_9464572c-6f33-45d5-819f-8b9ac8f826ae .
+
+lfm:observation_894a3bc3-ee77-4d60-b5a9-d22a63e2bfb3 a sosa:Observation ;
+    sosa:hasSimpleResult 1.902633e+02 ;
+    sosa:madeBySensor lfm:sensor_cf2f243b-f32b-4b54-9709-5f797c32d976 ;
+    sosa:resultTime lfm:instant_c4915a1a-c071-48bd-88fc-7f8caa10dab1 .
+
+lfm:observation_89fb25cd-2288-49ba-9687-509e13ad99fc a sosa:Observation ;
+    sosa:hasSimpleResult 1.922399e+02 ;
+    sosa:madeBySensor lfm:sensor_8d674349-4b02-4cf9-994b-c9964eb2b29d ;
+    sosa:resultTime lfm:instant_d5351c99-9e7a-4848-a38a-73d87e77c286 .
+
+lfm:observation_8a3cbece-608d-4f14-a115-19517f509a65 a sosa:Observation ;
+    sosa:hasSimpleResult -2.71829e+01 ;
+    sosa:madeBySensor lfm:sensor_1218c3ee-df19-499b-8375-860996682d8d ;
+    sosa:resultTime lfm:instant_848c4cad-72de-47f2-b3d6-87b2cba8b27d .
+
+lfm:observation_8b2e9653-d134-4555-8d7c-5c4d127466ee a sosa:Observation ;
+    sosa:hasSimpleResult 1.90719e+02 ;
+    sosa:madeBySensor lfm:sensor_f681c2f4-557a-4029-b51b-f71e2e0b6576 ;
+    sosa:resultTime lfm:instant_776de4fd-844f-4ed2-b89d-2849ef7431e2 .
+
+lfm:observation_8c79e437-b232-4638-8a13-2ed23b3486c8 a sosa:Observation ;
+    sosa:hasSimpleResult 1.406776e+02 ;
+    sosa:madeBySensor lfm:sensor_7e960886-b14a-4d65-bb04-3732a7b380e0 ;
+    sosa:resultTime lfm:instant_433651c5-b9b9-4449-847a-25145529cfd5 .
+
+lfm:observation_8cbd26bc-6a73-49ba-9920-9f533d73cbf5 a sosa:Observation ;
+    sosa:hasSimpleResult -3.59876e+01 ;
+    sosa:madeBySensor lfm:sensor_23bc2c5a-cb4f-409c-818b-a5eaa2592c6d ;
+    sosa:resultTime lfm:instant_02cbd129-719e-4d2e-8886-f4f5a8cf0199 .
+
+lfm:observation_9020a739-bed1-4493-9ee9-1de0064a46cd a sosa:Observation ;
+    sosa:hasSimpleResult 4.597e+00 ;
+    sosa:madeBySensor lfm:sensor_e29e7089-10e6-4018-8919-30acdbde8ffb ;
+    sosa:resultTime lfm:instant_e2b205cd-fcf5-4f7a-91d9-b75640f6a874 .
+
+lfm:observation_92eb2487-c9b1-45e0-9793-4095c45e5fc0 a sosa:Observation ;
+    sosa:hasSimpleResult 1.769484e+02 ;
+    sosa:madeBySensor lfm:sensor_e3c0e76f-9d4f-466a-a0ae-a4cb37521526 ;
+    sosa:resultTime lfm:instant_24527480-feb8-4067-9bee-d8a1b3416028 .
+
+lfm:observation_938883fa-0912-40c4-928a-0822e562cde7 a sosa:Observation ;
+    sosa:hasSimpleResult 1.752336e+02 ;
+    sosa:madeBySensor lfm:sensor_0795b497-6f53-41b9-a6c4-a74cb19e4438 ;
+    sosa:resultTime lfm:instant_fdba65dc-22ae-4f1f-b96b-716a194d16aa .
+
+lfm:observation_93895ca2-a185-4bba-b9bd-fd19f71b2ff0 a sosa:Observation ;
+    sosa:hasSimpleResult 1.851237e+02 ;
+    sosa:madeBySensor lfm:sensor_119fad68-a009-4f83-9821-296ed493ce3d ;
+    sosa:resultTime lfm:instant_ff73aa85-430b-48db-975e-a92f35d77074 .
+
+lfm:observation_9409a68d-7128-454e-9598-30f1aa0a3280 a sosa:Observation ;
+    sosa:hasSimpleResult 1.04698e+02 ;
+    sosa:madeBySensor lfm:sensor_136ae68f-56d5-44cd-adc2-cd7e904449b0 ;
+    sosa:resultTime lfm:instant_88a99c20-2702-4421-91de-b0c688d312ea .
+
+lfm:observation_94959a10-2c0a-4731-a463-0832e0a8da70 a sosa:Observation ;
+    sosa:hasSimpleResult 1.745794e+02 ;
+    sosa:madeBySensor lfm:sensor_a4017092-f963-4458-96e3-4bbe34499dbe ;
+    sosa:resultTime lfm:instant_a3636c3e-3f32-46c4-858e-3b0411666916 .
+
+lfm:observation_978ed74b-84e3-4a2d-960f-483847ebe6f4 a sosa:Observation ;
+    sosa:hasSimpleResult -3.57655e+01 ;
+    sosa:madeBySensor lfm:sensor_1549c23e-440a-4347-8671-c666487788aa ;
+    sosa:resultTime lfm:instant_2a9e5ea6-6413-43b9-978b-ca41ccfc1bc7 .
+
+lfm:observation_9853e6f5-62e2-4525-82ed-a70b21181a63 a sosa:Observation ;
+    sosa:hasSimpleResult 4.8715e+01 ;
+    sosa:madeBySensor lfm:sensor_f610b0e4-76d7-4ccc-8027-275e7efc806b ;
+    sosa:resultTime lfm:instant_a3f35595-a0ba-4c09-a578-319c0ce76488 .
+
+lfm:observation_9882f72d-2aab-4aa0-939e-141c6bb9ba6e a sosa:Observation ;
+    sosa:hasSimpleResult 1.915031e+02 ;
+    sosa:madeBySensor lfm:sensor_97b4dc85-752c-4e58-9083-2166b06a578b ;
+    sosa:resultTime lfm:instant_3f8c091a-c840-459d-96ed-feb0ff440090 .
+
+lfm:observation_993cae85-4fc7-4acc-9598-6908d3197318 a sosa:Observation ;
+    sosa:hasSimpleResult 1.952511e+02 ;
+    sosa:madeBySensor lfm:sensor_d57cdf5c-ac2f-40b8-bcff-5ce4d541880c ;
+    sosa:resultTime lfm:instant_a5cae8fa-a118-434a-bc46-3cc3ca1854a4 .
+
+lfm:observation_9ae2c55a-a4fd-448d-b2ac-acbbfb35e825 a sosa:Observation ;
+    sosa:hasSimpleResult 1.738209e+02 ;
+    sosa:madeBySensor lfm:sensor_be61f1b9-dd5e-416a-af0e-f860641bee59 ;
+    sosa:resultTime lfm:instant_8fa3f4c3-49c1-49ec-8a98-16724bfde103 .
+
+lfm:observation_9b40f209-ba55-4011-a38f-f3e6cb9c4ee5 a sosa:Observation ;
+    sosa:hasSimpleResult 4.3772e+01 ;
+    sosa:madeBySensor lfm:sensor_ceae0c2b-21a1-440d-b6e5-d2e0a92b8cad ;
+    sosa:resultTime lfm:instant_9ba02652-9784-4fe0-a6e6-452393f71cb6 .
+
+lfm:observation_9c6b7cac-2c70-48b4-b77b-0dce7e6f9528 a sosa:Observation ;
+    sosa:hasSimpleResult 1.78415e+02 ;
+    sosa:madeBySensor lfm:sensor_3223b524-e8a3-4460-865f-30203927e7d4 ;
+    sosa:resultTime lfm:instant_4c97617b-d7d7-4183-ae57-ef638df15c3d .
+
+lfm:observation_9cb0c284-6954-4dcb-9c7a-c57f57b3f81c a sosa:Observation ;
+    sosa:hasSimpleResult 1.929893e+02 ;
+    sosa:madeBySensor lfm:sensor_d5fb96ae-9ff0-432f-afe8-5baac50b1db6 ;
+    sosa:resultTime lfm:instant_e59b5541-4456-477a-b84b-a13aae49d7d6 .
+
+lfm:observation_9d82dfe6-0d4f-4e40-bd0a-53a22a42d53e a sosa:Observation ;
+    sosa:hasSimpleResult 1.757549e+02 ;
+    sosa:madeBySensor lfm:sensor_44a1cd4a-a7f0-49e5-8c09-2f4ab4cf0610 ;
+    sosa:resultTime lfm:instant_4b8149c7-bf11-49ad-8183-7198c7179069 .
+
+lfm:observation_9dda7404-b68d-4a81-9c3c-3efad9e96fd9 a sosa:Observation ;
+    sosa:hasSimpleResult 1.8015e+02 ;
+    sosa:madeBySensor lfm:sensor_d4ed3617-eed8-4f0a-90b5-5f987d0dcfe6 ;
+    sosa:resultTime lfm:instant_354849ec-365d-4b8b-938e-80e8e9f175d7 .
+
+lfm:observation_9f641758-954f-4a71-ab26-53dca755c3ca a sosa:Observation ;
+    sosa:hasSimpleResult 1.936409e+02 ;
+    sosa:madeBySensor lfm:sensor_3f9cbfbe-0891-46f2-a8c0-a115c6c0710b ;
+    sosa:resultTime lfm:instant_cbb4aa00-171f-46ed-8359-82b17619cf0a .
+
+lfm:observation_9f982105-5f5f-406b-8367-58d187de0fe1 a sosa:Observation ;
+    sosa:hasSimpleResult 1.707314e+02 ;
+    sosa:madeBySensor lfm:sensor_6d639b34-bb25-4687-822b-48b4fbe9292b ;
+    sosa:resultTime lfm:instant_8d23743d-e588-4a40-9cc4-42520edb1ee1 .
+
+lfm:observation_a2145ece-8c4b-4f1c-a571-1edf45156e3c a sosa:Observation ;
+    sosa:hasSimpleResult 1.95107e+02 ;
+    sosa:madeBySensor lfm:sensor_b7af49a9-10e0-41e8-83b3-5fcdb8662579 ;
+    sosa:resultTime lfm:instant_2839f98e-aafd-4b4a-8138-f39961d00268 .
+
+lfm:observation_a4bf251e-a6a0-48d2-972e-ed5169323a33 a sosa:Observation ;
+    sosa:hasSimpleResult 1.675251e+02 ;
+    sosa:madeBySensor lfm:sensor_449785a3-ed62-4335-b93c-1a4cf4e541b4 ;
+    sosa:resultTime lfm:instant_92748c2f-da88-4e78-a3fe-5841cc81b8af .
+
+lfm:observation_a5e9388b-c1b5-4298-8918-efdc33da0fdc a sosa:Observation ;
+    sosa:hasSimpleResult 1.936167e+02 ;
+    sosa:madeBySensor lfm:sensor_4d257e8d-63ae-41de-a971-e83c1a44aec3 ;
+    sosa:resultTime lfm:instant_66755b22-ca73-4bf9-ae24-aaa62412bfb1 .
+
+lfm:observation_a5fa0339-6f65-450d-b2a4-bb1824622c72 a sosa:Observation ;
+    sosa:hasSimpleResult 1.858429e+02 ;
+    sosa:madeBySensor lfm:sensor_3c5b9c04-755d-4f71-b6d4-6d4f05e80aee ;
+    sosa:resultTime lfm:instant_2cd621f6-3065-4427-ab65-2f9f83c9954e .
+
+lfm:observation_a7ae58b0-f070-4368-8385-01f19a89d855 a sosa:Observation ;
+    sosa:hasSimpleResult 1.70381e+02 ;
+    sosa:madeBySensor lfm:sensor_18378706-7a0b-4c56-afd6-cd908dfff298 ;
+    sosa:resultTime lfm:instant_1cf92107-3d24-4d54-b81b-f01c24e911c3 .
+
+lfm:observation_a9cb1bdf-b37a-4705-84d7-08bb61d34da8 a sosa:Observation ;
+    sosa:hasSimpleResult 1.893042e+02 ;
+    sosa:madeBySensor lfm:sensor_c61b6fbb-e5ec-46c2-9ee4-1a05a6e23303 ;
+    sosa:resultTime lfm:instant_e8c1e229-eaae-462e-909b-6ba343db5b3e .
+
+lfm:observation_a9e3ddd6-9907-42c4-b018-50aaeb18fe4c a sosa:Observation ;
+    sosa:hasSimpleResult 1.933024e+02 ;
+    sosa:madeBySensor lfm:sensor_abf77676-65d5-4c23-a768-3152b8cb8815 ;
+    sosa:resultTime lfm:instant_88374c5f-5be9-4ab9-8869-636e586dd745 .
+
+lfm:observation_ad43f063-26cc-4983-bf44-77350bc16e10 a sosa:Observation ;
+    sosa:hasSimpleResult -4.47706e+01 ;
+    sosa:madeBySensor lfm:sensor_88e60380-af18-4814-92b3-9962e2d65aa4 ;
+    sosa:resultTime lfm:instant_ddf55577-0135-45ef-8727-cf079992a6ab .
+
+lfm:observation_ae77e490-dca2-4c7a-90a4-e4a43a294307 a sosa:Observation ;
+    sosa:hasSimpleResult 1.911189e+02 ;
+    sosa:madeBySensor lfm:sensor_961ae78a-3c93-414b-b18b-7b51059229cb ;
+    sosa:resultTime lfm:instant_8564fe09-6a4f-410d-8c96-297fec307ca9 .
+
+lfm:observation_b1702035-3de9-434c-936e-9674ecf50258 a sosa:Observation ;
+    sosa:hasSimpleResult 1.782962e+02 ;
+    sosa:madeBySensor lfm:sensor_b75b6086-e678-492d-8e09-1e744f1881b4 ;
+    sosa:resultTime lfm:instant_e1700671-901e-42dc-ad7c-da7fff5cefd0 .
+
+lfm:observation_b20856ae-8d2d-4dbc-bbde-7b85173ade79 a sosa:Observation ;
+    sosa:hasSimpleResult 1.723612e+02 ;
+    sosa:madeBySensor lfm:sensor_4daa8d40-e0b7-41e2-980a-e87d7fcea0b7 ;
+    sosa:resultTime lfm:instant_bfd6d5bf-5f4c-4eb9-b6a5-22eac06c8ddb .
+
+lfm:observation_b2c4653e-5387-4262-82ec-5023a477cc4c a sosa:Observation ;
+    sosa:hasSimpleResult 1.750269e+02 ;
+    sosa:madeBySensor lfm:sensor_e73a32c9-e3fc-4d73-82a2-998a2acac197 ;
+    sosa:resultTime lfm:instant_45f17ac9-42f6-4471-a4f4-f56076f5cb9c .
+
+lfm:observation_b36dab10-e71d-4202-8415-aaf1f559da9e a sosa:Observation ;
+    sosa:hasSimpleResult 1.903576e+02 ;
+    sosa:madeBySensor lfm:sensor_d36f748f-b112-4180-86e6-7f72ea7bc57f ;
+    sosa:resultTime lfm:instant_9a79a8c2-482b-4178-8c8b-9d5434e2965a .
+
+lfm:observation_b4155a48-b344-4a0d-a69f-aa5892ec4eec a sosa:Observation ;
+    sosa:hasSimpleResult 5.99746e+01 ;
+    sosa:madeBySensor lfm:sensor_95ab7a46-490f-4652-97d3-26c6e6f82c5a ;
+    sosa:resultTime lfm:instant_2f2cce93-b510-4a50-a950-ea932bedf7c9 .
+
+lfm:observation_b623aa96-f91c-4eba-b92e-434ffe4b1d36 a sosa:Observation ;
+    sosa:hasSimpleResult 5.35251e+01 ;
+    sosa:madeBySensor lfm:sensor_ed05ab43-8d0d-4841-9985-366c0c77b245 ;
+    sosa:resultTime lfm:instant_96c1fc17-35de-4c4e-ad77-4085423b421d .
+
+lfm:observation_b7419ce1-4440-4427-bdd6-6ad126782ba3 a sosa:Observation ;
+    sosa:hasSimpleResult 1.82297e+02 ;
+    sosa:madeBySensor lfm:sensor_2802966d-4634-427e-a36c-7d4c43f6c054 ;
+    sosa:resultTime lfm:instant_1be481c9-0498-4230-91e8-c49fa56abaed .
+
+lfm:observation_b758f6cc-ac49-4c3c-b607-934cd66c491c a sosa:Observation ;
+    sosa:hasSimpleResult 1.752202e+02 ;
+    sosa:madeBySensor lfm:sensor_8bc22ad1-a1d5-4fe7-a29c-22457568a2f8 ;
+    sosa:resultTime lfm:instant_234e5a9b-0f99-44c9-a28f-b6504f991a3b .
+
+lfm:observation_b7c78cc3-7b26-4ebc-96c7-0e4249132bb0 a sosa:Observation ;
+    sosa:hasSimpleResult 1.887702e+02 ;
+    sosa:madeBySensor lfm:sensor_5e89dbeb-0b56-467f-a25e-7d519e325426 ;
+    sosa:resultTime lfm:instant_a2c32ed7-17e6-4e8b-b774-56a09a2db4b1 .
+
+lfm:observation_b80b6e63-9b45-447f-9bfe-3b3addab2b4a a sosa:Observation ;
+    sosa:hasSimpleResult 1.062375e+02 ;
+    sosa:madeBySensor lfm:sensor_bb304555-38b3-4759-8ad7-e5a9b3b843a9 ;
+    sosa:resultTime lfm:instant_1b8e2f28-f6b0-4cb0-84b2-7bcbee48d45c .
+
+lfm:observation_b8b815e0-7e38-4f67-911b-24ebab3ba7a3 a sosa:Observation ;
+    sosa:hasSimpleResult -2.49147e+01 ;
+    sosa:madeBySensor lfm:sensor_32ccc868-07d6-4f30-84f2-0a6c7a7fcbb3 ;
+    sosa:resultTime lfm:instant_b5465bbd-743e-4c44-8852-782adad750d8 .
+
+lfm:observation_b9a6b599-3d47-4bc4-b0fd-9548f2f8aeaf a sosa:Observation ;
+    sosa:hasSimpleResult 1.376862e+02 ;
+    sosa:madeBySensor lfm:sensor_d6e1e655-d582-40f4-8ab9-beb319538ace ;
+    sosa:resultTime lfm:instant_19e33d00-f1e5-4b52-9a03-8b53a91ae68d .
+
+lfm:observation_b9d2f7fa-8211-4188-8a09-7667f636fb83 a sosa:Observation ;
+    sosa:hasSimpleResult 1.922254e+02 ;
+    sosa:madeBySensor lfm:sensor_a922723b-7d52-4711-8c33-8eb834650d61 ;
+    sosa:resultTime lfm:instant_4ebc5b80-c2cd-4baf-9c1d-fc7e4933f594 .
+
+lfm:observation_bb1bf028-a90b-4213-b600-9cb34da98174 a sosa:Observation ;
+    sosa:hasSimpleResult 1.980468e+02 ;
+    sosa:madeBySensor lfm:sensor_90883229-6074-4499-bd41-03a51b7c7fac ;
+    sosa:resultTime lfm:instant_34b54b69-52a2-4f9d-b84c-63db065b59c6 .
+
+lfm:observation_bc146655-94aa-42c6-b6a9-3d32d5c7d73c a sosa:Observation ;
+    sosa:hasSimpleResult 1.795176e+02 ;
+    sosa:madeBySensor lfm:sensor_1adea204-d346-49ed-b80e-11951cc722f1 ;
+    sosa:resultTime lfm:instant_ba61b7f6-22c2-4159-834d-966700b1e498 .
+
+lfm:observation_bf47448e-fea6-42e9-8961-6f7009af32f9 a sosa:Observation ;
+    sosa:hasSimpleResult 1.887513e+02 ;
+    sosa:madeBySensor lfm:sensor_2ccd3a95-f379-4266-ad12-53f32265887e ;
+    sosa:resultTime lfm:instant_a20604e8-f991-4ea2-8dda-93e8130c7b91 .
+
+lfm:observation_bfe1dae7-de42-4227-bd80-7358eebd64f0 a sosa:Observation ;
+    sosa:hasSimpleResult 1.71798e+02 ;
+    sosa:madeBySensor lfm:sensor_b9e2aea4-b6ce-4f8a-9769-3e664e7f2fec ;
+    sosa:resultTime lfm:instant_a1520988-7aec-432e-8628-955776a0ffe3 .
+
+lfm:observation_c0d4e216-f7ed-4349-aa99-4f77f162ad2b a sosa:Observation ;
+    sosa:hasSimpleResult 1.838922e+02 ;
+    sosa:madeBySensor lfm:sensor_5c9bd7a8-7123-4ed4-99bf-6ef70689340c ;
+    sosa:resultTime lfm:instant_2f8c1511-a514-461f-b55e-7b28869d0c49 .
+
+lfm:observation_c0e26a80-268b-47bf-be41-08f168961793 a sosa:Observation ;
+    sosa:hasSimpleResult -5.49014e+01 ;
+    sosa:madeBySensor lfm:sensor_61029ff7-ef28-41dc-a3e9-9a47a39b8157 ;
+    sosa:resultTime lfm:instant_e8a8dddb-6d4d-42c0-b845-837fd658e50b .
+
+lfm:observation_c360f897-0192-40e6-ac12-bc4d1a040c69 a sosa:Observation ;
+    sosa:hasSimpleResult 1.89241e+02 ;
+    sosa:madeBySensor lfm:sensor_f5a79714-bd4d-450f-ad92-94913154cd4d ;
+    sosa:resultTime lfm:instant_6380a24b-6d3d-4f96-b73f-1c6bdf30774b .
+
+lfm:observation_c6ea1ebb-5d55-4da7-87c6-ec62766cb5f1 a sosa:Observation ;
+    sosa:hasSimpleResult 1.185501e+02 ;
+    sosa:madeBySensor lfm:sensor_9c6303f8-e8a6-4c1f-808d-17686f2ca80e ;
+    sosa:resultTime lfm:instant_42dad4e1-5674-4935-8cbf-b67e9e483605 .
+
+lfm:observation_c6eb0341-f4f3-4b49-b829-b1719b1d570f a sosa:Observation ;
+    sosa:hasSimpleResult 1.904418e+02 ;
+    sosa:madeBySensor lfm:sensor_d3092334-d03f-4a2b-8d2e-718ba73f1eae ;
+    sosa:resultTime lfm:instant_583ecb41-053d-477e-b341-22445829fa17 .
+
+lfm:observation_cafbd814-7f59-4861-93e2-4d24e015cd30 a sosa:Observation ;
+    sosa:hasSimpleResult -6.49131e+01 ;
+    sosa:madeBySensor lfm:sensor_f3a6ff42-44b9-4416-9162-29eaffaef270 ;
+    sosa:resultTime lfm:instant_c52c9688-34bf-4e88-a0b0-4e06a7a647c1 .
+
+lfm:observation_cbb48a93-384f-46e9-9aad-13f34ce6c83e a sosa:Observation ;
+    sosa:hasSimpleResult 1.972479e+02 ;
+    sosa:madeBySensor lfm:sensor_39d57ce1-1e9d-40a4-aede-5de06098a659 ;
+    sosa:resultTime lfm:instant_5a0c33ed-3c0f-4174-8744-9cf1be2666a3 .
+
+lfm:observation_cce395aa-1cab-4174-a238-2caf1b42591a a sosa:Observation ;
+    sosa:hasSimpleResult 2.81076e+01 ;
+    sosa:madeBySensor lfm:sensor_59b06340-4427-41b7-a4e8-0625a8fb8b33 ;
+    sosa:resultTime lfm:instant_07b55e60-df5c-4924-b1c9-9aa31f00bd6e .
+
+lfm:observation_d139f3d0-02e4-41bc-824a-b3655113650b a sosa:Observation ;
+    sosa:hasSimpleResult 6.92325e+01 ;
+    sosa:madeBySensor lfm:sensor_8228560f-5947-4b9d-8b5a-e3647ae6c8f3 ;
+    sosa:resultTime lfm:instant_60e48503-993b-4baa-8ace-fd0b4dfb4fa3 .
+
+lfm:observation_d357f28d-d9b7-4e06-9f50-c4f34c7e263e a sosa:Observation ;
+    sosa:hasSimpleResult 4.41788e+01 ;
+    sosa:madeBySensor lfm:sensor_79ad5dd7-a56f-4001-add4-1d7e269cef98 ;
+    sosa:resultTime lfm:instant_0d52862e-30b6-48da-b2f3-b89528f3f5f1 .
+
+lfm:observation_d379e0ed-334d-437b-abbd-fdede6820f1a a sosa:Observation ;
+    sosa:hasSimpleResult 4.6972e+01 ;
+    sosa:madeBySensor lfm:sensor_9501ac3d-52d1-4c2d-ad8e-49487bbd953f ;
+    sosa:resultTime lfm:instant_de45d9f0-3f40-4c26-85aa-eb61300c9ce1 .
+
+lfm:observation_d5ea08a3-2a12-496f-95dc-d784ceb755c5 a sosa:Observation ;
+    sosa:hasSimpleResult 1.9189e+02 ;
+    sosa:madeBySensor lfm:sensor_5ee8c475-a8fa-4cf1-9f3c-c1cbf3e9e230 ;
+    sosa:resultTime lfm:instant_05d8b836-1174-4bd9-972d-12ef27a7149c .
+
+lfm:observation_d63f335d-07a5-44c6-a994-c08f754ce34f a sosa:Observation ;
+    sosa:hasSimpleResult -4.31754e+01 ;
+    sosa:madeBySensor lfm:sensor_52e6c7c8-3bb4-4064-9200-d3b7e2b67ad4 ;
+    sosa:resultTime lfm:instant_5d937801-ed4d-4698-afaf-059f27efbbd2 .
+
+lfm:observation_d733e9c4-160c-47ea-a9a6-57e0fecb12a1 a sosa:Observation ;
+    sosa:hasSimpleResult 1.658812e+02 ;
+    sosa:madeBySensor lfm:sensor_363e13d5-f1a8-4b8a-ac74-5f0fd2238d95 ;
+    sosa:resultTime lfm:instant_3e1cad8c-ce74-4396-a181-6757e654267b .
+
+lfm:observation_de27e739-e98b-4d86-940c-68cae0fb226c a sosa:Observation ;
+    sosa:hasSimpleResult 1.891057e+02 ;
+    sosa:madeBySensor lfm:sensor_d0c717b2-58ab-4b40-846e-852a988b8834 ;
+    sosa:resultTime lfm:instant_6abadd19-3f65-4e94-b3c3-018e3e4258d0 .
+
+lfm:observation_e01b803c-38ce-4d3f-a487-b2922f8d0faa a sosa:Observation ;
+    sosa:hasSimpleResult 1.716724e+02 ;
+    sosa:madeBySensor lfm:sensor_4bb00142-f2f2-42e1-9b71-5894a9e62093 ;
+    sosa:resultTime lfm:instant_af07972e-dc80-45d2-8a59-3784fc0ba203 .
+
+lfm:observation_e02cdb92-d3c9-4b58-b96d-96f9ea707715 a sosa:Observation ;
+    sosa:hasSimpleResult 2.35149e+01 ;
+    sosa:madeBySensor lfm:sensor_21abf024-494a-4f5d-b426-e9951e8c8f0c ;
+    sosa:resultTime lfm:instant_ead7bef7-596b-4ee5-b69d-19db824e0561 .
+
+lfm:observation_e1831597-f945-4fde-a91e-a7de669d3538 a sosa:Observation ;
+    sosa:hasSimpleResult 8.74097e+01 ;
+    sosa:madeBySensor lfm:sensor_764cae09-e7f1-4cd9-b2ba-33a97e83269d ;
+    sosa:resultTime lfm:instant_65d4718c-a396-48b6-9dbf-ebdaaca9f226 .
+
+lfm:observation_e198a33a-d365-490a-9699-203e1b358dac a sosa:Observation ;
+    sosa:hasSimpleResult 1.924434e+02 ;
+    sosa:madeBySensor lfm:sensor_ca89a8e6-82ca-4761-b126-d8fc1be9823a ;
+    sosa:resultTime lfm:instant_cb5359bf-4aac-4832-b0c7-27d6c87b6390 .
+
+lfm:observation_e1c407a8-cf4a-4306-a854-f8e27af159a7 a sosa:Observation ;
+    sosa:hasSimpleResult -1.018939e+02 ;
+    sosa:madeBySensor lfm:sensor_204ed1e5-e90b-466f-ab03-338af11b84d0 ;
+    sosa:resultTime lfm:instant_6d3d32d0-46d3-40e3-9b71-a31f71c8553c .
+
+lfm:observation_e1c9fa9a-6dba-4f59-8dd1-cb2fac083bad a sosa:Observation ;
+    sosa:hasSimpleResult 1.901443e+02 ;
+    sosa:madeBySensor lfm:sensor_a52e6d56-eaba-46cf-a1f4-4f69a42175e0 ;
+    sosa:resultTime lfm:instant_4caae4f7-b004-418c-91bd-d4bcb372af92 .
+
+lfm:observation_e2493fcf-c439-4af5-8699-e59caa1a2f24 a sosa:Observation ;
+    sosa:hasSimpleResult 1.928221e+02 ;
+    sosa:madeBySensor lfm:sensor_a1a3fe94-172c-41c4-9a36-441bee5b422e ;
+    sosa:resultTime lfm:instant_c0f1ebac-9169-4369-9c5c-111136e2e9ce .
+
+lfm:observation_e5d8a7b9-23c1-4d11-93b2-b28caa239c15 a sosa:Observation ;
+    sosa:hasSimpleResult 3.1077e+00 ;
+    sosa:madeBySensor lfm:sensor_e9ec96a5-f05d-4663-ba51-47357a93d3a0 ;
+    sosa:resultTime lfm:instant_f88f8976-caf1-44a6-9e08-0802e6ee7f2d .
+
+lfm:observation_e89ce5dd-038b-4cb4-8565-3349607e003a a sosa:Observation ;
+    sosa:hasSimpleResult 1.889403e+02 ;
+    sosa:madeBySensor lfm:sensor_045f32b3-897f-468d-9665-cf25ec6c7edc ;
+    sosa:resultTime lfm:instant_bd9f19ef-a390-40d0-9ceb-0707dbb528b2 .
+
+lfm:observation_e976a3db-d10b-433e-8d88-bb0f12016f9e a sosa:Observation ;
+    sosa:hasSimpleResult 1.879256e+02 ;
+    sosa:madeBySensor lfm:sensor_d3a4156a-c950-47ee-983e-05c3f0c0c624 ;
+    sosa:resultTime lfm:instant_86c8f37e-486d-4bb4-94d8-4f3457d26c17 .
+
+lfm:observation_eb3716f8-4419-4a0f-b606-0e1524189e3a a sosa:Observation ;
+    sosa:hasSimpleResult 3.74941e+01 ;
+    sosa:madeBySensor lfm:sensor_d0729ea6-196d-41db-81ec-15fec14537a2 ;
+    sosa:resultTime lfm:instant_56a6ffec-4199-4deb-8574-591d55a94323 .
+
+lfm:observation_eb9e9cbe-b544-4cb5-81ed-ae7f7081bf9a a sosa:Observation ;
+    sosa:hasSimpleResult 1.81003e+02 ;
+    sosa:madeBySensor lfm:sensor_df0ed317-9e75-452d-81e4-059c4a4a1a3f ;
+    sosa:resultTime lfm:instant_ed11f6e7-3a9d-47b2-bfdc-3c192a5f7a40 .
+
+lfm:observation_eba38e5d-d2ab-4b2c-93bb-372069ffe8a9 a sosa:Observation ;
+    sosa:hasSimpleResult 1.926393e+02 ;
+    sosa:madeBySensor lfm:sensor_39cc34e7-4e5e-4dfa-ba99-0cf8c4060782 ;
+    sosa:resultTime lfm:instant_d901f24b-e821-4d5a-bac0-f2311dbcfe3f .
+
+lfm:observation_ee98883c-0988-46eb-84fe-84e141796c0c a sosa:Observation ;
+    sosa:hasSimpleResult 2.60106e+01 ;
+    sosa:madeBySensor lfm:sensor_23998dbc-c3c1-4242-bec3-82fdd409613b ;
+    sosa:resultTime lfm:instant_f798d23a-ee36-4fb0-be89-71627a01e734 .
+
+lfm:observation_eeb4bfbd-7c37-451b-b545-7a17ba15e8f1 a sosa:Observation ;
+    sosa:hasSimpleResult -4.80909e+01 ;
+    sosa:madeBySensor lfm:sensor_72aac5c3-7f39-47a4-95ea-771b287c0fd7 ;
+    sosa:resultTime lfm:instant_09ca5295-c2fc-4c62-979f-f75e25682bf5 .
+
+lfm:observation_f0f237cc-baf4-4e3f-8689-c208f32c2e5b a sosa:Observation ;
+    sosa:hasSimpleResult -6.32197e+01 ;
+    sosa:madeBySensor lfm:sensor_8e9b3db4-9e8a-4aff-888d-2989b3ea00ef ;
+    sosa:resultTime lfm:instant_a7c21704-8c2d-49e5-aadc-e89faea5ba86 .
+
+lfm:observation_f2baff4c-3ff7-427c-b578-e8b630e3e7d9 a sosa:Observation ;
+    sosa:hasSimpleResult -5.31991e+01 ;
+    sosa:madeBySensor lfm:sensor_1efe9cd2-5a7c-40e1-9f24-fd68376c8ed0 ;
+    sosa:resultTime lfm:instant_49ddd1d4-f5ee-461d-aac3-999c3906aeff .
+
+lfm:observation_f4830ae1-f7fa-4138-9406-d6472b6f431a a sosa:Observation ;
+    sosa:hasSimpleResult 1.797639e+02 ;
+    sosa:madeBySensor lfm:sensor_477585ae-c774-4426-b158-4d6167f59bce ;
+    sosa:resultTime lfm:instant_826c76ba-81fa-47e2-8de6-4d40ce5f7c96 .
+
+lfm:observation_f64882b1-88cc-4aa9-828d-743d9ef05369 a sosa:Observation ;
+    sosa:hasSimpleResult 1.904279e+02 ;
+    sosa:madeBySensor lfm:sensor_5646c6ac-7d8d-453e-8f0d-1a8b5804f358 ;
+    sosa:resultTime lfm:instant_b3353921-6011-41a2-9af7-345e59b6b9c2 .
+
+lfm:observation_f6c85d10-eb3d-4bb2-8a41-a870c29b3f7f a sosa:Observation ;
+    sosa:hasSimpleResult 1.90484e+02 ;
+    sosa:madeBySensor lfm:sensor_d505d422-f32e-448b-ba00-75b5f8bad48e ;
+    sosa:resultTime lfm:instant_51aefee4-bbac-42a5-89a0-0f55d9e37f0e .
+
+lfm:observation_f90ea9fd-2137-4cb5-8e67-4ab28debc0b6 a sosa:Observation ;
+    sosa:hasSimpleResult 1.218582e+02 ;
+    sosa:madeBySensor lfm:sensor_bdf5af9d-6d61-4f48-9c65-c67b00e0f9c5 ;
+    sosa:resultTime lfm:instant_a2c3a322-6d0c-44e5-9044-879a7cd5a4cf .
+
+lfm:observation_f963fc18-bf9a-458a-bb42-76c8c2d54b34 a sosa:Observation ;
+    sosa:hasSimpleResult 1.813621e+02 ;
+    sosa:madeBySensor lfm:sensor_013d4069-6254-4339-adf8-82b5250caa36 ;
+    sosa:resultTime lfm:instant_b6c83d9b-fad9-4a50-bd54-216c466d32b0 .
+
+lfm:observation_f9c796c1-b098-4d76-88de-9da27e320b73 a sosa:Observation ;
+    sosa:hasSimpleResult 1.951296e+02 ;
+    sosa:madeBySensor lfm:sensor_7bf7eeee-a4e2-4503-b0ee-aa358e003b75 ;
+    sosa:resultTime lfm:instant_0ff9545e-6190-48f5-9476-328b44658421 .
+
+lfm:observation_fa5a2252-54cf-4024-9fe7-f15681089c78 a sosa:Observation ;
+    sosa:hasSimpleResult 1.971508e+02 ;
+    sosa:madeBySensor lfm:sensor_da745bf9-285c-44c0-a51f-1183fb212e51 ;
+    sosa:resultTime lfm:instant_5a92eea9-006e-43b1-9f86-bbbb0864a451 .
+
+lfm:observation_fbef5b57-3d7e-4d22-94ef-a730f9d9acd7 a sosa:Observation ;
+    sosa:hasSimpleResult 1.92101e+02 ;
+    sosa:madeBySensor lfm:sensor_734ea5bf-fc03-4bcf-8bab-0fec92504490 ;
+    sosa:resultTime lfm:instant_266a85e5-c29e-4992-838e-3c0dddde22ef .
+
+lfm:observation_fc0b23c9-9e40-4a53-88d9-1052e961caf2 a sosa:Observation ;
+    sosa:hasSimpleResult 1.943987e+02 ;
+    sosa:madeBySensor lfm:sensor_c651ccc4-3a2d-4f9d-a82f-0b1edc9eec80 ;
+    sosa:resultTime lfm:instant_389d8449-9c27-432a-915e-f178be90fc50 .
+
+lfm:observation_ff4d78b1-87ee-4bc3-b2fd-1ecf95cacc05 a sosa:Observation ;
+    sosa:hasSimpleResult -6.0897e+01 ;
+    sosa:madeBySensor lfm:sensor_79005a7f-df2b-4f9d-a2a4-9629204fcc22 ;
+    sosa:resultTime lfm:instant_3eba8808-a281-4028-bd02-0119dba326a7 .
+
+lfm:site_c45b6519-ad74-4596-9d66-ca184b49599d a bot:Site ;
+    bot:hasBuilding lfm:building_68d3eab5-86ed-46b1-9238-906fa39e06e7 .
+
+lfm:building_68d3eab5-86ed-46b1-9238-906fa39e06e7 a bot:Building ;
+    bot:hasStorey lfm:storey_087674ba-cb8d-4027-ac5e-65f40bff979a .
+
+lfm:element_020943b5-c3ef-40b2-9fdd-d0beaf2b958a a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_0ec28f08-11f4-4d52-97b5-d123fa45217f .
+
+lfm:element_05e12289-22e9-43af-b345-c112b9b11912 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_44f50688-349f-4570-9379-75e962504880 .
+
+lfm:element_075b83b8-aded-4cf5-85b2-cf7051714076 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_a1307c51-497b-479a-999b-73e55e230704 .
+
+lfm:element_0d85d178-4f8e-44eb-8e98-f925f8ff2b6f a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_aa8fca00-d7ba-4d01-bacb-51d2fdd4f5d4 .
+
+lfm:element_0d8f6f3d-a882-4b20-adbe-f77ca5ff2f87 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_e29315e0-72dd-49ef-8919-aff0563f1dd1 .
+
+lfm:element_0e53e788-69d3-47be-bc35-35fe1716d0f5 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_330374c7-dd70-4814-92aa-d226affc72ed .
+
+lfm:element_14fbbe78-4908-4901-9413-10070332aa12 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_fa567338-4ba4-4d05-9697-3e45856ab9af .
+
+lfm:element_163984f7-751f-4596-9357-ada017bf772d a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_318e3f98-b11b-4529-b5bd-a2a9ffce961d .
+
+lfm:element_164e3a59-0952-4a04-b5f3-61b5ded7540b a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_c69e168b-e13b-4ae1-9c52-9af3c0db0c9f .
+
+lfm:element_18e887f0-d31a-4c62-82f3-c4b27f075942 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_a1d1f2b7-b474-4f79-be67-f124e09bffa4 .
+
+lfm:element_1b6dfd3e-6cc8-4235-8b06-3d19453c5d90 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_4b859e4c-c316-4579-81de-a64e619187b1 .
+
+lfm:element_1f8ea99e-0dcf-4f58-9d4c-eda3598f482b a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_e964ba7c-4257-460d-b9e2-a09dba1527bd .
+
+lfm:element_21757931-1bae-46e4-8bf8-76b40a133923 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_a2edc959-34b0-4677-96e7-0ed574735160 .
+
+lfm:element_2190eb1c-c45d-41b5-b3c5-fb610489172b a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_1ecba634-4a3a-4192-81b6-537e54d1c346 .
+
+lfm:element_23d681d4-06f1-4ca5-9449-80df54d6698d a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_0e5ebf96-9d82-466e-94b7-a47e5c32ab9a .
+
+lfm:element_2644717e-5bbc-4c66-8dbf-42250772d350 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_e269be4d-b7ae-4e26-845f-36cb9629edc0 .
+
+lfm:element_2693976d-1adb-48e7-b0b8-df0f7e7af689 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_34f09029-795c-4c9a-b10e-c6ff804251bb .
+
+lfm:element_2b154b9c-b325-4091-ba57-2aef7004ede9 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_419f0eca-6b63-4679-898c-646606487b0e .
+
+lfm:element_2b9b3abe-44b1-4ccd-8284-00eea3d84519 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_07fddb20-d609-4586-898a-a913c99be8d2 .
+
+lfm:element_2eb38e9e-ef27-49d6-b8a1-82041f8e32bd a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_f9db89ce-76d1-41a9-a0e6-28ed14c1d292 .
+
+lfm:element_32b5b646-b8f6-4e64-a81d-7b1440f0329d a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_08f88fcd-1886-47dc-b4b0-8cef06a2cb1c .
+
+lfm:element_36b86db3-bac1-4b05-848e-aedd865e77ce a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_c393ab85-a3a8-411e-a365-faaa27e62367 .
+
+lfm:element_37c20aa9-47ba-43e1-b662-6bcc651e19a5 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_70c5a33f-5060-49ec-9bd5-9a38629628bc .
+
+lfm:element_382e9ea3-af47-46f0-83f5-ebe1c1a24f7b a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_63167cb5-b71b-45ac-8a05-b81f117feed2 .
+
+lfm:element_3e46d73c-178a-4ddd-b5cd-93346cc86e7b a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_d8dfcbf7-3d23-44ff-8b1e-6b240f32629e .
+
+lfm:element_434452bf-eb7c-479a-aeed-3c8838b0070c a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_9779f88b-b014-4762-b3a6-2214bff2a430 .
+
+lfm:element_45ff592d-66eb-4c09-b685-7c06d4f61da1 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_99230b94-f98d-488b-85a9-79580c231a6b .
+
+lfm:element_4ae9e9ae-ea85-4400-a705-ededffc70d0e a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcWall ;
+    lfm:hasPropertyState lfm:property_state_0d845fdc-6a16-472a-86c2-4110a39fba1f .
+
+lfm:element_556cc57f-2c22-4888-b4ca-1503b2a231cb a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_9fc1041f-693d-40c7-a8a7-8dfb49870e55 .
+
+lfm:element_55b12a0f-064b-4175-b578-bc19a85d1074 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_dcf777d9-0630-4022-87ac-e38995d6aaa3 .
+
+lfm:element_571d0298-35e3-4273-9b35-bd160b5f86a4 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_2885ed9d-ad57-448a-b380-aa4db0bbb523 .
+
+lfm:element_5bca09b4-de87-40a7-bd36-f2266db77fc2 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_3a159b64-6daa-4a89-a62b-c4d60becab1c .
+
+lfm:element_5e4d1ccf-7d2f-4dab-b806-d7fb7deb0e11 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_37feca09-5dcc-4295-8493-87f80894871f .
+
+lfm:element_615fc0c9-03b3-4442-ad51-57d9afc61524 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_7dcef9f8-e899-4a22-8c1f-84be25f017f4 .
+
+lfm:element_61c90432-a440-4557-b41e-f64cccc564bb a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_b99c622e-78c4-4127-a074-f600a210af1f .
+
+lfm:element_64586c29-8e61-407d-bd06-0e79a7c0d24d a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_7094f2e1-fb79-4976-b261-bec7a430acd8 .
+
+lfm:element_683f2dca-63be-4b29-9434-1d51888aa148 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcWall ;
+    lfm:hasPropertyState lfm:property_state_c1137074-2371-4233-991c-3f4dfff17fd3 .
+
+lfm:element_6ee8b93c-5edb-44cd-ba1c-61acf5ca82d2 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_cebc4b16-6e30-40d7-ac0f-db919d6cea4b .
+
+lfm:element_714f354f-061b-4c29-bd6e-75553bca62d8 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_2bfca286-bac7-4291-9eb3-939c49452cf1 .
+
+lfm:element_72842b00-ae98-429b-aed0-5cb4ed90c4b9 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_ab9e80cc-6903-4300-b138-cfe6564818c5 .
+
+lfm:element_72f0b68a-6cbc-4253-bba7-d7ea00cc11dd a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_531cf2e3-4dde-4d1c-a349-10e64e9f9e5a .
+
+lfm:element_7472f2b2-5d12-4dda-a20f-bedd7b684a12 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcWall ;
+    lfm:hasPropertyState lfm:property_state_6cc805f8-85ae-4ec9-bada-47ca736ab284 .
+
+lfm:element_7c4718e4-c49f-4633-afa4-d2e1d98a149b a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_4edeac5d-d6ad-4620-a6b9-60cdd6cc3c9c .
+
+lfm:element_7d305d72-0bd5-4248-bf7b-608c0b3c7776 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_abbf52c3-76d6-4f66-9d67-03e935c32b0e .
+
+lfm:element_7d8bb4af-5c44-43a4-851e-322fc8cea3a1 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_f017b5d0-7197-41d3-a9c3-f4a7fe49cbb8 .
+
+lfm:element_7e0d7257-6884-46a7-8604-f6c1a02738a5 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_9ccb818f-4ab8-4cb0-916f-da559c42063f .
+
+lfm:element_81efa06c-7cd1-47bb-ba94-b244ba27f2be a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_beb7edbd-bdfa-4a40-852f-7037ccfe47e0 .
+
+lfm:element_843dc92b-a4a9-4f33-b939-dd967a924a84 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_c8c4cfbf-a240-4310-a0ce-79c692f01741 .
+
+lfm:element_8cb78ad5-7834-4f77-a34f-339ed2b4adbe a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_bc21549d-6fdc-4d1a-bad4-0293d554e479 .
+
+lfm:element_8de621a8-e5bd-4859-aa02-1f953e099f65 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_1cc23a70-71ca-400a-bbdc-c231509d6c27 .
+
+lfm:element_9401248f-13e5-4fbb-bc78-339ebdcafc01 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_39d601fb-cdf6-46fc-a709-333f17aa7ca7 .
+
+lfm:element_956b171b-51db-44f2-815b-cfd64e4af5ae a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_90202fc9-51aa-48fc-88cc-9ba540fcb32c .
+
+lfm:element_9a2443fb-200d-4d96-b6f4-b69da9955b28 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_96d9a06f-f30e-49c8-8f21-a15b4d0810c6 .
+
+lfm:element_9d5175d4-5e72-42b1-a158-da69caf51ea7 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_248e2c01-eb6a-417f-9da3-8f0a92301f7f .
+
+lfm:element_a363294c-b1f8-4e13-ad30-7d5bf5b43ad1 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcWall ;
+    lfm:hasPropertyState lfm:property_state_536a0bc0-35bd-4448-8705-b001124da5fc .
+
+lfm:element_a3bab343-60a3-4673-bd8d-03c78e3582fa a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_38b3b2a0-be3b-42e7-8dd4-cd00ff380fc1 .
+
+lfm:element_a433f612-b9f8-4694-a773-f3096892321e a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_85b443bd-e063-40fa-9960-14eb42748f60 .
+
+lfm:element_a5efa169-1959-4b96-828c-de60f7446fcc a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_dad1936a-f8da-4a90-a2e2-9be693327542 .
+
+lfm:element_aaabfbbf-358e-4a95-b8b3-11cb13825906 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_0d246ef2-b0b5-4a7a-a080-f2ad60ec069d .
+
+lfm:element_b5f5cc1d-eed8-4884-a0c5-a89b52b93392 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_9129facc-792b-49d2-9e1e-b15285a817bf .
+
+lfm:element_b5fc9366-7adb-4c46-8140-19029134ea22 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_faa1b702-f385-4182-913e-f29be8a7bf26 .
+
+lfm:element_bac2d41f-c70e-490d-8827-46c1767b079a a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_f6736b87-e36d-454b-b617-42075842401c .
+
+lfm:element_bd12ca81-cc23-4a50-9562-b6e578791323 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_4a5ff35a-1d60-4236-a93e-60c9949820c6 .
+
+lfm:element_be79417b-d243-416a-9a4e-02f41b496053 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_631938c5-60b4-419a-a4ad-19f27684a5de .
+
+lfm:element_bebb7085-aa67-47f0-b21f-d2009ce2776a a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_84e6f32d-9d88-4b96-9e22-705992308f32 .
+
+lfm:element_c1926d85-8822-4748-8951-87d5b6363ee4 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_aaf36acc-aac4-4dff-951f-cd2a0cb8e32c .
+
+lfm:element_c22160f1-1b2f-46ff-8c89-2b2b68fb94cf a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_25f9974b-5f76-478e-95fc-c461f7b7caf1 .
+
+lfm:element_c23da175-317c-46e1-85ee-59fa990aeab4 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_17df4e85-aacf-4c8a-9b76-91541e853301 .
+
+lfm:element_c454584c-4fdb-4fdd-91f4-f3ed9c0f78f5 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_8267ee87-db8a-43c0-a91d-9f7a1931e4ca .
+
+lfm:element_cf06dd1f-aec4-4fc5-aac4-351ae81ea23d a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_81e6752b-fc38-42e2-a06e-dcc953c19206 .
+
+lfm:element_cf736e94-1025-49eb-925b-4f6dc322d6c6 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_e203a1da-18a6-4bf5-a5b2-2dc960049857 .
+
+lfm:element_cfdb1e0f-3d0c-4f75-857e-5f11b0d30ede a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcWall ;
+    lfm:hasPropertyState lfm:property_state_9e3858a8-438b-486e-af0c-b17fc33a9ec8 .
+
+lfm:element_d75dfb6c-6105-4a7e-be15-bd5964f359b2 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_15ef4e43-9fbb-4a86-851e-2e91e4d1297c .
+
+lfm:element_d82bfe95-fb7f-453a-871f-47f1da41df25 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_bc188e87-e38b-4393-ac34-c7ba84a74c96 .
+
+lfm:element_d871b8e8-ecb5-4267-ab39-d180673c5781 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcWall ;
+    lfm:hasPropertyState lfm:property_state_d0cfb31f-786a-4695-a913-0e8782217542 .
+
+lfm:element_d8c804b3-9dfc-4fe0-aad8-17385735d0e3 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcSlab ;
+    lfm:hasPropertyState lfm:property_state_a8c5b246-c585-4628-98df-42e076058d90 .
+
+lfm:element_dcd41583-0bd9-4cec-b8ea-de44567d79ad a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_e5d6c921-ceaf-4683-a713-425088d6811e .
+
+lfm:element_de428eb1-4a69-4461-9c90-362d42c6d084 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_a9874be2-f292-47e4-a79a-1e8991c918a5 .
+
+lfm:element_df72e0a9-dfc2-494a-96a0-936fee088a7a a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_24d5599c-b03f-41c6-80d1-28e4ff994927 .
+
+lfm:element_e60adac0-6349-47b8-ae10-bb4f943a7927 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_07b4e72a-3755-46a8-bd1b-2ab08df4d47e .
+
+lfm:element_e9a0ff11-cef0-42d2-9fd4-125dd8f61fed a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_ab7297c1-5920-43c8-a29e-bfc057e0bf21 .
+
+lfm:element_f1e5c06c-97d8-4e0e-acb6-ef4fd29a9773 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_49d677c0-ceac-45e8-ba1e-4fa0e177c05c .
+
+lfm:element_f4e90572-3f06-4773-be8a-7df6ab5112e9 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_926f87f5-7452-47db-900c-702a2d62e71c .
+
+lfm:element_f7589afb-9542-4faf-ad46-d91489bb7f69 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_edd3289e-b19b-4fcf-910c-170811b1651b .
+
+lfm:element_f8afb810-c8d4-4ead-9b3f-a253197e28a1 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcWall ;
+    lfm:hasPropertyState lfm:property_state_f89a40c2-97cc-40a8-a2ee-4ea590a737b6 .
+
+lfm:element_fafbe35b-6563-4ac2-8ccd-2cd553912426 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_ed384191-4021-4e78-a58a-b3e89a0e00d6 .
+
+lfm:element_fe22f258-3b7d-4c9f-9c90-190aa2847c5d a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcColumn ;
+    lfm:hasPropertyState lfm:property_state_2d844785-32a2-4594-a818-e722ebbe720a .
+
+lfm:element_ffbb475c-a0f1-4837-96a5-de0687130de1 a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcWall ;
+    lfm:hasPropertyState lfm:property_state_b6f34828-82b4-492e-b410-15ac9f69bc4e .
+
+lfm:element_ffe13264-3c0d-4907-b51d-86556ae7535b a bot:Element,
+        lfm:ConcreteElement ;
+    lfm:hasIfcRepresentation ifc:IfcBeam ;
+    lfm:hasPropertyState lfm:property_state_aff501b3-8a38-41ca-9cba-3c2e26f0c9ad .
+
+lfm:instant_006b7397-5208-48bf-b8d8-4a75858f8845 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.196784"^^xsd:dateTimeStamp .
+
+lfm:instant_02cbd129-719e-4d2e-8886-f4f5a8cf0199 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.161267"^^xsd:dateTimeStamp .
+
+lfm:instant_05d8b836-1174-4bd9-972d-12ef27a7149c a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.203784"^^xsd:dateTimeStamp .
+
+lfm:instant_063aba98-6e65-4168-871d-190a279c16f8 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.171268"^^xsd:dateTimeStamp .
+
+lfm:instant_070ed5fa-8ea4-410a-9516-8d9e29798d2a a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.220298"^^xsd:dateTimeStamp .
+
+lfm:instant_07b55e60-df5c-4924-b1c9-9aa31f00bd6e a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.278585"^^xsd:dateTimeStamp .
+
+lfm:instant_08b525b4-95c5-468c-a9b3-fcbd40b660cf a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.286583"^^xsd:dateTimeStamp .
+
+lfm:instant_094c11f7-509c-486f-be89-344f3af5dfd6 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.216300"^^xsd:dateTimeStamp .
+
+lfm:instant_094f8170-25a1-4883-be4e-13cef3a150be a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.224297"^^xsd:dateTimeStamp .
+
+lfm:instant_09ca5295-c2fc-4c62-979f-f75e25682bf5 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.208298"^^xsd:dateTimeStamp .
+
+lfm:instant_0d52862e-30b6-48da-b2f3-b89528f3f5f1 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.207296"^^xsd:dateTimeStamp .
+
+lfm:instant_0ff9545e-6190-48f5-9476-328b44658421 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.197782"^^xsd:dateTimeStamp .
+
+lfm:instant_124f4505-136f-4d81-ab88-b71d617a9bff a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.223298"^^xsd:dateTimeStamp .
+
+lfm:instant_14a0a2d0-192d-42fc-a4b3-5b4b3a1721f3 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.228299"^^xsd:dateTimeStamp .
+
+lfm:instant_16800878-0b64-4226-8402-c76ab7b02ef0 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.285583"^^xsd:dateTimeStamp .
+
+lfm:instant_178aad7c-c92d-4862-aa06-a1872b03c13a a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.252298"^^xsd:dateTimeStamp .
+
+lfm:instant_17e5f9d3-cbdf-43d6-b514-14fafb8a952b a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.205291"^^xsd:dateTimeStamp .
+
+lfm:instant_197cc43d-6e14-4619-8d2b-c033ceecb796 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.163269"^^xsd:dateTimeStamp .
+
+lfm:instant_19e33d00-f1e5-4b52-9a03-8b53a91ae68d a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.267953"^^xsd:dateTimeStamp .
+
+lfm:instant_1b8e2f28-f6b0-4cb0-84b2-7bcbee48d45c a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.169269"^^xsd:dateTimeStamp .
+
+lfm:instant_1be481c9-0498-4230-91e8-c49fa56abaed a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.185782"^^xsd:dateTimeStamp .
+
+lfm:instant_1bf9310a-ba2a-4a45-a85b-ab4b435be2ca a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.217300"^^xsd:dateTimeStamp .
+
+lfm:instant_1cf92107-3d24-4d54-b81b-f01c24e911c3 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.217300"^^xsd:dateTimeStamp .
+
+lfm:instant_2074cd11-7634-4808-b296-0983092446d4 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.283584"^^xsd:dateTimeStamp .
+
+lfm:instant_2243c61b-bb68-493b-b9e0-86725e9eb03a a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.230298"^^xsd:dateTimeStamp .
+
+lfm:instant_234e5a9b-0f99-44c9-a28f-b6504f991a3b a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.225299"^^xsd:dateTimeStamp .
+
+lfm:instant_24527480-feb8-4067-9bee-d8a1b3416028 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.224297"^^xsd:dateTimeStamp .
+
+lfm:instant_253aba12-53d5-437a-b90d-d083b6ea1cd6 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.205291"^^xsd:dateTimeStamp .
+
+lfm:instant_264919b3-9b36-452e-bdae-7e91cc7afab9 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.281583"^^xsd:dateTimeStamp .
+
+lfm:instant_266a85e5-c29e-4992-838e-3c0dddde22ef a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.249300"^^xsd:dateTimeStamp .
+
+lfm:instant_282cebc7-53c4-423a-90f9-3d26cef675a8 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.233299"^^xsd:dateTimeStamp .
+
+lfm:instant_2839f98e-aafd-4b4a-8138-f39961d00268 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.196784"^^xsd:dateTimeStamp .
+
+lfm:instant_29d8e07a-2142-44fa-a901-67317ce5cabb a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.167269"^^xsd:dateTimeStamp .
+
+lfm:instant_2a87f39a-26cf-4b85-8e7a-349bff8205bb a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.186781"^^xsd:dateTimeStamp .
+
+lfm:instant_2a9e5ea6-6413-43b9-978b-ca41ccfc1bc7 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.281583"^^xsd:dateTimeStamp .
+
+lfm:instant_2cd621f6-3065-4427-ab65-2f9f83c9954e a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.242300"^^xsd:dateTimeStamp .
+
+lfm:instant_2f2cce93-b510-4a50-a950-ea932bedf7c9 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.159252"^^xsd:dateTimeStamp .
+
+lfm:instant_2f8c1511-a514-461f-b55e-7b28869d0c49 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.182783"^^xsd:dateTimeStamp .
+
+lfm:instant_2f9d7c05-be79-448c-881e-75f80e48f908 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.213298"^^xsd:dateTimeStamp .
+
+lfm:instant_327965d0-8541-4566-b697-36cdc537d6ee a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.193782"^^xsd:dateTimeStamp .
+
+lfm:instant_33aa46d2-9628-4b1c-8309-bf562615bc00 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.279584"^^xsd:dateTimeStamp .
+
+lfm:instant_34b54b69-52a2-4f9d-b84c-63db065b59c6 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.248300"^^xsd:dateTimeStamp .
+
+lfm:instant_34b5c45a-1dcb-4945-bd33-598954b758f7 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.165270"^^xsd:dateTimeStamp .
+
+lfm:instant_354849ec-365d-4b8b-938e-80e8e9f175d7 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.251299"^^xsd:dateTimeStamp .
+
+lfm:instant_37f5d3c3-9148-4b8b-ae88-f6a63952c9f8 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.180782"^^xsd:dateTimeStamp .
+
+lfm:instant_389d8449-9c27-432a-915e-f178be90fc50 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.174267"^^xsd:dateTimeStamp .
+
+lfm:instant_3be3ddfa-1e22-4c6d-ae96-58c5db0394c0 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.208298"^^xsd:dateTimeStamp .
+
+lfm:instant_3e1cad8c-ce74-4396-a181-6757e654267b a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.183782"^^xsd:dateTimeStamp .
+
+lfm:instant_3eba8808-a281-4028-bd02-0119dba326a7 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.285583"^^xsd:dateTimeStamp .
+
+lfm:instant_3f8c091a-c840-459d-96ed-feb0ff440090 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.191783"^^xsd:dateTimeStamp .
+
+lfm:instant_3fe4662c-3698-4073-8dc4-047d8503beac a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.287583"^^xsd:dateTimeStamp .
+
+lfm:instant_42dad4e1-5674-4935-8cbf-b67e9e483605 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.272072"^^xsd:dateTimeStamp .
+
+lfm:instant_430b02dd-dae6-434c-9ab8-92c27c3745cc a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.221299"^^xsd:dateTimeStamp .
+
+lfm:instant_433651c5-b9b9-4449-847a-25145529cfd5 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.268954"^^xsd:dateTimeStamp .
+
+lfm:instant_436a957b-3a5b-46b7-83fe-4a2ed8a50ab1 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.229299"^^xsd:dateTimeStamp .
+
+lfm:instant_441c0ed0-60dc-485a-ac02-5149fcec3508 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.239298"^^xsd:dateTimeStamp .
+
+lfm:instant_45c11d4f-083b-433b-8f24-f6833effd650 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.270069"^^xsd:dateTimeStamp .
+
+lfm:instant_45f17ac9-42f6-4471-a4f4-f56076f5cb9c a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.223298"^^xsd:dateTimeStamp .
+
+lfm:instant_470c26bc-6151-4a72-af64-8ecf8d32d408 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.166271"^^xsd:dateTimeStamp .
+
+lfm:instant_4857aa9c-453b-4450-9360-53e1b513defc a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.251299"^^xsd:dateTimeStamp .
+
+lfm:instant_49ddd1d4-f5ee-461d-aac3-999c3906aeff a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.284583"^^xsd:dateTimeStamp .
+
+lfm:instant_4aadc189-7972-449a-98e2-1cba0d14a637 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.243300"^^xsd:dateTimeStamp .
+
+lfm:instant_4b8149c7-bf11-49ad-8183-7198c7179069 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.218300"^^xsd:dateTimeStamp .
+
+lfm:instant_4ba13462-21c3-4e22-b306-fc9c4ccce32a a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.213298"^^xsd:dateTimeStamp .
+
+lfm:instant_4c97617b-d7d7-4183-ae57-ef638df15c3d a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.177784"^^xsd:dateTimeStamp .
+
+lfm:instant_4caae4f7-b004-418c-91bd-d4bcb372af92 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.181784"^^xsd:dateTimeStamp .
+
+lfm:instant_4ebc5b80-c2cd-4baf-9c1d-fc7e4933f594 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.179784"^^xsd:dateTimeStamp .
+
+lfm:instant_51aefee4-bbac-42a5-89a0-0f55d9e37f0e a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.238298"^^xsd:dateTimeStamp .
+
+lfm:instant_5511bacb-f578-4314-a38b-4628ec5ed97b a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.208298"^^xsd:dateTimeStamp .
+
+lfm:instant_56a6ffec-4199-4deb-8574-591d55a94323 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.277583"^^xsd:dateTimeStamp .
+
+lfm:instant_57c7f4c2-bbb4-4297-bc72-6592f30ba51d a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.203784"^^xsd:dateTimeStamp .
+
+lfm:instant_583ecb41-053d-477e-b341-22445829fa17 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.202784"^^xsd:dateTimeStamp .
+
+lfm:instant_58deedfa-8acd-451a-a097-25e9619bd23f a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.212297"^^xsd:dateTimeStamp .
+
+lfm:instant_5a0c33ed-3c0f-4174-8744-9cf1be2666a3 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.250300"^^xsd:dateTimeStamp .
+
+lfm:instant_5a7e4777-e980-4c2e-a63b-b2519d483ea7 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.278585"^^xsd:dateTimeStamp .
+
+lfm:instant_5a92eea9-006e-43b1-9f86-bbbb0864a451 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.219299"^^xsd:dateTimeStamp .
+
+lfm:instant_5cd58752-7f4b-4b64-96d9-9c8f4d49b27e a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.271071"^^xsd:dateTimeStamp .
+
+lfm:instant_5d481a41-0dc3-4d6f-8be3-cf48b13b5231 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.274072"^^xsd:dateTimeStamp .
+
+lfm:instant_5d937801-ed4d-4698-afaf-059f27efbbd2 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.284583"^^xsd:dateTimeStamp .
+
+lfm:instant_605bf701-72a7-4122-908e-5efc9224def4 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.193782"^^xsd:dateTimeStamp .
+
+lfm:instant_60e48503-993b-4baa-8ace-fd0b4dfb4fa3 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.157746"^^xsd:dateTimeStamp .
+
+lfm:instant_619ebe89-5512-4d66-88e1-a3baa609dac8 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.185782"^^xsd:dateTimeStamp .
+
+lfm:instant_623a53f4-b81e-44d2-8583-1a251f7394f4 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.281583"^^xsd:dateTimeStamp .
+
+lfm:instant_6306cb0a-105c-4db4-9aa9-ca5fce12d168 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.214299"^^xsd:dateTimeStamp .
+
+lfm:instant_6380a24b-6d3d-4f96-b73f-1c6bdf30774b a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.174267"^^xsd:dateTimeStamp .
+
+lfm:instant_639cfe7b-9e0f-4e2f-a589-7a775440398f a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.172270"^^xsd:dateTimeStamp .
+
+lfm:instant_65d4718c-a396-48b6-9dbf-ebdaaca9f226 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.169269"^^xsd:dateTimeStamp .
+
+lfm:instant_66755b22-ca73-4bf9-ae24-aaa62412bfb1 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.196784"^^xsd:dateTimeStamp .
+
+lfm:instant_67492774-4145-4918-b26a-4b744661ad0b a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.230298"^^xsd:dateTimeStamp .
+
+lfm:instant_6abadd19-3f65-4e94-b3c3-018e3e4258d0 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.174267"^^xsd:dateTimeStamp .
+
+lfm:instant_6d3d32d0-46d3-40e3-9b71-a31f71c8553c a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.203784"^^xsd:dateTimeStamp .
+
+lfm:instant_6f103fb9-35f5-45eb-8e4b-a725a769e220 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.282584"^^xsd:dateTimeStamp .
+
+lfm:instant_73c21d58-3e17-4d4d-b89c-a37af7d578c3 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.287583"^^xsd:dateTimeStamp .
+
+lfm:instant_754dc3a2-9601-437b-a325-4a9b5a82cdee a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.273072"^^xsd:dateTimeStamp .
+
+lfm:instant_75bd98de-77b2-4ec7-bed1-9a658dd7eb2a a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.227300"^^xsd:dateTimeStamp .
+
+lfm:instant_75c91635-189a-45e9-896f-ce8a53b4d9e6 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.228299"^^xsd:dateTimeStamp .
+
+lfm:instant_776de4fd-844f-4ed2-b89d-2849ef7431e2 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.242300"^^xsd:dateTimeStamp .
+
+lfm:instant_7798c8d9-5c5c-4728-ac31-4638217d0daf a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.198781"^^xsd:dateTimeStamp .
+
+lfm:instant_78e5504f-50a2-49e8-9bb9-fea5302649c2 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.231297"^^xsd:dateTimeStamp .
+
+lfm:instant_7ad84bab-827d-4abe-971d-8f23c91374a9 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.244300"^^xsd:dateTimeStamp .
+
+lfm:instant_7c6aeb76-f495-4d57-aa9a-b73278cbeb31 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.234299"^^xsd:dateTimeStamp .
+
+lfm:instant_7e28c220-9a1a-468b-bbfa-482cec3f33d6 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.243300"^^xsd:dateTimeStamp .
+
+lfm:instant_7f23013b-69d7-4066-a298-cedb88b894ac a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.234299"^^xsd:dateTimeStamp .
+
+lfm:instant_7fd0c7f2-f2f6-4003-afac-8586d1ce9f2d a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.201783"^^xsd:dateTimeStamp .
+
+lfm:instant_8207a1aa-46a4-404c-b222-a10cdfa67192 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.191783"^^xsd:dateTimeStamp .
+
+lfm:instant_826c76ba-81fa-47e2-8de6-4d40ce5f7c96 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.227300"^^xsd:dateTimeStamp .
+
+lfm:instant_826f53f9-1ab8-4712-9487-c2adf9484302 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.215300"^^xsd:dateTimeStamp .
+
+lfm:instant_848c4cad-72de-47f2-b3d6-87b2cba8b27d a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.160261"^^xsd:dateTimeStamp .
+
+lfm:instant_8564fe09-6a4f-410d-8c96-297fec307ca9 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.192784"^^xsd:dateTimeStamp .
+
+lfm:instant_86c8f37e-486d-4bb4-94d8-4f3457d26c17 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.202784"^^xsd:dateTimeStamp .
+
+lfm:instant_879f0e71-43f5-4140-b21b-794438b62095 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.232297"^^xsd:dateTimeStamp .
+
+lfm:instant_87adabc7-0ce9-48ae-85b1-f80fdca42d07 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.250300"^^xsd:dateTimeStamp .
+
+lfm:instant_88374c5f-5be9-4ab9-8869-636e586dd745 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.189781"^^xsd:dateTimeStamp .
+
+lfm:instant_88a99c20-2702-4421-91de-b0c688d312ea a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.169269"^^xsd:dateTimeStamp .
+
+lfm:instant_8c2acf37-eec5-4140-b60e-3313cce31ca5 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.215300"^^xsd:dateTimeStamp .
+
+lfm:instant_8c3d3a94-fb4b-45ac-a686-9f4af292ac43 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.226299"^^xsd:dateTimeStamp .
+
+lfm:instant_8d23743d-e588-4a40-9cc4-42520edb1ee1 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.221299"^^xsd:dateTimeStamp .
+
+lfm:instant_8d4defde-2f29-423f-bc3c-0a03c1ce34d1 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.188783"^^xsd:dateTimeStamp .
+
+lfm:instant_8e1ce4e2-42b1-44e9-b208-17efd501b5fc a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.216300"^^xsd:dateTimeStamp .
+
+lfm:instant_8e305ae6-862f-4cbd-bfe2-88134811c306 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.148214"^^xsd:dateTimeStamp .
+
+lfm:instant_8f786432-c5f9-40d6-abe1-05304aea77ed a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.252298"^^xsd:dateTimeStamp .
+
+lfm:instant_8fa3f4c3-49c1-49ec-8a98-16724bfde103 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.220298"^^xsd:dateTimeStamp .
+
+lfm:instant_92748c2f-da88-4e78-a3fe-5841cc81b8af a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.221299"^^xsd:dateTimeStamp .
+
+lfm:instant_93046985-842f-43af-a69e-ab14754a930a a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.231297"^^xsd:dateTimeStamp .
+
+lfm:instant_93b53762-93e9-4af0-b3aa-be0850600737 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.280585"^^xsd:dateTimeStamp .
+
+lfm:instant_9464572c-6f33-45d5-819f-8b9ac8f826ae a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.181784"^^xsd:dateTimeStamp .
+
+lfm:instant_95de2f9d-0d2e-4490-8b99-2347015eedee a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.240299"^^xsd:dateTimeStamp .
+
+lfm:instant_95e5f49d-2cdf-485a-beeb-f40a8def7bde a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.232297"^^xsd:dateTimeStamp .
+
+lfm:instant_96c1fc17-35de-4c4e-ad77-4085423b421d a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.206297"^^xsd:dateTimeStamp .
+
+lfm:instant_985bd7c3-bd09-4ec7-8a61-66dfc7507f30 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.198781"^^xsd:dateTimeStamp .
+
+lfm:instant_987fbb3e-1b09-4bb7-ab10-bb51c493f02f a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.275069"^^xsd:dateTimeStamp .
+
+lfm:instant_9940c544-5e64-4402-93fe-b0d530a4fb3d a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.219299"^^xsd:dateTimeStamp .
+
+lfm:instant_9a79a8c2-482b-4178-8c8b-9d5434e2965a a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.172270"^^xsd:dateTimeStamp .
+
+lfm:instant_9ba02652-9784-4fe0-a6e6-452393f71cb6 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.207296"^^xsd:dateTimeStamp .
+
+lfm:instant_9bb42f40-a7de-4d7c-a29c-08331bc00777 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.247299"^^xsd:dateTimeStamp .
+
+lfm:instant_9dd65152-2c64-4f92-ada9-99d4b7e1dc1d a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.163269"^^xsd:dateTimeStamp .
+
+lfm:instant_9ef768c8-cbaf-4d98-8194-7a32e6f2ba88 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.280585"^^xsd:dateTimeStamp .
+
+lfm:instant_9f431b2d-5465-4c02-bc65-2b349073cf06 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.276576"^^xsd:dateTimeStamp .
+
+lfm:instant_9f4cbbec-434a-4faf-beda-67c4dde79e45 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.171268"^^xsd:dateTimeStamp .
+
+lfm:instant_9f8e5af0-3359-4d03-b548-ca52271bd736 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.203784"^^xsd:dateTimeStamp .
+
+lfm:instant_a1520988-7aec-432e-8628-955776a0ffe3 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.218300"^^xsd:dateTimeStamp .
+
+lfm:instant_a20604e8-f991-4ea2-8dda-93e8130c7b91 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.232297"^^xsd:dateTimeStamp .
+
+lfm:instant_a236bec2-5df5-4f73-bec8-503fc78bf656 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.214299"^^xsd:dateTimeStamp .
+
+lfm:instant_a2507d7e-d55a-4ce7-8595-191b9973b2bb a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.236300"^^xsd:dateTimeStamp .
+
+lfm:instant_a2c32ed7-17e6-4e8b-b774-56a09a2db4b1 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.192784"^^xsd:dateTimeStamp .
+
+lfm:instant_a2c3a322-6d0c-44e5-9044-879a7cd5a4cf a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.172270"^^xsd:dateTimeStamp .
+
+lfm:instant_a3636c3e-3f32-46c4-858e-3b0411666916 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.183782"^^xsd:dateTimeStamp .
+
+lfm:instant_a3f35595-a0ba-4c09-a578-319c0ce76488 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.206297"^^xsd:dateTimeStamp .
+
+lfm:instant_a4b33f10-3e4e-4b0a-96d5-5ed183edbbf8 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.210300"^^xsd:dateTimeStamp .
+
+lfm:instant_a5cae8fa-a118-434a-bc46-3cc3ca1854a4 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.249300"^^xsd:dateTimeStamp .
+
+lfm:instant_a6f3bf97-c19e-485c-a656-59f6de0eb3f9 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.194781"^^xsd:dateTimeStamp .
+
+lfm:instant_a7c21704-8c2d-49e5-aadc-e89faea5ba86 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.286583"^^xsd:dateTimeStamp .
+
+lfm:instant_a882d38f-459d-49c4-9807-cd28ad9ff4cc a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.200782"^^xsd:dateTimeStamp .
+
+lfm:instant_abe89228-1af4-480f-96ea-0d71f6625726 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.175775"^^xsd:dateTimeStamp .
+
+lfm:instant_ac4751a6-9cd2-44ea-bc8e-a5bb5836444b a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.241306"^^xsd:dateTimeStamp .
+
+lfm:instant_af07972e-dc80-45d2-8a59-3784fc0ba203 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.224297"^^xsd:dateTimeStamp .
+
+lfm:instant_af08a40e-0c58-4640-bdbe-1b53b6f7ecde a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.199782"^^xsd:dateTimeStamp .
+
+lfm:instant_af2752e2-5a7e-4beb-9d59-7789bc9f41c7 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.199782"^^xsd:dateTimeStamp .
+
+lfm:instant_af29a128-483d-4e42-8981-85054eab2e39 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.189781"^^xsd:dateTimeStamp .
+
+lfm:instant_b0ae081b-dd41-493a-9690-facccb35cf9a a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.230298"^^xsd:dateTimeStamp .
+
+lfm:instant_b143a3b3-aa5c-4b4f-8b64-8045d8418e56 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.229299"^^xsd:dateTimeStamp .
+
+lfm:instant_b3353921-6011-41a2-9af7-345e59b6b9c2 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.185782"^^xsd:dateTimeStamp .
+
+lfm:instant_b3cdcbbf-d25f-464e-a61f-a9b740ed8180 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.162269"^^xsd:dateTimeStamp .
+
+lfm:instant_b5465bbd-743e-4c44-8852-782adad750d8 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.159252"^^xsd:dateTimeStamp .
+
+lfm:instant_b6c83d9b-fad9-4a50-bd54-216c466d32b0 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.178784"^^xsd:dateTimeStamp .
+
+lfm:instant_ba45ec2d-44c5-4e60-afee-ddc5212a1cd8 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.275069"^^xsd:dateTimeStamp .
+
+lfm:instant_ba61b7f6-22c2-4159-834d-966700b1e498 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.184782"^^xsd:dateTimeStamp .
+
+lfm:instant_bb5e21a5-b43b-49e4-b6c3-ed78c5ae6f96 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.178784"^^xsd:dateTimeStamp .
+
+lfm:instant_bd89412f-18aa-4d09-a96b-4248dc009f26 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.176784"^^xsd:dateTimeStamp .
+
+lfm:instant_bd9f19ef-a390-40d0-9ceb-0707dbb528b2 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.184782"^^xsd:dateTimeStamp .
+
+lfm:instant_bfd6d5bf-5f4c-4eb9-b6a5-22eac06c8ddb a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.182783"^^xsd:dateTimeStamp .
+
+lfm:instant_c086ae84-308c-4b11-96c5-631674cde514 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.199782"^^xsd:dateTimeStamp .
+
+lfm:instant_c0f1ebac-9169-4369-9c5c-111136e2e9ce a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.198781"^^xsd:dateTimeStamp .
+
+lfm:instant_c2bdb4f8-cb4d-42a4-ae6c-e852c22d33a2 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.228299"^^xsd:dateTimeStamp .
+
+lfm:instant_c4915a1a-c071-48bd-88fc-7f8caa10dab1 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.173268"^^xsd:dateTimeStamp .
+
+lfm:instant_c52c9688-34bf-4e88-a0b0-4e06a7a647c1 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.287583"^^xsd:dateTimeStamp .
+
+lfm:instant_c5806418-6028-47a4-8949-63048685e37c a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.170269"^^xsd:dateTimeStamp .
+
+lfm:instant_c8d72d11-81b0-4c0c-9a8a-42296d665181 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.192784"^^xsd:dateTimeStamp .
+
+lfm:instant_cb5359bf-4aac-4832-b0c7-27d6c87b6390 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.244300"^^xsd:dateTimeStamp .
+
+lfm:instant_cb66f617-b59e-47a1-af8b-4b22f0df2782 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.188783"^^xsd:dateTimeStamp .
+
+lfm:instant_cbb4aa00-171f-46ed-8359-82b17619cf0a a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.190781"^^xsd:dateTimeStamp .
+
+lfm:instant_ce2572be-410a-41da-9016-b4dbd5692ce0 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.186781"^^xsd:dateTimeStamp .
+
+lfm:instant_ce8d84f4-e947-459b-a7c8-c1103a8b9d65 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.175775"^^xsd:dateTimeStamp .
+
+lfm:instant_cfd182ac-a3ee-432c-a5fb-ac78efcac845 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.275069"^^xsd:dateTimeStamp .
+
+lfm:instant_d052bf8a-02f3-42c9-9c41-9c7ebe8e23d2 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.277583"^^xsd:dateTimeStamp .
+
+lfm:instant_d2977b33-6dda-4ef0-a168-e14271ec6b1d a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.233299"^^xsd:dateTimeStamp .
+
+lfm:instant_d33e3fa1-57a0-471f-805e-f5d1149393e5 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.251299"^^xsd:dateTimeStamp .
+
+lfm:instant_d35773c0-2318-4a77-8585-dce365d79fdd a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.195782"^^xsd:dateTimeStamp .
+
+lfm:instant_d5351c99-9e7a-4848-a38a-73d87e77c286 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.246301"^^xsd:dateTimeStamp .
+
+lfm:instant_d5837fe0-de29-428d-a0aa-96ec5733e566 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.222297"^^xsd:dateTimeStamp .
+
+lfm:instant_d596f87c-6938-4200-add6-0b9e38825a45 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.276576"^^xsd:dateTimeStamp .
+
+lfm:instant_d62b27f8-bfd9-4fc3-9a1d-c6594763cbc0 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.187780"^^xsd:dateTimeStamp .
+
+lfm:instant_d901f24b-e821-4d5a-bac0-f2311dbcfe3f a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.189781"^^xsd:dateTimeStamp .
+
+lfm:instant_ddf55577-0135-45ef-8727-cf079992a6ab a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.283584"^^xsd:dateTimeStamp .
+
+lfm:instant_de45d9f0-3f40-4c26-85aa-eb61300c9ce1 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.214299"^^xsd:dateTimeStamp .
+
+lfm:instant_dfc539a2-bdc2-41cf-a4b5-2c8243cec669 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.162269"^^xsd:dateTimeStamp .
+
+lfm:instant_dffd76ad-0a33-4d29-b32d-f81ce976285b a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.219299"^^xsd:dateTimeStamp .
+
+lfm:instant_e034bc7f-7d99-49d7-b1a1-7811cb6ac3cb a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.206297"^^xsd:dateTimeStamp .
+
+lfm:instant_e12986a6-908e-4d91-ba8e-90383a4e2894 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.190781"^^xsd:dateTimeStamp .
+
+lfm:instant_e1700671-901e-42dc-ad7c-da7fff5cefd0 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.250300"^^xsd:dateTimeStamp .
+
+lfm:instant_e1da8a4d-1ce5-42e9-bce5-74b99d9d3ae7 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.220298"^^xsd:dateTimeStamp .
+
+lfm:instant_e2b205cd-fcf5-4f7a-91d9-b75640f6a874 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.209300"^^xsd:dateTimeStamp .
+
+lfm:instant_e428851a-6e60-4857-99f2-53ac97a3ea0b a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.274072"^^xsd:dateTimeStamp .
+
+lfm:instant_e59b5541-4456-477a-b84b-a13aae49d7d6 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.247299"^^xsd:dateTimeStamp .
+
+lfm:instant_e792f93f-694b-4250-b998-7a8b7aed1790 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.276070"^^xsd:dateTimeStamp .
+
+lfm:instant_e86a1f92-6491-46ce-b02b-9a3a65840d54 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.197782"^^xsd:dateTimeStamp .
+
+lfm:instant_e8a8dddb-6d4d-42c0-b845-837fd658e50b a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.284583"^^xsd:dateTimeStamp .
+
+lfm:instant_e8c1e229-eaae-462e-909b-6ba343db5b3e a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.186781"^^xsd:dateTimeStamp .
+
+lfm:instant_ead7bef7-596b-4ee5-b69d-19db824e0561 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.211300"^^xsd:dateTimeStamp .
+
+lfm:instant_ebb94468-f230-405b-9ac1-7c0a09d23014 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.180782"^^xsd:dateTimeStamp .
+
+lfm:instant_ecb31df9-a92e-46dc-8dcb-b4a992eeb372 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.201783"^^xsd:dateTimeStamp .
+
+lfm:instant_ed11f6e7-3a9d-47b2-bfdc-3c192a5f7a40 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.222297"^^xsd:dateTimeStamp .
+
+lfm:instant_ed6c99ce-1d99-4c9a-bc0a-b46618c644da a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.187780"^^xsd:dateTimeStamp .
+
+lfm:instant_edc86f7c-886f-4516-bd92-ca21533f1635 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.276576"^^xsd:dateTimeStamp .
+
+lfm:instant_eeafc1bc-be46-49bc-a8f5-974d413aab65 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.168269"^^xsd:dateTimeStamp .
+
+lfm:instant_f551c161-2e31-4550-8dc2-91f629cb6c56 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.231297"^^xsd:dateTimeStamp .
+
+lfm:instant_f798d23a-ee36-4fb0-be89-71627a01e734 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.212297"^^xsd:dateTimeStamp .
+
+lfm:instant_f88f8976-caf1-44a6-9e08-0802e6ee7f2d a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.209300"^^xsd:dateTimeStamp .
+
+lfm:instant_f9f278bd-55b6-4f71-8aec-de0b5350e984 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.173268"^^xsd:dateTimeStamp .
+
+lfm:instant_fbe96874-b464-4972-bf75-ae76a30fa183 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.282584"^^xsd:dateTimeStamp .
+
+lfm:instant_fdba65dc-22ae-4f1f-b96b-716a194d16aa a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.223298"^^xsd:dateTimeStamp .
+
+lfm:instant_ff73aa85-430b-48db-975e-a92f35d77074 a time:Instant ;
+    time:inXSDDateTimeStamp "2025-01-17T12:42:34.233299"^^xsd:dateTimeStamp .
+
+lfm:property_state_07b4e72a-3755-46a8-bd1b-2ab08df4d47e a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_07fddb20-d609-4586-898a-a913c99be8d2 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_08f88fcd-1886-47dc-b4b0-8cef06a2cb1c a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_0d246ef2-b0b5-4a7a-a080-f2ad60ec069d a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_0d845fdc-6a16-472a-86c2-4110a39fba1f a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "Default" .
+
+lfm:property_state_0e5ebf96-9d82-466e-94b7-a47e5c32ab9a a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_0ec28f08-11f4-4d52-97b5-d123fa45217f a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_15ef4e43-9fbb-4a86-851e-2e91e4d1297c a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_17df4e85-aacf-4c8a-9b76-91541e853301 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_1cc23a70-71ca-400a-bbdc-c231509d6c27 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_1ecba634-4a3a-4192-81b6-537e54d1c346 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_248e2c01-eb6a-417f-9da3-8f0a92301f7f a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_24d5599c-b03f-41c6-80d1-28e4ff994927 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_25f9974b-5f76-478e-95fc-c461f7b7caf1 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_2885ed9d-ad57-448a-b380-aa4db0bbb523 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_2bfca286-bac7-4291-9eb3-939c49452cf1 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_2d844785-32a2-4594-a818-e722ebbe720a a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_318e3f98-b11b-4529-b5bd-a2a9ffce961d a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_330374c7-dd70-4814-92aa-d226affc72ed a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_s1_asfalt_zwart" .
+
+lfm:property_state_34f09029-795c-4c9a-b10e-c6ff804251bb a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_37feca09-5dcc-4295-8493-87f80894871f a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_38b3b2a0-be3b-42e7-8dd4-cd00ff380fc1 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_39d601fb-cdf6-46fc-a709-333f17aa7ca7 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_s1_asfalt_zwart" .
+
+lfm:property_state_3a159b64-6daa-4a89-a62b-c4d60becab1c a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_419f0eca-6b63-4679-898c-646606487b0e a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_44f50688-349f-4570-9379-75e962504880 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_49d677c0-ceac-45e8-ba1e-4fa0e177c05c a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_4a5ff35a-1d60-4236-a93e-60c9949820c6 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_4b859e4c-c316-4579-81de-a64e619187b1 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_4edeac5d-d6ad-4620-a6b9-60cdd6cc3c9c a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_531cf2e3-4dde-4d1c-a349-10e64e9f9e5a a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_s1_asfalt_zwart" .
+
+lfm:property_state_536a0bc0-35bd-4448-8705-b001124da5fc a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "Default" .
+
+lfm:property_state_63167cb5-b71b-45ac-8a05-b81f117feed2 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_631938c5-60b4-419a-a4ad-19f27684a5de a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_6cc805f8-85ae-4ec9-bada-47ca736ab284 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "Default" .
+
+lfm:property_state_7094f2e1-fb79-4976-b261-bec7a430acd8 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_70c5a33f-5060-49ec-9bd5-9a38629628bc a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_7dcef9f8-e899-4a22-8c1f-84be25f017f4 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_81e6752b-fc38-42e2-a06e-dcc953c19206 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_8267ee87-db8a-43c0-a91d-9f7a1931e4ca a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_84e6f32d-9d88-4b96-9e22-705992308f32 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_85b443bd-e063-40fa-9960-14eb42748f60 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_90202fc9-51aa-48fc-88cc-9ba540fcb32c a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_9129facc-792b-49d2-9e1e-b15285a817bf a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_926f87f5-7452-47db-900c-702a2d62e71c a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_96d9a06f-f30e-49c8-8f21-a15b4d0810c6 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_9779f88b-b014-4762-b3a6-2214bff2a430 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_s1_asfalt_zwart" .
+
+lfm:property_state_99230b94-f98d-488b-85a9-79580c231a6b a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "Default" .
+
+lfm:property_state_9ccb818f-4ab8-4cb0-916f-da559c42063f a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_s1_asfalt_zwart" .
+
+lfm:property_state_9e3858a8-438b-486e-af0c-b17fc33a9ec8 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "Default" .
+
+lfm:property_state_9fc1041f-693d-40c7-a8a7-8dfb49870e55 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_a1307c51-497b-479a-999b-73e55e230704 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_a1d1f2b7-b474-4f79-be67-f124e09bffa4 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_a2edc959-34b0-4677-96e7-0ed574735160 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_a8c5b246-c585-4628-98df-42e076058d90 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_s1_asfalt_zwart" .
+
+lfm:property_state_a9874be2-f292-47e4-a79a-1e8991c918a5 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_aa8fca00-d7ba-4d01-bacb-51d2fdd4f5d4 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_aaf36acc-aac4-4dff-951f-cd2a0cb8e32c a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_s1_asfalt_zwart" .
+
+lfm:property_state_ab7297c1-5920-43c8-a29e-bfc057e0bf21 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_ab9e80cc-6903-4300-b138-cfe6564818c5 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_abbf52c3-76d6-4f66-9d67-03e935c32b0e a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_aff501b3-8a38-41ca-9cba-3c2e26f0c9ad a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_b6f34828-82b4-492e-b410-15ac9f69bc4e a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "Default" .
+
+lfm:property_state_b99c622e-78c4-4127-a074-f600a210af1f a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_bc188e87-e38b-4393-ac34-c7ba84a74c96 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_bc21549d-6fdc-4d1a-bad4-0293d554e479 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_s1_asfalt_zwart" .
+
+lfm:property_state_beb7edbd-bdfa-4a40-852f-7037ccfe47e0 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_c1137074-2371-4233-991c-3f4dfff17fd3 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "Default" .
+
+lfm:property_state_c393ab85-a3a8-411e-a365-faaa27e62367 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_c69e168b-e13b-4ae1-9c52-9af3c0db0c9f a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_s1_asfalt_zwart" .
+
+lfm:property_state_c8c4cfbf-a240-4310-a0ce-79c692f01741 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_cebc4b16-6e30-40d7-ac0f-db919d6cea4b a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_d0cfb31f-786a-4695-a913-0e8782217542 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "Default" .
+
+lfm:property_state_d8dfcbf7-3d23-44ff-8b1e-6b240f32629e a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_dad1936a-f8da-4a90-a2e2-9be693327542 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_dcf777d9-0630-4022-87ac-e38995d6aaa3 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_e203a1da-18a6-4bf5-a5b2-2dc960049857 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_e269be4d-b7ae-4e26-845f-36cb9629edc0 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_e29315e0-72dd-49ef-8919-aff0563f1dd1 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_e5d6c921-ceaf-4683-a713-425088d6811e a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_e964ba7c-4257-460d-b9e2-a09dba1527bd a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_ed384191-4021-4e78-a58a-b3e89a0e00d6 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_edd3289e-b19b-4fcf-910c-170811b1651b a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_f017b5d0-7197-41d3-a9c3-f4a7fe49cbb8 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_f6736b87-e36d-454b-b617-42075842401c a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_f89a40c2-97cc-40a8-a2ee-4ea590a737b6 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "Default" .
+
+lfm:property_state_f9db89ce-76d1-41a9-a0e6-28ed14c1d292 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_fa567338-4ba4-4d05-9697-3e45856ab9af a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "NLRS_f2_beton_ihwg_gen" .
+
+lfm:property_state_faa1b702-f385-4182-913e-f29be8a7bf26 a opm:PropertyState ;
+    opm:propertyName "material" ;
+    opm:value "Default" .
+
+lfm:sensor_013d4069-6254-4339-adf8-82b5250caa36 a sosa:Sensor ;
+    rdfs:label "ch4_fbg12" .
+
+lfm:sensor_024557e4-99c2-4d84-8441-031cc0725d52 a sosa:Sensor ;
+    rdfs:label "ch9_fbg15" .
+
+lfm:sensor_045f32b3-897f-468d-9665-cf25ec6c7edc a sosa:Sensor ;
+    rdfs:label "ch5_fbg12" .
+
+lfm:sensor_05ef0c93-965b-45ef-97a2-38c715d194cb a sosa:Sensor ;
+    rdfs:label "ch9_fbg16" .
+
+lfm:sensor_06d0a580-7577-4d60-941c-7e605468cce0 a sosa:Sensor ;
+    rdfs:label "ch6_fbg5" .
+
+lfm:sensor_077f1f6f-d026-4791-9eab-492ecc05c63d a sosa:Sensor ;
+    rdfs:label "ch10_fbg20" .
+
+lfm:sensor_0795b497-6f53-41b9-a6c4-a74cb19e4438 a sosa:Sensor ;
+    rdfs:label "ch4_fbg11" .
+
+lfm:sensor_0c10fd80-45b3-43a0-9ef5-e2d6b557bd03 a sosa:Sensor ;
+    rdfs:label "ch3_fbg2" .
+
+lfm:sensor_0d49b15b-6fd3-4ed6-92cb-7619cebb9d33 a sosa:Sensor ;
+    rdfs:label "ch7_fbg14" .
+
+lfm:sensor_0dce479b-f9d2-46e3-a86e-2bb58908d9d1 a sosa:Sensor ;
+    rdfs:label "ch8_fbg2" .
+
+lfm:sensor_0ebd3e08-2cba-4514-8d46-c93d69198165 a sosa:Sensor ;
+    rdfs:label "ch9_fbg11" .
+
+lfm:sensor_0fb9eff9-973b-428a-af3e-f537cebb8fec a sosa:Sensor ;
+    rdfs:label "ch1_fbg25" .
+
+lfm:sensor_114eaef7-8586-40f7-902d-4f18c71bb194 a sosa:Sensor ;
+    rdfs:label "ch9_fbg20" .
+
+lfm:sensor_119fad68-a009-4f83-9821-296ed493ce3d a sosa:Sensor ;
+    rdfs:label "ch7_fbg2" .
+
+lfm:sensor_1218c3ee-df19-499b-8375-860996682d8d a sosa:Sensor ;
+    rdfs:label "ch1_fbg19" .
+
+lfm:sensor_12531205-93bc-4f6a-a6bc-2cc98b58ac6d a sosa:Sensor ;
+    rdfs:label "ch5_fbg5" .
+
+lfm:sensor_134c822e-e200-4b4c-8c78-510cd5c623d8 a sosa:Sensor ;
+    rdfs:label "ch8_fbg1" .
+
+lfm:sensor_136ae68f-56d5-44cd-adc2-cd7e904449b0 a sosa:Sensor ;
+    rdfs:label "ch2_fbg16" .
+
+lfm:sensor_13cadf3b-4de7-41d6-986d-7778ab66eb45 a sosa:Sensor ;
+    rdfs:label "ch10_fbg10" .
+
+lfm:sensor_141c43d4-2086-4db6-8eb9-03231a391a83 a sosa:Sensor ;
+    rdfs:label "ch7_fbg3" .
+
+lfm:sensor_1549c23e-440a-4347-8671-c666487788aa a sosa:Sensor ;
+    rdfs:label "ch10_fbg6" .
+
+lfm:sensor_18378706-7a0b-4c56-afd6-cd908dfff298 a sosa:Sensor ;
+    rdfs:label "ch3_fbg6" .
+
+lfm:sensor_194900ba-9a83-4cfd-8e15-210d91de97fb a sosa:Sensor ;
+    rdfs:label "ch10_fbg7" .
+
+lfm:sensor_1adea204-d346-49ed-b80e-11951cc722f1 a sosa:Sensor ;
+    rdfs:label "ch4_fbg22" .
+
+lfm:sensor_1d87fb0f-3db8-482e-9a5a-2100101c0823 a sosa:Sensor ;
+    rdfs:label "ch7_fbg8" .
+
+lfm:sensor_1efe9cd2-5a7c-40e1-9f24-fd68376c8ed0 a sosa:Sensor ;
+    rdfs:label "ch10_fbg13" .
+
+lfm:sensor_204ed1e5-e90b-466f-ab03-338af11b84d0 a sosa:Sensor ;
+    rdfs:label "ch1_fbg4" .
+
+lfm:sensor_20a2f891-6100-4e1a-b03d-16b035263ed0 a sosa:Sensor ;
+    rdfs:label "ch6_fbg1" .
+
+lfm:sensor_20f1460e-b17b-4d19-8ab3-6ed3f298baf0 a sosa:Sensor ;
+    rdfs:label "ch2_fbg19" .
+
+lfm:sensor_21abf024-494a-4f5d-b426-e9951e8c8f0c a sosa:Sensor ;
+    rdfs:label "ch2_fbg4" .
+
+lfm:sensor_23998dbc-c3c1-4242-bec3-82fdd409613b a sosa:Sensor ;
+    rdfs:label "ch2_fbg6" .
+
+lfm:sensor_23bc2c5a-cb4f-409c-818b-a5eaa2592c6d a sosa:Sensor ;
+    rdfs:label "ch1_fbg20" .
+
+lfm:sensor_25358463-f714-42d0-aa66-5241d35d4e8d a sosa:Sensor ;
+    rdfs:label "ch10_fbg5" .
+
+lfm:sensor_26585355-edc3-42db-93d8-0c2a41512839 a sosa:Sensor ;
+    rdfs:label "ch8_fbg21" .
+
+lfm:sensor_26beb015-fd32-44c7-9599-8006045d7b49 a sosa:Sensor ;
+    rdfs:label "ch1_fbg23" .
+
+lfm:sensor_2802966d-4634-427e-a36c-7d4c43f6c054 a sosa:Sensor ;
+    rdfs:label "ch5_fbg14" .
+
+lfm:sensor_29a74355-809e-4eb7-adaa-eea4cc069729 a sosa:Sensor ;
+    rdfs:label "ch9_fbg26" .
+
+lfm:sensor_2c7e584a-a62b-4387-a122-1794675912d7 a sosa:Sensor ;
+    rdfs:label "ch9_fbg17" .
+
+lfm:sensor_2c997fe7-5cf6-45cd-8e5c-497120647367 a sosa:Sensor ;
+    rdfs:label "ch9_fbg18" .
+
+lfm:sensor_2ccd3a95-f379-4266-ad12-53f32265887e a sosa:Sensor ;
+    rdfs:label "ch6_fbg9" .
+
+lfm:sensor_2dc948f3-f885-4667-8d79-970c544014ec a sosa:Sensor ;
+    rdfs:label "ch3_fbg1" .
+
+lfm:sensor_30a2e6c0-0db3-44be-a575-cc0fdb9e0301 a sosa:Sensor ;
+    rdfs:label "ch6_fbg15" .
+
+lfm:sensor_317c6e15-ee64-43bc-9d4f-4635ce0f753e a sosa:Sensor ;
+    rdfs:label "ch6_fbg21" .
+
+lfm:sensor_3223b524-e8a3-4460-865f-30203927e7d4 a sosa:Sensor ;
+    rdfs:label "ch3_fbg21" .
+
+lfm:sensor_32ccc868-07d6-4f30-84f2-0a6c7a7fcbb3 a sosa:Sensor ;
+    rdfs:label "ch1_fbg18" .
+
+lfm:sensor_363e13d5-f1a8-4b8a-ac74-5f0fd2238d95 a sosa:Sensor ;
+    rdfs:label "ch4_fbg21" .
+
+lfm:sensor_36eee0bb-1faa-4b4b-b62e-4a714275cb0e a sosa:Sensor ;
+    rdfs:label "ch1_fbg24" .
+
+lfm:sensor_3731f710-28f9-4e0a-9825-5bf9e88cc564 a sosa:Sensor ;
+    rdfs:label "ch8_fbg15" .
+
+lfm:sensor_384b1472-cd69-4727-aa0e-a2921eb595f2 a sosa:Sensor ;
+    rdfs:label "ch10_fbg1" .
+
+lfm:sensor_39cc34e7-4e5e-4dfa-ba99-0cf8c4060782 a sosa:Sensor ;
+    rdfs:label "ch6_fbg14" .
+
+lfm:sensor_39d57ce1-1e9d-40a4-aede-5de06098a659 a sosa:Sensor ;
+    rdfs:label "ch8_fbg11" .
+
+lfm:sensor_3b2daaad-a1b0-41d8-a584-49e4ad439eb8 a sosa:Sensor ;
+    rdfs:label "ch3_fbg22" .
+
+lfm:sensor_3c5b9c04-755d-4f71-b6d4-6d4f05e80aee a sosa:Sensor ;
+    rdfs:label "ch7_fbg11" .
+
+lfm:sensor_3c77a72e-e65e-409e-9135-641f97385de4 a sosa:Sensor ;
+    rdfs:label "ch9_fbg4" .
+
+lfm:sensor_3d671bfb-1e83-4fcd-8000-091fd91d816d a sosa:Sensor ;
+    rdfs:label "ch1_fbg15" .
+
+lfm:sensor_3ef297f9-5e3d-44a8-bb82-2c1174d1d96b a sosa:Sensor ;
+    rdfs:label "ch3_fbg11" .
+
+lfm:sensor_3f19c1b7-a249-43d2-ad4b-495e1e65d658 a sosa:Sensor ;
+    rdfs:label "ch7_fbg7" .
+
+lfm:sensor_3f9c8445-3833-4bb8-8fbe-d53ef19a3e39 a sosa:Sensor ;
+    rdfs:label "ch1_fbg5" .
+
+lfm:sensor_3f9cbfbe-0891-46f2-a8c0-a115c6c0710b a sosa:Sensor ;
+    rdfs:label "ch6_fbg16" .
+
+lfm:sensor_449785a3-ed62-4335-b93c-1a4cf4e541b4 a sosa:Sensor ;
+    rdfs:label "ch4_fbg5" .
+
+lfm:sensor_44a1cd4a-a7f0-49e5-8c09-2f4ab4cf0610 a sosa:Sensor ;
+    rdfs:label "ch3_fbg7" .
+
+lfm:sensor_44d75404-403c-4f68-87ed-5f13db2cbe2c a sosa:Sensor ;
+    rdfs:label "ch8_fbg7" .
+
+lfm:sensor_477585ae-c774-4426-b158-4d6167f59bce a sosa:Sensor ;
+    rdfs:label "ch5_fbg6" .
+
+lfm:sensor_4bb00142-f2f2-42e1-9b71-5894a9e62093 a sosa:Sensor ;
+    rdfs:label "ch5_fbg1" .
+
+lfm:sensor_4cabaa9b-dc91-4858-8ac7-ce53718e804e a sosa:Sensor ;
+    rdfs:label "ch4_fbg14" .
+
+lfm:sensor_4ce3435a-c06d-4cfd-be5e-09b91da4303f a sosa:Sensor ;
+    rdfs:label "ch8_fbg22" .
+
+lfm:sensor_4d257e8d-63ae-41de-a971-e83c1a44aec3 a sosa:Sensor ;
+    rdfs:label "ch7_fbg15" .
+
+lfm:sensor_4d7df9d6-733c-4252-abc0-c861c89e3025 a sosa:Sensor ;
+    rdfs:label "ch4_fbg3" .
+
+lfm:sensor_4daa8d40-e0b7-41e2-980a-e87d7fcea0b7 a sosa:Sensor ;
+    rdfs:label "ch4_fbg18" .
+
+lfm:sensor_4fa54277-1159-4cd7-b874-7a40c5e9da28 a sosa:Sensor ;
+    rdfs:label "ch7_fbg12" .
+
+lfm:sensor_519087da-740b-4ba2-b569-282b223031ae a sosa:Sensor ;
+    rdfs:label "ch6_fbg6" .
+
+lfm:sensor_52e6c7c8-3bb4-4064-9200-d3b7e2b67ad4 a sosa:Sensor ;
+    rdfs:label "ch10_fbg11" .
+
+lfm:sensor_53ddd749-7aa0-4d25-8fe4-d3be8534c8c5 a sosa:Sensor ;
+    rdfs:label "ch1_fbg7" .
+
+lfm:sensor_5646c6ac-7d8d-453e-8f0d-1a8b5804f358 a sosa:Sensor ;
+    rdfs:label "ch5_fbg13" .
+
+lfm:sensor_5854e4c2-c686-482a-b772-06136cf36822 a sosa:Sensor ;
+    rdfs:label "ch6_fbg2" .
+
+lfm:sensor_58cd5a6d-68a1-474a-bf6d-14ea271fc971 a sosa:Sensor ;
+    rdfs:label "ch9_fbg6" .
+
+lfm:sensor_59b06340-4427-41b7-a4e8-0625a8fb8b33 a sosa:Sensor ;
+    rdfs:label "ch9_fbg25" .
+
+lfm:sensor_5beddde1-6d4f-47b8-970a-fa58a28836a3 a sosa:Sensor ;
+    rdfs:label "ch2_fbg3" .
+
+lfm:sensor_5c50830c-cf26-4e67-a841-825e8425b4ee a sosa:Sensor ;
+    rdfs:label "ch6_fbg11" .
+
+lfm:sensor_5c9bd7a8-7123-4ed4-99bf-6ef70689340c a sosa:Sensor ;
+    rdfs:label "ch4_fbg19" .
+
+lfm:sensor_5dcc25a4-b597-4165-b141-72d80f8f4df5 a sosa:Sensor ;
+    rdfs:label "ch5_fbg20" .
+
+lfm:sensor_5e1cacbd-acbb-4bd2-8b21-d551a8bb4759 a sosa:Sensor ;
+    rdfs:label "ch10_fbg3" .
+
+lfm:sensor_5e89dbeb-0b56-467f-a25e-7d519e325426 a sosa:Sensor ;
+    rdfs:label "ch6_fbg20" .
+
+lfm:sensor_5ee8c475-a8fa-4cf1-9f3c-c1cbf3e9e230 a sosa:Sensor ;
+    rdfs:label "ch8_fbg20" .
+
+lfm:sensor_61029ff7-ef28-41dc-a3e9-9a47a39b8157 a sosa:Sensor ;
+    rdfs:label "ch10_fbg12" .
+
+lfm:sensor_69ac32c8-ae7b-4e2f-94ff-39b1a7c0c93f a sosa:Sensor ;
+    rdfs:label "ch5_fbg11" .
+
+lfm:sensor_6c8974e0-7062-43bb-a75c-2b92123cfb90 a sosa:Sensor ;
+    rdfs:label "ch6_fbg12" .
+
+lfm:sensor_6d639b34-bb25-4687-822b-48b4fbe9292b a sosa:Sensor ;
+    rdfs:label "ch4_fbg6" .
+
+lfm:sensor_6e93b588-8c19-407b-a505-9031aa925220 a sosa:Sensor ;
+    rdfs:label "ch9_fbg13" .
+
+lfm:sensor_6f174315-3c8d-45a2-b941-519404fad98c a sosa:Sensor ;
+    rdfs:label "ch5_fbg19" .
+
+lfm:sensor_701016d2-3cb5-4f9c-b35d-22a59ac35db0 a sosa:Sensor ;
+    rdfs:label "ch6_fbg18" .
+
+lfm:sensor_72aac5c3-7f39-47a4-95ea-771b287c0fd7 a sosa:Sensor ;
+    rdfs:label "ch1_fbg13" .
+
+lfm:sensor_734ea5bf-fc03-4bcf-8bab-0fec92504490 a sosa:Sensor ;
+    rdfs:label "ch8_fbg9" .
+
+lfm:sensor_73c49218-4b0c-4d6c-abd7-09e65ba8771b a sosa:Sensor ;
+    rdfs:label "ch9_fbg22" .
+
+lfm:sensor_74a1eb8a-d1e4-40b8-b3fc-33606face4d2 a sosa:Sensor ;
+    rdfs:label "ch1_fbg21" .
+
+lfm:sensor_74d87984-bace-4478-bdbc-9dcaa5afed26 a sosa:Sensor ;
+    rdfs:label "ch7_fbg1" .
+
+lfm:sensor_75325edf-d7cb-487d-8199-c0437527ecba a sosa:Sensor ;
+    rdfs:label "ch8_fbg16" .
+
+lfm:sensor_7573998a-63d2-4fc9-aeee-6d5c9e0ec4ae a sosa:Sensor ;
+    rdfs:label "ch6_fbg8" .
+
+lfm:sensor_764cae09-e7f1-4cd9-b2ba-33a97e83269d a sosa:Sensor ;
+    rdfs:label "ch2_fbg15" .
+
+lfm:sensor_78e39bd4-fa6a-4c1e-828c-213d2c86ea9c a sosa:Sensor ;
+    rdfs:label "ch2_fbg10" .
+
+lfm:sensor_79005a7f-df2b-4f9d-a2a4-9629204fcc22 a sosa:Sensor ;
+    rdfs:label "ch10_fbg15" .
+
+lfm:sensor_79ad5dd7-a56f-4001-add4-1d7e269cef98 a sosa:Sensor ;
+    rdfs:label "ch1_fbg11" .
+
+lfm:sensor_7a6a65dc-9b8c-46f9-9abd-ed73997a300b a sosa:Sensor ;
+    rdfs:label "ch8_fbg4" .
+
+lfm:sensor_7bf7eeee-a4e2-4503-b0ee-aa358e003b75 a sosa:Sensor ;
+    rdfs:label "ch7_fbg18" .
+
+lfm:sensor_7e874965-01da-4fea-92fa-2482d5c9aef0 a sosa:Sensor ;
+    rdfs:label "ch5_fbg8" .
+
+lfm:sensor_7e960886-b14a-4d65-bb04-3732a7b380e0 a sosa:Sensor ;
+    rdfs:label "ch9_fbg9" .
+
+lfm:sensor_8228560f-5947-4b9d-8b5a-e3647ae6c8f3 a sosa:Sensor ;
+    rdfs:label "ch1_fbg16" .
+
+lfm:sensor_83e72f2f-e051-470b-8755-1c2932114970 a sosa:Sensor ;
+    rdfs:label "ch4_fbg17" .
+
+lfm:sensor_84f11b24-9a4b-449b-8940-1fd94b66e06e a sosa:Sensor ;
+    rdfs:label "ch2_fbg11" .
+
+lfm:sensor_87810c49-5809-49ec-97c7-7594d4890766 a sosa:Sensor ;
+    rdfs:label "ch9_fbg1" .
+
+lfm:sensor_88e60380-af18-4814-92b3-9962e2d65aa4 a sosa:Sensor ;
+    rdfs:label "ch10_fbg9" .
+
+lfm:sensor_8bc22ad1-a1d5-4fe7-a29c-22457568a2f8 a sosa:Sensor ;
+    rdfs:label "ch5_fbg4" .
+
+lfm:sensor_8d49eab6-5669-4b5d-9bc9-6bd11e3fca6e a sosa:Sensor ;
+    rdfs:label "ch7_fbg22" .
+
+lfm:sensor_8d674349-4b02-4cf9-994b-c9964eb2b29d a sosa:Sensor ;
+    rdfs:label "ch8_fbg5" .
+
+lfm:sensor_8d711250-2006-4f6c-80f4-edf06963ae9e a sosa:Sensor ;
+    rdfs:label "ch5_fbg7" .
+
+lfm:sensor_8d85c132-a20e-4472-8c30-592de46fc4b7 a sosa:Sensor ;
+    rdfs:label "ch2_fbg5" .
+
+lfm:sensor_8dd0b5e4-1d36-46ee-b533-f5caa078f20a a sosa:Sensor ;
+    rdfs:label "ch7_fbg4" .
+
+lfm:sensor_8e9b3db4-9e8a-4aff-888d-2989b3ea00ef a sosa:Sensor ;
+    rdfs:label "ch10_fbg17" .
+
+lfm:sensor_90883229-6074-4499-bd41-03a51b7c7fac a sosa:Sensor ;
+    rdfs:label "ch8_fbg8" .
+
+lfm:sensor_9241c3ab-5e30-4ba6-85dc-4e4b86fe8739 a sosa:Sensor ;
+    rdfs:label "ch10_fbg8" .
+
+lfm:sensor_9254d82e-77eb-4da3-a71b-4a947336e11e a sosa:Sensor ;
+    rdfs:label "ch7_fbg17" .
+
+lfm:sensor_9501ac3d-52d1-4c2d-ad8e-49487bbd953f a sosa:Sensor ;
+    rdfs:label "ch2_fbg9" .
+
+lfm:sensor_95ab7a46-490f-4652-97d3-26c6e6f82c5a a sosa:Sensor ;
+    rdfs:label "ch1_fbg17" .
+
+lfm:sensor_961ae78a-3c93-414b-b18b-7b51059229cb a sosa:Sensor ;
+    rdfs:label "ch6_fbg19" .
+
+lfm:sensor_97b4dc85-752c-4e58-9083-2166b06a578b a sosa:Sensor ;
+    rdfs:label "ch6_fbg17" .
+
+lfm:sensor_97daeb45-db3a-4f53-a7a3-7cca7a9a490c a sosa:Sensor ;
+    rdfs:label "ch10_fbg4" .
+
+lfm:sensor_9b937e9c-bf50-47de-bc87-7b6c468cad3d a sosa:Sensor ;
+    rdfs:label "ch9_fbg7" .
+
+lfm:sensor_9c6303f8-e8a6-4c1f-808d-17686f2ca80e a sosa:Sensor ;
+    rdfs:label "ch9_fbg12" .
+
+lfm:sensor_9d537ab3-d4dc-43b6-8448-81013333dd25 a sosa:Sensor ;
+    rdfs:label "ch7_fbg13" .
+
+lfm:sensor_a1a3fe94-172c-41c4-9a36-441bee5b422e a sosa:Sensor ;
+    rdfs:label "ch7_fbg20" .
+
+lfm:sensor_a3b5190d-0eac-4841-9953-d3855883f267 a sosa:Sensor ;
+    rdfs:label "ch2_fbg20" .
+
+lfm:sensor_a4017092-f963-4458-96e3-4bbe34499dbe a sosa:Sensor ;
+    rdfs:label "ch4_fbg20" .
+
+lfm:sensor_a464ae8f-ebba-4bf1-8473-aa6904159cf5 a sosa:Sensor ;
+    rdfs:label "ch6_fbg22" .
+
+lfm:sensor_a52e6d56-eaba-46cf-a1f4-4f69a42175e0 a sosa:Sensor ;
+    rdfs:label "ch4_fbg16" .
+
+lfm:sensor_a63e0a15-151d-424c-b7d8-33ae0081f2c7 a sosa:Sensor ;
+    rdfs:label "ch2_fbg7" .
+
+lfm:sensor_a6e32ab9-8cc3-4aa1-998b-1de2346d06f6 a sosa:Sensor ;
+    rdfs:label "ch2_fbg12" .
+
+lfm:sensor_a8605c79-0f9b-4069-b863-db80489956e3 a sosa:Sensor ;
+    rdfs:label "ch3_fbg20" .
+
+lfm:sensor_a922723b-7d52-4711-8c33-8eb834650d61 a sosa:Sensor ;
+    rdfs:label "ch4_fbg13" .
+
+lfm:sensor_a9f1ba31-73c1-47da-8779-e6188b1fdaf3 a sosa:Sensor ;
+    rdfs:label "ch7_fbg19" .
+
+lfm:sensor_aa76ad38-4ac2-488c-8ce5-0bcd016d6305 a sosa:Sensor ;
+    rdfs:label "ch5_fbg15" .
+
+lfm:sensor_abb25ea0-3bef-4978-b739-0e07c66665c8 a sosa:Sensor ;
+    rdfs:label "ch9_fbg19" .
+
+lfm:sensor_abf77676-65d5-4c23-a768-3152b8cb8815 a sosa:Sensor ;
+    rdfs:label "ch6_fbg13" .
+
+lfm:sensor_ac3fb434-d760-4b33-bc7f-1b6b379b728d a sosa:Sensor ;
+    rdfs:label "ch9_fbg5" .
+
+lfm:sensor_acdba6af-df8f-48f1-b40f-ca9e3f99931d a sosa:Sensor ;
+    rdfs:label "ch10_fbg14" .
+
+lfm:sensor_ad1f8f0b-4aea-4bf1-b2cb-224f61bc974c a sosa:Sensor ;
+    rdfs:label "ch10_fbg18" .
+
+lfm:sensor_ae1a2266-feb7-4568-b8f1-1beda94b28a6 a sosa:Sensor ;
+    rdfs:label "ch6_fbg7" .
+
+lfm:sensor_b03d5475-ddde-453e-a0cc-efbacfeff766 a sosa:Sensor ;
+    rdfs:label "ch4_fbg1" .
+
+lfm:sensor_b1d004fb-5faa-4290-8c6d-2908a7d3a75b a sosa:Sensor ;
+    rdfs:label "ch8_fbg12" .
+
+lfm:sensor_b335fd53-94e0-49e4-8312-402338514631 a sosa:Sensor ;
+    rdfs:label "ch5_fbg9" .
+
+lfm:sensor_b58c8fdf-2112-4c1f-86c5-05560111fe32 a sosa:Sensor ;
+    rdfs:label "ch6_fbg10" .
+
+lfm:sensor_b73839b6-c40b-4840-b667-069aa9d6003a a sosa:Sensor ;
+    rdfs:label "ch1_fbg14" .
+
+lfm:sensor_b75b6086-e678-492d-8e09-1e744f1881b4 a sosa:Sensor ;
+    rdfs:label "ch9_fbg2" .
+
+lfm:sensor_b7af49a9-10e0-41e8-83b3-5fcdb8662579 a sosa:Sensor ;
+    rdfs:label "ch7_fbg16" .
+
+lfm:sensor_b9e2aea4-b6ce-4f8a-9769-3e664e7f2fec a sosa:Sensor ;
+    rdfs:label "ch3_fbg8" .
+
+lfm:sensor_ba650d72-ec30-46a8-b7b8-4e52957b44e3 a sosa:Sensor ;
+    rdfs:label "ch9_fbg23" .
+
+lfm:sensor_ba91ea57-a3d9-41ab-8e97-be212d1b2afe a sosa:Sensor ;
+    rdfs:label "ch7_fbg21" .
+
+lfm:sensor_bb304555-38b3-4759-8ad7-e5a9b3b843a9 a sosa:Sensor ;
+    rdfs:label "ch2_fbg17" .
+
+lfm:sensor_bb4b7094-aa35-408b-ab98-fdbf73a16b4e a sosa:Sensor ;
+    rdfs:label "ch1_fbg6" .
+
+lfm:sensor_bdf5af9d-6d61-4f48-9c65-c67b00e0f9c5 a sosa:Sensor ;
+    rdfs:label "ch2_fbg21" .
+
+lfm:sensor_be61f1b9-dd5e-416a-af0e-f860641bee59 a sosa:Sensor ;
+    rdfs:label "ch4_fbg2" .
+
+lfm:sensor_bfe0ba0d-cbaf-4c5e-bfbf-1df714482a40 a sosa:Sensor ;
+    rdfs:label "ch8_fbg13" .
+
+lfm:sensor_c0c15d87-5d31-492c-8e3b-d12b13e23a9f a sosa:Sensor ;
+    rdfs:label "ch9_fbg14" .
+
+lfm:sensor_c48bf0bd-1dc1-4036-aab3-27fb7a125af1 a sosa:Sensor ;
+    rdfs:label "ch1_fbg22" .
+
+lfm:sensor_c575f500-621a-4474-abda-2708ac2618bf a sosa:Sensor ;
+    rdfs:label "ch5_fbg21" .
+
+lfm:sensor_c5edc9a1-3b3a-4dcb-b59f-6b332d5e648b a sosa:Sensor ;
+    rdfs:label "ch4_fbg15" .
+
+lfm:sensor_c61b6fbb-e5ec-46c2-9ee4-1a05a6e23303 a sosa:Sensor ;
+    rdfs:label "ch5_fbg16" .
+
+lfm:sensor_c651ccc4-3a2d-4f9d-a82f-0b1edc9eec80 a sosa:Sensor ;
+    rdfs:label "ch3_fbg16" .
+
+lfm:sensor_c8134659-147a-4ebe-b2b5-e3091e60f8f1 a sosa:Sensor ;
+    rdfs:label "ch1_fbg12" .
+
+lfm:sensor_c8639215-b206-41f4-b356-02edc6e668bd a sosa:Sensor ;
+    rdfs:label "ch3_fbg13" .
+
+lfm:sensor_ca89a8e6-82ca-4761-b126-d8fc1be9823a a sosa:Sensor ;
+    rdfs:label "ch8_fbg3" .
+
+lfm:sensor_cb01dd8d-91c4-427b-84ac-f79bc67ea35f a sosa:Sensor ;
+    rdfs:label "ch5_fbg10" .
+
+lfm:sensor_cc02bf93-01be-4c9f-8a7e-cccde818d254 a sosa:Sensor ;
+    rdfs:label "ch4_fbg10" .
+
+lfm:sensor_cc5d4185-9835-4cc4-b570-91dff30a50ad a sosa:Sensor ;
+    rdfs:label "ch8_fbg14" .
+
+lfm:sensor_cd4f39d3-675c-4fc1-a6d0-e23452f2fdca a sosa:Sensor ;
+    rdfs:label "ch3_fbg3" .
+
+lfm:sensor_ceae0c2b-21a1-440d-b6e5-d2e0a92b8cad a sosa:Sensor ;
+    rdfs:label "ch1_fbg10" .
+
+lfm:sensor_cf2f243b-f32b-4b54-9709-5f797c32d976 a sosa:Sensor ;
+    rdfs:label "ch3_fbg14" .
+
+lfm:sensor_d0729ea6-196d-41db-81ec-15fec14537a2 a sosa:Sensor ;
+    rdfs:label "ch9_fbg24" .
+
+lfm:sensor_d0c717b2-58ab-4b40-846e-852a988b8834 a sosa:Sensor ;
+    rdfs:label "ch3_fbg17" .
+
+lfm:sensor_d3092334-d03f-4a2b-8d2e-718ba73f1eae a sosa:Sensor ;
+    rdfs:label "ch8_fbg19" .
+
+lfm:sensor_d36f748f-b112-4180-86e6-7f72ea7bc57f a sosa:Sensor ;
+    rdfs:label "ch3_fbg12" .
+
+lfm:sensor_d38e4941-e49e-46a5-820a-d670d48ab1d2 a sosa:Sensor ;
+    rdfs:label "ch3_fbg9" .
+
+lfm:sensor_d3a4156a-c950-47ee-983e-05c3f0c0c624 a sosa:Sensor ;
+    rdfs:label "ch8_fbg18" .
+
+lfm:sensor_d40f23d5-8fa4-4781-b744-dcd1f96e7317 a sosa:Sensor ;
+    rdfs:label "ch2_fbg22" .
+
+lfm:sensor_d4793ed3-f274-4bd9-80a5-ff064b3e7332 a sosa:Sensor ;
+    rdfs:label "ch10_fbg16" .
+
+lfm:sensor_d4ed3617-eed8-4f0a-90b5-5f987d0dcfe6 a sosa:Sensor ;
+    rdfs:label "ch9_fbg3" .
+
+lfm:sensor_d505d422-f32e-448b-ba00-75b5f8bad48e a sosa:Sensor ;
+    rdfs:label "ch7_fbg6" .
+
+lfm:sensor_d57cdf5c-ac2f-40b8-bcff-5ce4d541880c a sosa:Sensor ;
+    rdfs:label "ch8_fbg10" .
+
+lfm:sensor_d5fb96ae-9ff0-432f-afe8-5baac50b1db6 a sosa:Sensor ;
+    rdfs:label "ch8_fbg6" .
+
+lfm:sensor_d6e1e655-d582-40f4-8ab9-beb319538ace a sosa:Sensor ;
+    rdfs:label "ch9_fbg8" .
+
+lfm:sensor_d78fef22-3e8b-4003-87c3-3b105bb9f738 a sosa:Sensor ;
+    rdfs:label "ch8_fbg17" .
+
+lfm:sensor_d896d511-4f3a-4a82-8c54-3a6813a5b3bd a sosa:Sensor ;
+    rdfs:label "ch5_fbg2" .
+
+lfm:sensor_da54608f-55f5-4e0f-8551-a607bead5ece a sosa:Sensor ;
+    rdfs:label "ch10_fbg2" .
+
+lfm:sensor_da745bf9-285c-44c0-a51f-1183fb212e51 a sosa:Sensor ;
+    rdfs:label "ch3_fbg10" .
+
+lfm:sensor_df0ed317-9e75-452d-81e4-059c4a4a1a3f a sosa:Sensor ;
+    rdfs:label "ch4_fbg7" .
+
+lfm:sensor_e1e212ba-6048-45de-b69a-c353d99f9153 a sosa:Sensor ;
+    rdfs:label "ch4_fbg4" .
+
+lfm:sensor_e29e7089-10e6-4018-8919-30acdbde8ffb a sosa:Sensor ;
+    rdfs:label "ch2_fbg2" .
+
+lfm:sensor_e2a0a54f-4a97-45fe-b1ad-d5831494ecc1 a sosa:Sensor ;
+    rdfs:label "ch6_fbg3" .
+
+lfm:sensor_e385b923-c5f0-40f1-a0a3-c89aadbc31c7 a sosa:Sensor ;
+    rdfs:label "ch5_fbg17" .
+
+lfm:sensor_e3c0e76f-9d4f-466a-a0ae-a4cb37521526 a sosa:Sensor ;
+    rdfs:label "ch5_fbg3" .
+
+lfm:sensor_e3e129a1-eb1f-4f40-8500-ae247bc6ad50 a sosa:Sensor ;
+    rdfs:label "ch5_fbg18" .
+
+lfm:sensor_e5ff2d2e-ca67-46fe-a2ab-42c4bf471992 a sosa:Sensor ;
+    rdfs:label "ch6_fbg4" .
+
+lfm:sensor_e73a32c9-e3fc-4d73-82a2-998a2acac197 a sosa:Sensor ;
+    rdfs:label "ch4_fbg9" .
+
+lfm:sensor_e91df917-9c6a-4031-99e7-e5e59a3574e5 a sosa:Sensor ;
+    rdfs:label "ch3_fbg5" .
+
+lfm:sensor_e9ec96a5-f05d-4663-ba51-47357a93d3a0 a sosa:Sensor ;
+    rdfs:label "ch2_fbg1" .
+
+lfm:sensor_eb921252-202f-4b9b-baa2-ded9a2bcb416 a sosa:Sensor ;
+    rdfs:label "ch3_fbg4" .
+
+lfm:sensor_ed05ab43-8d0d-4841-9985-366c0c77b245 a sosa:Sensor ;
+    rdfs:label "ch1_fbg9" .
+
+lfm:sensor_ed858c76-438d-4605-a3d8-f36df35d29a3 a sosa:Sensor ;
+    rdfs:label "ch7_fbg9" .
+
+lfm:sensor_ef93538c-7151-4c67-9721-1da9dd48e59b a sosa:Sensor ;
+    rdfs:label "ch7_fbg5" .
+
+lfm:sensor_f03dc83e-f2c3-47ef-ada6-9bd76f93d28e a sosa:Sensor ;
+    rdfs:label "ch3_fbg19" .
+
+lfm:sensor_f1a2a608-b61c-475a-9eb5-e4c7cf5ee695 a sosa:Sensor ;
+    rdfs:label "ch4_fbg8" .
+
+lfm:sensor_f3a6ff42-44b9-4416-9162-29eaffaef270 a sosa:Sensor ;
+    rdfs:label "ch10_fbg19" .
+
+lfm:sensor_f45c8ebc-9dc6-4c28-8d6e-8d01a1b47a70 a sosa:Sensor ;
+    rdfs:label "ch5_fbg22" .
+
+lfm:sensor_f4709eef-c4af-4850-bab8-4b9fd0a4da25 a sosa:Sensor ;
+    rdfs:label "ch2_fbg14" .
+
+lfm:sensor_f494eabc-38dd-4ca4-97e1-608485b9ca72 a sosa:Sensor ;
+    rdfs:label "ch3_fbg18" .
+
+lfm:sensor_f4a80040-391f-4b0b-8c67-f1a905be095f a sosa:Sensor ;
+    rdfs:label "ch2_fbg8" .
+
+lfm:sensor_f4b06ccd-dd02-4e53-90a5-a5397d02b41a a sosa:Sensor ;
+    rdfs:label "ch9_fbg10" .
+
+lfm:sensor_f5a79714-bd4d-450f-ad92-94913154cd4d a sosa:Sensor ;
+    rdfs:label "ch3_fbg15" .
+
+lfm:sensor_f610b0e4-76d7-4ccc-8027-275e7efc806b a sosa:Sensor ;
+    rdfs:label "ch1_fbg8" .
+
+lfm:sensor_f681c2f4-557a-4029-b51b-f71e2e0b6576 a sosa:Sensor ;
+    rdfs:label "ch7_fbg10" .
+
+lfm:sensor_f7c41a4c-624b-4bbc-90dc-ea11fbff5356 a sosa:Sensor ;
+    rdfs:label "ch9_fbg21" .
+
+lfm:sensor_f8e4901b-7903-491d-ac4f-49431dc4e459 a sosa:Sensor ;
+    rdfs:label "ch2_fbg13" .
+
+lfm:sensor_fafea34f-4afe-4e9c-8ea1-0f5acc8e3069 a sosa:Sensor ;
+    rdfs:label "ch2_fbg18" .
+
+lfm:storey_087674ba-cb8d-4027-ac5e-65f40bff979a a bot:Storey ;
+    bot:containsElement lfm:element_020943b5-c3ef-40b2-9fdd-d0beaf2b958a,
+        lfm:element_05e12289-22e9-43af-b345-c112b9b11912,
+        lfm:element_075b83b8-aded-4cf5-85b2-cf7051714076,
+        lfm:element_0d85d178-4f8e-44eb-8e98-f925f8ff2b6f,
+        lfm:element_0d8f6f3d-a882-4b20-adbe-f77ca5ff2f87,
+        lfm:element_0e53e788-69d3-47be-bc35-35fe1716d0f5,
+        lfm:element_14fbbe78-4908-4901-9413-10070332aa12,
+        lfm:element_163984f7-751f-4596-9357-ada017bf772d,
+        lfm:element_164e3a59-0952-4a04-b5f3-61b5ded7540b,
+        lfm:element_18e887f0-d31a-4c62-82f3-c4b27f075942,
+        lfm:element_1b6dfd3e-6cc8-4235-8b06-3d19453c5d90,
+        lfm:element_1f8ea99e-0dcf-4f58-9d4c-eda3598f482b,
+        lfm:element_21757931-1bae-46e4-8bf8-76b40a133923,
+        lfm:element_2190eb1c-c45d-41b5-b3c5-fb610489172b,
+        lfm:element_23d681d4-06f1-4ca5-9449-80df54d6698d,
+        lfm:element_2644717e-5bbc-4c66-8dbf-42250772d350,
+        lfm:element_2693976d-1adb-48e7-b0b8-df0f7e7af689,
+        lfm:element_2b154b9c-b325-4091-ba57-2aef7004ede9,
+        lfm:element_2b9b3abe-44b1-4ccd-8284-00eea3d84519,
+        lfm:element_2eb38e9e-ef27-49d6-b8a1-82041f8e32bd,
+        lfm:element_32b5b646-b8f6-4e64-a81d-7b1440f0329d,
+        lfm:element_36b86db3-bac1-4b05-848e-aedd865e77ce,
+        lfm:element_37c20aa9-47ba-43e1-b662-6bcc651e19a5,
+        lfm:element_382e9ea3-af47-46f0-83f5-ebe1c1a24f7b,
+        lfm:element_3e46d73c-178a-4ddd-b5cd-93346cc86e7b,
+        lfm:element_434452bf-eb7c-479a-aeed-3c8838b0070c,
+        lfm:element_45ff592d-66eb-4c09-b685-7c06d4f61da1,
+        lfm:element_4ae9e9ae-ea85-4400-a705-ededffc70d0e,
+        lfm:element_556cc57f-2c22-4888-b4ca-1503b2a231cb,
+        lfm:element_55b12a0f-064b-4175-b578-bc19a85d1074,
+        lfm:element_571d0298-35e3-4273-9b35-bd160b5f86a4,
+        lfm:element_5bca09b4-de87-40a7-bd36-f2266db77fc2,
+        lfm:element_5e4d1ccf-7d2f-4dab-b806-d7fb7deb0e11,
+        lfm:element_615fc0c9-03b3-4442-ad51-57d9afc61524,
+        lfm:element_61c90432-a440-4557-b41e-f64cccc564bb,
+        lfm:element_64586c29-8e61-407d-bd06-0e79a7c0d24d,
+        lfm:element_683f2dca-63be-4b29-9434-1d51888aa148,
+        lfm:element_6ee8b93c-5edb-44cd-ba1c-61acf5ca82d2,
+        lfm:element_714f354f-061b-4c29-bd6e-75553bca62d8,
+        lfm:element_72842b00-ae98-429b-aed0-5cb4ed90c4b9,
+        lfm:element_72f0b68a-6cbc-4253-bba7-d7ea00cc11dd,
+        lfm:element_7472f2b2-5d12-4dda-a20f-bedd7b684a12,
+        lfm:element_7c4718e4-c49f-4633-afa4-d2e1d98a149b,
+        lfm:element_7d305d72-0bd5-4248-bf7b-608c0b3c7776,
+        lfm:element_7d8bb4af-5c44-43a4-851e-322fc8cea3a1,
+        lfm:element_7e0d7257-6884-46a7-8604-f6c1a02738a5,
+        lfm:element_81efa06c-7cd1-47bb-ba94-b244ba27f2be,
+        lfm:element_843dc92b-a4a9-4f33-b939-dd967a924a84,
+        lfm:element_8cb78ad5-7834-4f77-a34f-339ed2b4adbe,
+        lfm:element_8de621a8-e5bd-4859-aa02-1f953e099f65,
+        lfm:element_9401248f-13e5-4fbb-bc78-339ebdcafc01,
+        lfm:element_956b171b-51db-44f2-815b-cfd64e4af5ae,
+        lfm:element_9a2443fb-200d-4d96-b6f4-b69da9955b28,
+        lfm:element_9d5175d4-5e72-42b1-a158-da69caf51ea7,
+        lfm:element_a363294c-b1f8-4e13-ad30-7d5bf5b43ad1,
+        lfm:element_a3bab343-60a3-4673-bd8d-03c78e3582fa,
+        lfm:element_a433f612-b9f8-4694-a773-f3096892321e,
+        lfm:element_a5efa169-1959-4b96-828c-de60f7446fcc,
+        lfm:element_aaabfbbf-358e-4a95-b8b3-11cb13825906,
+        lfm:element_b5f5cc1d-eed8-4884-a0c5-a89b52b93392,
+        lfm:element_b5fc9366-7adb-4c46-8140-19029134ea22,
+        lfm:element_bac2d41f-c70e-490d-8827-46c1767b079a,
+        lfm:element_bd12ca81-cc23-4a50-9562-b6e578791323,
+        lfm:element_be79417b-d243-416a-9a4e-02f41b496053,
+        lfm:element_bebb7085-aa67-47f0-b21f-d2009ce2776a,
+        lfm:element_c1926d85-8822-4748-8951-87d5b6363ee4,
+        lfm:element_c22160f1-1b2f-46ff-8c89-2b2b68fb94cf,
+        lfm:element_c23da175-317c-46e1-85ee-59fa990aeab4,
+        lfm:element_c454584c-4fdb-4fdd-91f4-f3ed9c0f78f5,
+        lfm:element_cf06dd1f-aec4-4fc5-aac4-351ae81ea23d,
+        lfm:element_cf736e94-1025-49eb-925b-4f6dc322d6c6,
+        lfm:element_cfdb1e0f-3d0c-4f75-857e-5f11b0d30ede,
+        lfm:element_d75dfb6c-6105-4a7e-be15-bd5964f359b2,
+        lfm:element_d82bfe95-fb7f-453a-871f-47f1da41df25,
+        lfm:element_d871b8e8-ecb5-4267-ab39-d180673c5781,
+        lfm:element_d8c804b3-9dfc-4fe0-aad8-17385735d0e3,
+        lfm:element_dcd41583-0bd9-4cec-b8ea-de44567d79ad,
+        lfm:element_de428eb1-4a69-4461-9c90-362d42c6d084,
+        lfm:element_df72e0a9-dfc2-494a-96a0-936fee088a7a,
+        lfm:element_e60adac0-6349-47b8-ae10-bb4f943a7927,
+        lfm:element_e9a0ff11-cef0-42d2-9fd4-125dd8f61fed,
+        lfm:element_f1e5c06c-97d8-4e0e-acb6-ef4fd29a9773,
+        lfm:element_f4e90572-3f06-4773-be8a-7df6ab5112e9,
+        lfm:element_f7589afb-9542-4faf-ad46-d91489bb7f69,
+        lfm:element_f8afb810-c8d4-4ead-9b3f-a253197e28a1,
+        lfm:element_fafbe35b-6563-4ac2-8ccd-2cd553912426,
+        lfm:element_fe22f258-3b7d-4c9f-9c90-190aa2847c5d,
+        lfm:element_ffbb475c-a0f1-4837-96a5-de0687130de1,
+        lfm:element_ffe13264-3c0d-4907-b51d-86556ae7535b .
+

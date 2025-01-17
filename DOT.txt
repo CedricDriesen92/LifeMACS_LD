@@ -1,0 +1,359 @@
+Damage Topology Ontology: Overviewback to ToC
+This ontology has the following classes and properties.
+
+Classes
+Causation   Damage   Damage Area   Damage Documentation   Damage Element   Damage Pattern   Defect   Description   External Resource   Inspection   Inspector   Structural Damage 
+Object Properties
+adjacent DamageElement   aggregates Damage Element   aggregates Damage Pattern   covered by documentation   covered by inspection   documentation from inspection   groups Damage Elements   has Causation   has Damage   has DamageArea   has DamageElement   has documentation   has Inspector 
+Data Properties
+description content   file path 
+Damage Topology Ontology: Descriptionback to ToC
+When a damage instance is defined using DOT, exactly three direct subclasses of dot:Damage should be related to the damage instance. First, a damage topology class has to be selected (dot:DamageElement or dot:DamageArea). Secondly, the kind of damage can be defined using either dot:UnclassifiedDamage or subclasses of dot:ClassifiedDamage that are defined in DOT extensions. Finally, a certain damage instance can impair the structural integrity (dot:StructuralDamage) or it does not relate to the structural capacities of the element (dot:Defect).
+DOT damage classes
+DOT damage classes and their usage
+Cross reference for Damage Topology Ontology classes, object properties and datatype propertiesback to ToC
+This section provides details for each class and property defined by Damage Topology Ontology.
+Classes
+Causation   Classified Damage   Damage   Damage Area   Damage Documentation   Damage Element   Damage Pattern   Defect   Description   External Resource   Inspection   Inspector   Structural Damage   Unclassified Damage 
+Causationcback to ToC or Class ToC
+IRI: https://w3id.org/dot#Causation
+
+Represents the causation of a damage. Should be extended with domain-specific subclasses.
+
+Is defined by
+https://w3id.org/dot#
+is in range of
+has Causation op
+Classified Damagecback to ToC or Class ToC
+IRI: https://w3id.org/dot#ClassifiedDamage
+
+A damage classification is used to denote the kind of damage. Subclasses of this class are defined in extensions such as CDO (Concrete Damage Ontology), NSO (the Natural Stone Ontology), etc.
+
+Is defined by
+https://w3id.org/dot#
+has super-classes
+Damage c
+is disjoint with
+Unclassified Damage c
+Damagecback to ToC or Class ToC
+IRI: https://w3id.org/dot#Damage
+
+Damage is the harm to a structure resulting in impairment or loss of function, usefulness or value. Instead of using dot:Damage, it is recommended to use one subclass of dot:Damage for respectively the damage topology (either dot:DamageArea or dot:DamageElement), the potential structural impact (either dot:StructuralDamage or dot:Defect) and the damage classification (either dot:UnclassifiedDamage or subclasses of dot:ClassifiedDamage).
+
+Is defined by
+https://w3id.org/dot#
+has sub-classes
+Classified Damage c, Damage Area c, Damage Element c, Defect c, Structural Damage c, Unclassified Damage c
+is in domain of
+has Causation op
+is in range of
+has Damage op
+Damage Areacback to ToC or Class ToC
+IRI: https://w3id.org/dot#DamageArea
+
+Area in a component where damage is located. Holds collection of multiple DamageElements or DamagePatterns. Used to be attached with simplified geometry.
+
+Is defined by
+https://w3id.org/dot#
+has super-classes
+Damage c
+is in domain of
+aggregates Damage Element op, aggregates Damage Pattern op
+is in range of
+has Damage Area op
+is disjoint with
+Damage Element c, Damage Pattern c
+Damage Documentationcback to ToC or Class ToC
+IRI: https://w3id.org/dot#Documentation
+
+Material or data that provides information or evidence about the structure and its components or that serves as a record. Should only be used for damage-related documentation.
+
+Is defined by
+https://w3id.org/dot#
+has sub-classes
+Description c, External Resource c
+is in range of
+covered by documentation op, has Documentation op
+Damage Elementcback to ToC or Class ToC
+IRI: https://w3id.org/dot#DamageElement
+
+Damage that is modeled on a very detailed level and belongs with other adjacent Damage Element instances to a broader damage area or damage pattern
+
+Is defined by
+https://w3id.org/dot#
+has super-classes
+Damage c
+is in domain of
+adjacent Damage Element op
+is in range of
+adjacent Damage Element op, aggregates Damage Element op, groups Damage Element op, has Damage Element op
+is disjoint with
+Damage Area c, Damage Pattern c
+Damage Patterncback to ToC or Class ToC
+IRI: https://w3id.org/dot#DamagePattern
+
+Defines a group of associated or physically connected instances of DamageElement. Used as class for grouping inside an instance of DamageArea.
+
+Is defined by
+https://w3id.org/dot#
+is in domain of
+groups Damage Element op
+is in range of
+aggregates Damage Pattern op
+is disjoint with
+Damage Area c, Damage Element c
+Defectcback to ToC or Class ToC
+IRI: https://w3id.org/dot#Defect
+
+Should be used on nodes that are already classified as dot:DamageArea or dot:DamageElement. Damage that does not impair the structural integrity of the structure, but can still have influence on the durability, usability and / or value.
+
+Is defined by
+https://w3id.org/dot#
+has super-classes
+Damage c
+is disjoint with
+Structural Damage c
+Descriptioncback to ToC or Class ToC
+IRI: https://w3id.org/dot#Description
+
+Short textual documentation about a Damage or Structure Element. Generally created by the inspecting person.
+
+Is defined by
+https://w3id.org/dot#
+has super-classes
+Damage Documentation c
+is in domain of
+description content dp
+External Resourcecback to ToC or Class ToC
+IRI: https://w3id.org/dot#ExternalResource
+
+Document that is stored in a separate file, referenced by an external path.
+
+Is defined by
+https://w3id.org/dot#
+has super-classes
+Damage Documentation c
+is in domain of
+file path dp
+Inspectioncback to ToC or Class ToC
+IRI: https://w3id.org/dot#Inspection
+
+Careful examination or scrutiny in which an existing construction or a part of it is inspected and detected damages are recorded. Should be repeated at regular time intervals.
+
+Is defined by
+https://w3id.org/dot#
+is in domain of
+has Inspector op, has Documentation op
+is in range of
+covered by inspection op
+Inspectorcback to ToC or Class ToC
+IRI: https://w3id.org/dot#Inspector
+
+A person who inspects constructions (for damages) or whose task it is to carry out inspections on constructions.
+
+Is defined by
+https://w3id.org/dot#
+has super-classes
+person c
+is in range of
+has Inspector op
+Structural Damagecback to ToC or Class ToC
+IRI: https://w3id.org/dot#StructuralDamage
+
+Should be used on nodes that are already classified as dot:DamageArea or dot:DamageElement. Damage that impairs the structural integrity of the structure.
+
+Is defined by
+https://w3id.org/dot#
+has super-classes
+Damage c
+is disjoint with
+Defect c
+Unclassified Damagecback to ToC or Class ToC
+IRI: https://w3id.org/dot#UnclassifiedDamage
+
+A dot:Damage instance that is not further classified with domain-specific classes (subclasses of dot:ClassifiedDamage). This class can be used in cases where the damage classification is unknown.
+
+Is defined by
+https://w3id.org/dot#
+has super-classes
+Damage c
+is disjoint with
+Classified Damage c
+Object Properties
+adjacent Damage Element   aggregates Damage Element   aggregates Damage Pattern   covered by documentation   covered by inspection   documentation from inspection   groups Damage Element   has Causation   has Damage   has Damage Area   has Damage Element   has Documentation   has Inspector 
+adjacent Damage Elementopback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#adjacentDamageElement
+
+Defines the relationship between two instances of DamageElement that are physically connected with each other.
+
+Is defined by
+https://w3id.org/dot#
+has characteristics: symmetric
+
+has domain
+Damage Element c
+has range
+Damage Element c
+aggregates Damage Elementopback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#aggregatesDamageElement
+
+A relationship between an instance of Damage Area and its consisting DamageElement instance.
+
+Is defined by
+https://w3id.org/dot#
+has domain
+Damage Area c
+has range
+Damage Element c
+has sub-property chains
+aggregates Damage Element op o adjacent Damage Element op
+aggregates Damage Pattern op o groups Damage Element op
+aggregates Damage Patternopback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#aggregatesDamagePattern
+
+A relationship between an instance of DamageArea and its consisting DamagePattern instance.
+
+Is defined by
+https://w3id.org/dot#
+has domain
+Damage Area c
+has range
+Damage Pattern c
+covered by documentationopback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#coveredInDocumentation
+
+Relationship between a Documentation and the relevant documented or inspected object (e.g. DamageArea or bot:Element). Should only be used for damage-relevant documentations.
+
+Is defined by
+https://w3id.org/dot#
+has range
+Damage Documentation c
+covered by inspectionopback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#coveredByInspection
+
+Relationship between a documented object (damage or component / zone) and the Inspection in which the object has been covered.
+
+Is defined by
+https://w3id.org/dot#
+has range
+Inspection c
+has sub-property chains
+covered by documentation op o documentation from inspection op
+documentation from inspectionopback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#documentationFromInspection
+
+Relationship between a Documentation and the Inspection to which the Documentation refers. Inverse object property of dot:hasDocumentation .
+
+Is defined by
+https://w3id.org/dot#
+is inverse of
+has Documentation op
+groups Damage Elementopback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#groupsDamageElement
+
+Groups instances of Damage Element that are physically connected in a DamagePattern.
+
+Is defined by
+https://w3id.org/dot#
+has domain
+Damage Pattern c
+has range
+Damage Element c
+has sub-property chains
+groups Damage Element op o adjacent Damage Element op
+has Causationopback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#hasCausation
+
+Relationship between a Damage and its Causation.
+
+Is defined by
+https://w3id.org/dot#
+has domain
+Damage c
+has range
+Causation c
+has Damageopback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#hasDamage
+
+Defines the relationship between an affected component or structure (e.g. bot:Element) and a Damage.
+
+Is defined by
+https://w3id.org/dot#
+has sub-properties
+has Damage Area op, has Damage Element op
+has range
+Damage c
+has Damage Areaopback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#hasDamageArea
+
+Defines the relationship between an affected component or structure (e.g. bot:Element) and a DamageArea.
+
+Is defined by
+https://w3id.org/dot#
+has super-properties
+has Damage op
+has range
+Damage Area c
+has Damage Elementopback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#hasDamageElement
+
+Defines the relationship between an affected component or structure (e.g. bot:Element) and a DamageElement.
+
+Is defined by
+https://w3id.org/dot#
+has super-properties
+has Damage op
+has range
+Damage Element c
+has sub-property chains
+has Damage Area op o aggregates Damage Element op
+has Documentationopback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#hasDocumentation
+
+Relationship between an Inspection and the corresponding Documentation
+
+Is defined by
+https://w3id.org/dot#
+has domain
+Inspection c
+has range
+Damage Documentation c
+is inverse of
+documentation from inspection op
+has Inspectoropback to ToC or Object Property ToC
+IRI: https://w3id.org/dot#hasInspector
+
+Relationship between an Inspector and the Inspection that has been performed by him.
+
+Is defined by
+https://w3id.org/dot#
+has domain
+Inspection c
+has range
+Inspector c
+Data Properties
+description content   file path 
+description contentdpback to ToC or Data Property ToC
+IRI: https://w3id.org/dot#descriptionContent
+
+Textual content used for the Description of a Structure Element or Damage.
+
+Is defined by
+https://w3id.org/dot#
+has super-properties
+description dp
+has domain
+Description c
+has range
+string
+file pathdpback to ToC or Data Property ToC
+IRI: https://w3id.org/dot#filePath
+
+Defines the unique location in a file system of an ExternalResource
+
+Is defined by
+https://w3id.org/dot#
+has domain
+External Resource c
+has range
+any u r i

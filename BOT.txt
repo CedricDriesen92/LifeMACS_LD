@@ -1,0 +1,644 @@
+1. Introduction
+This section is non-normative.
+
+Designing, planning, constructing and maintaining a building are tasks that involve multiple stakeholders each having their own interpretations and requirements for the common dataset. Furthermore, each stakeholder consumes, processes and manipulates information about the building during it's full life cycle.
+
+Several industries have interfaces to the construction industry and buildings in particular without this being their main industry. As there is often a need to describe some sensor, product, device in the context of the building in which it sits and as the building is itself also a feature of interest in the context of a smart city, there is a demand for a minimal, extendable ontology that describes anything in its context of a building.
+
+The Building Topology Ontology (BOT) is a minimal OWL DL [owl2-primer] ontology for defining relationships between the sub-components of a building. It was suggested as an extensible baseline for use along with more domain specific ontologies following general W3C principles of encouraging reuse and keeping the schema no more complex than necessary.
+
+BOT is from design scoped to describe topology specific to the buildings domain. It does not provide a generic description of topological relationships as, for instance, the Regional Connection Calculus (RCC) [Randell]. See also in this regard the discussion in the accompanying publication [[Rasmussen2020], Sec. 3.3] .
+
+2. Requirements
+This section is non-normative.
+
+Section to be consolidated with the Final Draft of the Linked Building Data Community Group Use Cases & Requirements [LBD-UCR]
+
+This section lists the set of competency questions the BOT ontology answers.
+
+Zones are areas with spatial 3D volumes, and include, Buildings, Storeys, and Spaces.
+Zones may contain other zones, Buildings may contain storeys, Storeys may contain spaces.
+Zones may intersect, or be adjacent to other zones.
+There are building elements, which may have sub elements.
+Zones may have elements, either contained, adjacent, or intersecting it.
+A adjacent zones and/or elements share some interface.
+Zones and Elements have a 3D Model (including geometry, material, etc.).
+3. Axiomatization
+This section introduces the specifications for BOT.
+
+3.1 Namespace
+The namespace for BOT terms is https://w3id.org/bot#
+
+The suggested prefix for the BOT namespace is bot
+
+The Turtle version of the BOT ontology is available at http://www.w3id.org/bot/bot.ttl
+
+3.2 Overview of Classes and Properties
+This section is non-normative.
+
+Classes: bot:Building , bot:Element , bot:Interface , bot:Site , bot:Space , bot:Storey , bot:Zone
+
+Object Properties: bot:adjacentElement , bot:adjacentZone , bot:containsElement , bot:containsZone , bot:interfaceOf , bot:intersectingElement , bot:intersectsZone , bot:has3DModel , bot:hasBuilding , bot:hasElement , bot:hasSubElement , bot:hasSpace , bot:hasStorey , bot:hasZeroPoint
+
+Datatype Properties: bot:hasSimple3DModel
+
+3.3 Zones and sub-zones
+3.3.1 Overview and Examples
+This section is non-normative.
+
+Zones are defined as a part of the physical world or a virtual world that is inherently both located in this world and has a 3D spatial extent. Four sub types of Zones are defined:
+
+Site: An area containing one or more buildings;
+Building: An independent unit of the built environment with a characteristic spatial structure;
+Storey: A level part of a building;
+Space: A limited three-dimensional extent defined physically or notionally.
+
+Zones
+Figure 1 Classes and relationships involved in Zones
+Zones must be understood as a Matryoshka doll principle. The bot:Site instance, <siteX>, contains one building, <buildingA>, specified by the bot:hasBuilding relationship. <buildingA> contains one storey, <storey01>, specified by the bot:hasStorey relationship. <storey01> contains two spaces, <spaceA12> and <spaceA13>, specified by the bot:hasSpace relationship.
+
+Spaces <spaceA12> and <spaceA13> are adjacent, which is specified by the bot:adjacentZone relationship.
+The transitive bot:containsZone relationship is a super-property of both bot:hasBuilding, bot:hasStorey and bot:hasSpace - therefore <siteX> contains all the other bot:Zone instances.
+A stairwell would be modeled as a bot:Zone, linked to the different bot:Storeys through the bot:intersectsZone relation.
+This specification does not restrict what an instance of the bot:Zone class can be. BOT may be used in conjunction with other ontologies to specify this. Examples include:
+
+
+A category of zones (e.g., office building)
+A specification of zones (e.g., office buildings with energy efficiency class above A)
+An actual zone (e.g., the kitchen in Marc's home)
+3.3.2 Specification
+This section introduces the following classes and properties:
+
+bot:adjacentZone, bot:Building, bot:containsZone, bot:hasBuilding, bot:hasSpace bot:hasStorey, bot:intersectsZone, bot:Site, bot:Space, bot:Storey, bot:Zone,
+
+3.3.2.1 bot:Zone
+IRI: https://w3id.org/bot#Zone
+
+a OWL Class
+
+Zone - A part of the physical world or a virtual world that is inherently both located in this world and has a 3D spatial extent; Sub-classes of bot:Zone include bot:Site, bot:Building, bot:Storey, or bot:Space. An instance of bot:Zone can contain other bot:Zone instances, making it possible to group or subdivide zones. An instance of bot:Zone can be adjacent to or intersecting other bot:Zone instances. Finally, a bot:Zone can instantiate three relations to bot:Element, which are either contained in (bot:containsElement), adjacent to it (bot:adjacentElement) or intersecting (bot:intersectingElement).
+Example	A site, a building, a space, an appartment or a fire cell.
+Disjoint with	bot:Element, bot:Interface
+3.3.2.2 bot:Site ⊑ bot:Zone
+IRI: https://w3id.org/bot#Site
+
+a OWL Class
+
+Site - A part of the physical world or a virtual world that is inherently both located in this world and having a 3D spatial extent. It is intended to contain or contains one or more buildings.
+Example	A hospital campus or a single family residential lot.
+Sub class of	bot:Zone
+Disjoint with	bot:Building, bot:Storey, bot:Space
+3.3.2.3 bot:Building ⊑ bot:Zone
+IRI: https://w3id.org/bot#Building
+
+a OWL Class
+
+Building - An independent unit of the built environment with a characteristic spatial structure, intended to serve at least one function or user activity [ISO-12006]. A bot:Building is a part of the physical world or a virtual world that is inherently both located in this world and having a 3D spatial extent, is contained in a building site, and can contain one or more storeys that are vertically connected.
+Example	A hospital or an office building.
+Sub class of	bot:Zone
+Disjoint with	bot:Site, bot:Storey, bot:Space
+3.3.2.4 bot:Storey ⊑ bot:Zone
+IRI: https://w3id.org/bot#Storey
+
+a OWL Class
+
+Storey - A part of the physical world or a virtual world that is inherently both located in this world and having a 3D spatial extent. A bot:Storey is contained in one or more buildings, and is intended to contain one or more spaces that are horizontally connected. Storeys of a building are connected by means of vertical connections such as elevators and stairs. A bot:Storey encompasses both zones above and below ground, for example, a building with 21 floors above ground, one ground floor and 3 basements is equal to the sentence: A building has 25 instances of bot:Storey.
+Example	The ground floor.
+Sub class of	bot:Zone
+Disjoint with	bot:Site, bot:Building, bot:Space
+3.3.2.5 bot:Space ⊑ bot:Zone
+IRI: https://w3id.org/bot#Space
+
+a OWL Class
+
+Space - A part of the physical world or a virtual world whose 3D spatial extent is bounded actually or theoretically, and provides for certain functions within the zone it is contained in.
+Example	A classroom or a kitchen.
+Sub class of	bot:Zone
+Disjoint with	bot:Site, bot:Building, bot:Storey
+3.3.2.6 bot:containsZone
+IRI: https://w3id.org/bot#containsZone
+
+a OWL Object Property
+
+contains zone - Relationship to the subzones of a major zone. A space zone could for instance be contained in a storey zone which is further contained in a building zone. bot:containsZone is a transitive property. This implies that in the previous example a bot:containsZone relationship holds between the space zone and the building zone.
+Domain	bot:Zone
+Range	bot:Zone
+Domain Includes	bot:Site, bot:Building, bot:Storey, bot:Space
+Range Includes	bot:Site, bot:Building, bot:Storey, bot:Space
+is Transitive
+3.3.2.7 bot:hasBuilding ⊑ bot:containsZone
+IRI: https://w3id.org/bot#hasBuilding
+
+a OWL Object Property
+
+has building - Relation to buildings contained in a zone. The typical domains of bot:hasBuilding are instances of bot:Site.
+Sub property of	bot:containsZone
+Domain	bot:Zone
+Range	bot:Building
+Domain Includes	bot:Site
+3.3.2.8 bot:hasStorey ⊑ bot:containsZone
+IRI: https://w3id.org/bot#hasStorey
+
+a OWL Object Property
+
+has storey - Relation to storeys contained in a zone. The typical domains of bot:hasStorey are instances of bot:Building.
+Sub property of	bot:containsZone
+Domain	bot:Zone
+Range	bot:Storey
+Domain Includes	bot:Building
+3.3.2.9 bot:hasSpace ⊑ bot:containsZone
+IRI: https://w3id.org/bot#hasSpace
+
+a OWL Object Property
+
+has space - Relation to spaces contained in a zone. The typical domains of bot:hasSpace are instances of bot:Storey or bot:Building.
+Sub property of	bot:containsZone
+Domain	bot:Zone
+Range	bot:Space
+Domain Includes	bot:Building, bot:Storey
+3.3.2.10 bot:adjacentZone
+IRI: https://w3id.org/bot#adjacentZone
+
+a OWL Object Property
+
+adjacent zone - Relationship between two zones that share a common interface, but do not intersect.
+Domain	bot:Zone
+Range	bot:Zone
+Domain Includes	bot:Site, bot:Building, bot:Storey, bot:Space
+Range Includes	bot:Site, bot:Building, bot:Storey, bot:Space
+Disjoint object properties	bot:intersectsZone
+is Symmetric
+3.3.2.11 bot:intersectsZone
+IRI: https://w3id.org/bot#intersectsZone
+
+a OWL Object Property
+
+intersects zone - Relationship between two zones whose 3D extent intersect. For example, a stairwell intersects different storeys.
+Domain	bot:Zone
+Range	bot:Zone
+Domain Includes	bot:Site, bot:Building, bot:Storey, bot:Space
+Range Includes	bot:Site, bot:Building, bot:Storey, bot:Space
+Disjoint object properties	bot:adjacentZone
+is Symmetric
+3.4 Elements
+3.4.1 Overview and Examples
+This section is non-normative.
+
+Building elements are physical parts of building constructions. Examples of elements include walls, doors, pipes, heaters, lights, smart sensors, tables, chairs.
+
+Elements can contain sub elements. Zones can contain elements, or be adjacent to elements.
+
+This specification does not restrict what an instance of the bot:Element class can be. BOT may be used in conjunction with other ontologies to specify this. Examples include:
+
+
+A category of elements (e.g., air conditioner with class A energy efficiency ratio)
+A specification of elements (e.g., air conditioner with energy efficiency ratio above B)
+A element in a specific catalogue (e.g., air conditioner with reference xyz manufactured by abc)
+An actual element (e.g., the air conditioner Marc installed yesterday at his home)
+3.4.2 Specification
+This section introduces the following classes and properties:
+
+bot:Element, bot:adjacentElement, bot:containsElement, bot:hasSubElement, bot:intersectingElement
+
+3.4.2.1 bot:Element
+IRI: https://w3id.org/bot#Element
+
+a OWL Class
+
+Element - Constituent of a construction entity with a characteristic technical function, form or position [[ISO-12006], 3.4.7].
+Example	Any product or device that is described in its context of a building. For example a wall, a chair or a temperature sensor.
+Disjoint with	bot:Zone, bot:Interface
+3.4.2.2 bot:hasSubElement
+IRI: https://w3id.org/bot#hasSubElement
+
+a OWL Object Property
+
+hosts element - Relation between two building elements, either one element hosting another (e.g. a wall hosts a window) or a subcomposition of a building element into smaller parts (e.g. an air handling unit has as a part a fan).
+Example	<wall> bot:hasSubElement <window> .
+Domain	bot:Element
+Range	bot:Element
+3.4.2.3 bot:hasElement
+IRI: https://w3id.org/bot#hasElement
+
+a OWL Object Property
+
+has element - Links a Zone to an Element that is either contained in, adjacent to or intersecting with the Zone. The intended use of this relationship is not to be stated explicitly, but to be inferred from its sub-properties. It will, for example, allow one to query for all the doors of a building given that they have an adjacency to spaces of the building.
+Domain	bot:Zone
+Range	bot:Element
+Sub property of Chain	bot:containsZone o bot:hasElement
+3.4.2.4 bot:containsElement ⊑ bot:hasElement
+IRI: https://w3id.org/bot#containsElement
+
+a OWL Object Property
+
+contains element - Relation to a building element contained in a zone.
+Sub property of	bot:hasElement
+Sub property of Chain	bot:containsZone o bot:containsElement
+3.4.2.5 bot:adjacentElement ⊑ bot:hasElement
+IRI: https://w3id.org/bot#adjacentElement
+
+a OWL Object Property
+
+adjacent element - Relation between a zone and its adjacent building elements, bounding the zone.
+Sub property of	bot:hasElement
+Disjoint object properties	bot:intersectingElement
+3.4.2.6 bot:intersectingElement ⊑ bot:hasElement
+IRI: https://w3id.org/bot#intersectingElement
+
+a OWL Object Property
+
+intersecting element - Relation between a Zone and a building Element that intersects it.
+Sub property of	bot:hasElement
+Disjoint object properties	bot:adjacentElement
+3.5 Interfaces
+3.5.1 Overview and Examples
+This section is non-normative.
+
+Interfaces are used in situations where it is necessary to quantify a relationship between two elements or zones or an element and a zone. The following figure provides an overview of the core classes and properties that are specifically related to modeling Interfaces.
+
+Interfaces
+Figure 2 Classes and relationships involved in Interfaces
+In the figure, there are two bot:Zone instances that are both adjacent to the same bot:Element instance <wall22>. To quantify the heat transfer areas between <spaceA12>/<wall22> and <zoneB>/<wall22> respectively, two interfaces, <interfaceA> and <interfaceB>, are introduced. Both interfaces are related to <wall22> through the bot:interfaceOf relationships, but their second bot:interfaceOf relationship is to either <spaceA12> or <zoneB>.
+
+3.5.2 Specification
+This section introduces the following classes and properties:
+
+bot:Interface, bot:interfaceOf
+
+3.5.2.1 bot:Interface
+IRI: https://w3id.org/bot#Interface
+
+a OWL Class
+
+Interface - A generic concept to qualify the relationship of two or more things in the world, where at least one is a building element or zone. Examples: (1) Qualification of heat transmission between zones through one or more building elements. This includes one-dimensional (surface) heat losses from one zone to another through a single building element, a two dimensional (line) loss from one zone to another through the connection in which the two elements meet or a three dimensional (point) loss from one zone to another through the connection where three elements (typically two walls and a slab) meet. (2) Connection of an electric device to the electric system of a building. (3) A door between one room and another.
+Example	A heat transfer area between a space and an adjacent wall, the pipe surface facing the space that the pipe passes through, a joint between two concrete elements or connection between a window and a wall.
+Disjoint with	bot:Zone, bot:Element
+3.5.2.2 bot:interfaceOf
+IRI: https://w3id.org/bot#interfaceOf
+
+a OWL Object Property
+
+interface of - Relationship between an interface and another thing (building zone, element or owl:Thing).
+Domain	bot:Interface
+Range Includes	bot:Zone, bot:Element
+3.6 3D Model
+3.6.1 Overview and Examples
+This section is non-normative.
+
+Any bot:Zone or bot:Element can be assigned a 3D Model (including geometry, material, etc.), using some existing data format for 3D models. Two properties are defined for this:
+
+The bot:hasSimple3DModel datatype property links a bot:Zone or bot:Element to a 3D Model encoded as a literal. Note that we encourage the use of URIs for mediatype with the IANA authority. For example https://www.iana.org/assignments/media-types/model/3mf for the mediatype model/3mf. Other mediatypes for OBJ, STP, IFC, W3D, etc. can be defined. If the data format is textual, then the lexical form of the 3D Model literal SHOULD be encoded as a Unicode [UNICODE] string, which SHOULD be in Normal Form C [NFC]. If the data format is binary, then the lexical form of the 3D Model literal SHOULD be encoded using a base32 encoding [rfc4648].
+The bot:has3DModel object property links a bot:Zone or bot:Element to some IRI that identifies a 3D Model. This 3D Model can then be described using some dedicated RDF vocabulary. Else, the 3D Model IRI could be dereferenceable, and when looking up the IRI one could retrieve a representation of the 3D Model with some existing data format for 3D models.
+3.6.2 Specification
+This section introduces the following classes and properties:
+
+bot:has3DModel, bot:hasSimple3DModel, bot:hasZeroPoint
+
+3.6.2.1 bot:hasZeroPoint
+IRI: https://w3id.org/bot#hasZeroPoint
+
+a OWL Object Property
+
+has Zero Point - Links a bot:Site to an instance that encodes the latitude and longitude of the Zero Point of the building site. This could be an instance of a wgs84:Point. The definition of GIS and geometry is not within the scope of BOT and an appropriate ontology needs to be selected here by the user. The use of this property is potentially ambiguous and it might be removed or revised in future editions of the ontology.
+Domain	bot:Site
+3.6.2.2 bot:hasSimple3DModel
+IRI: https://w3id.org/bot#hasSimple3DModel
+
+a OWL Datatype Property
+
+has Simple 3D Model - Links any bot:Zone or bot:Element to a 3D Model encoded as a literal.
+Domain Includes	bot:Zone	bot:Element
+3.6.2.3 bot:has3DModel
+IRI: https://w3id.org/bot#has3DModel
+
+a OWL Object Property
+
+has 3D Model - Links any bot:Zone or bot:Element to a IRI that identifies its 3D Model. This 3D Model can then be described using some dedicated RDF vocabulary. Else, the 3D Model IRI could be dereferenceable, and when looking up the IRI one could retrieve a representation of the 3D Model with some existing data format for 3D models.
+Domain Includes	bot:Zone	bot:Element
+4. Alignment Modules
+As BOT is proposed as a central ontology in the domain of AEC/FM industry, alignments with existing domains are provided as separate modules.
+
+The evolution of the alignment definitions and their rationale is described in detail in the publications by [Schneider-2017] and [Schneider-2019].
+
+4.1 BRICK Alignment Module
+This section is non-normative.
+
+An alignment of BOT to the BRICK ontology is available at https://raw.githubusercontent.com/w3c-lbd-cg/bot/master/BRICKAlignment.ttl.
+
+4.2 DERIROOMS Alignment Module
+This section is non-normative.
+
+An alignment of BOT to the DERIROOMS ontology is available at https://raw.githubusercontent.com/w3c-lbd-cg/bot/master/DERIROOMAlignment.ttl.
+
+4.3 DogOnt Alignment Module
+This section is non-normative.
+
+An alignment of BOT to the DogOnt ontology is available at https://raw.githubusercontent.com/w3c-lbd-cg/bot/master/DOGONTAlignment.ttl.
+
+4.4 DUL Alignment Module
+This section is non-normative.
+
+An alignment of BOT to the DUL ontology is available at https://raw.githubusercontent.com/w3c-lbd-cg/bot/master/DULAlignment.ttl.
+
+4.5 ifcOWL Alignment Module
+This section is non-normative.
+
+An alignment of BOT to the ifcOWL ontology is available at https://raw.githubusercontent.com/w3c-lbd-cg/bot/master/IFCOWL4_ADD2Alignment.ttl.
+
+4.6 SAREF4Bldg Alignment Module
+This section is non-normative.
+
+An alignment of BOT to the SAREF4Bldg ontology is available at https://raw.githubusercontent.com/w3c-lbd-cg/bot/master/SAREF4BLDGAlignment.ttl.
+
+4.7 ThinkHome Alignment Module
+This section is non-normative.
+
+An alignment of BOT to the ThinkHome ontology is available at https://raw.githubusercontent.com/w3c-lbd-cg/bot/master/THINKHOMEAlignment.ttl.
+
+4.8 Realestate Core Alignment Module
+This section is non-normative.
+
+An alignment of BOT to the Realestate Core ontology is available at https://raw.githubusercontent.com/w3c-lbd-cg/bot/master/RECAlignment.ttl.
+
+4.9 DUL Alignment Module
+This section is non-normative.
+
+An alignment of BOT to Dolce Ultralite ontology (DUL) is available at https://raw.githubusercontent.com/w3c-lbd-cg/bot/master/DULAlignment.ttl. While other alignments can be seen as extending domain ontologies from BOT, this alignment extends BOT from DUL.
+
+5. Common Modeling Questions
+This section is non-normative.
+
+This section informally discusses how to handle common modeling questions such as zone- and element adjacencies and containment or the use of interfaces.
+5.1 Zones - appartment example
+BOT defines a Zone as "A part of the physical world or a virtual world that is inherently both located in this world and has a 3D spatial extent. [...]". Any area of interest is hence a bot:Zone. A building itself is a zone and so are all the spaces within it. Grouping sub-zones into one zone can be handled with the bot:containsZone property. In the example below, bot:Zone is used to group spaces into an appartment.
+
+Example 1
+@prefix bot: <https://w3id.org/bot#> .
+
+<Bathroom_1>   a bot:Space .
+<Bedroom_1>    a bot:Space .
+<Kitchen_1>    a bot:Space .
+<LivingRoom_1> a bot:Space .
+
+<Appartment_A> a bot:Zone ;
+    bot:containsZone <Bathroom_1> , <Bedroom_1> , <Kitchen_1> , <LivingRoom_1> .
+5.2 Stairwell
+A stairwell stretches across the full height of a building and intersects with all the storeys it serves. Modeling the space inside a stairwell can be tricky since it is not just assosiated to one single storey like most other spaces.
+
+In most BIM authoring tools the stairwell space would just be located on the base level and hence belong to this storey. In BOT, however, we have the concept of interfaces that we can use to model the relationships to the different storeys. See example below:
+
+Reference: GitHub issue
+
+Interactive example
+
+Example 2
+@prefix bot:  <https://w3id.org/bot#> .
+@prefix ex:   <https://example.org/bot#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# TBOX
+ex:ZoneIntersection rdfs:subClassOf     bot:Interface .
+ex:intersectsZone   rdfs:subPropertyOf  bot:interfaceOf ;
+                    rdfs:domain         ex:ZoneIntersection ;
+                    rdfs:range          bot:Zone .
+
+# ABOX
+<Stairwell>  a bot:Space .
+<Space_A>    a bot:Space .
+<Space_B>    a bot:Space .
+<Builing_A>  a bot:Building .
+<Level_1>    a bot:Storey .
+<Level_2>    a bot:Storey .
+<Level_3>    a bot:Storey .
+
+# building / storeys relations
+<Builing_A> bot:hasStorey <Level_1> , <Level_2> , <Level_3> .
+
+# regular spaces
+<Level_2> bot:hasSpace <Space_A> , <Space_B> .
+
+# special case
+<Builing_A> bot:hasSpace <Stairwell> .
+<wellLvl1> ex:intersectsZone <Level_1> , <Stairwell> .
+<wellLvl2> ex:intersectsZone <Level_2> , <Stairwell> .
+<wellLvl3> ex:intersectsZone <Level_3> , <Stairwell> .
+Query to get all spaces that are either located at or intersects with a specific storey:
+Example 3
+PREFIX bot:  <https://w3id.org/bot#>
+PREFIX ex:   <https://example.org/bot#>
+
+SELECT ?space
+WHERE {
+    BIND(<Level_2> AS ?storey)
+    {
+    ?i ex:intersectsZone ?storey ;
+        ex:intersectsZone ?space .
+    } UNION {
+        ?storey bot:hasSpace ?space .
+    }
+    FILTER(?space != ?storey)
+}
+5.3 Windows
+Windows are sub elements of the wall in which they are hosted, but there are no logics to infer that because the wall is adjacent to some space, so are the windows hosted in the wall. The reason for this is that a wall can span multiple storeys and hence be adjacent to several spaces where the window should only be adjacent to one space.
+
+Example 4
+@prefix bot:  <https://w3id.org/bot#> .
+A. Implementation Report
+The following ontologies and softwares produce or consume terms from the BOT ontology.
+
+B. Complete Examples
+B.1 Two storey building
+A SPARQL-visualizer example is available here.
+
+Example 5
+@prefix bot: <https://w3id.org/bot#> .
+
+# A simple two storey building with two spaces at each floor.
+
+<SiteA> a bot:Site ;
+    bot:hasBuilding <BuildingA> .
+
+# Since the range of bot:hasBuilding is bot:Building it is 
+# automatically inferred that <BuildingA> is a bot:Building.
+
+<BuildingA> bot:hasStorey <Storey00> , <Storey01> .
+
+# Since the range of bot:hasStorey is bot:Storey it is automatically 
+# inferred that <Storey00> and <Storey01> are instances of bot:Storey.
+
+<Storey00> bot:hasSpace <SpaceA> , <SpaceB> .
+
+<Storey01> bot:hasSpace <SpaceC> , <SpaceD> .
+
+# Since the range of bot:hasSpace is bot:Space it is automatically inferred
+# that <SpaceA>, <SpaceB>, <SpaceC> and <SpaceD> are instances of bot:Space.
+
+# Since bot:Site, bot:Building, bot:Storey and bot:Building are all sub classes of
+# bot:Zone, <SiteA>, <BuildingA>, <Storey00> , <Storey01>, <SpaceA>, <SpaceB>,
+# <SpaceC> and <SpaceD> are all instances of bot:Zone
+
+# Since bot:hasBuilding, bot:hasStorey and bot:hasSpace are all sub properties of 
+# bot:containsZone the following can also be deduced:
+# 
+# <SiteA> bot:containsZone <BuildingA> .
+# <BuildingA> bot:containsZone <Storey00> , <Storey01> .
+B.2 Extending BOT
+BOT may be extended either by specifying subclasses, or subproperties, of BOT elements.
+
+The following snippet extends bot:Element with h:SpaceHeater.
+
+Example 6
+@prefix bot:  <https://w3id.org/bot#> .
+@prefix h:  <https://example.org/heatingSystem#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+h:SpaceHeater a owl:Class ;
+    rdfs:subClassOf bot:Element .
+The following snippet defines h:heatedBy as a subproperty of bot:containsElement.
+
+Example 7
+@prefix bot:  <https://w3id.org/bot#> .
+@prefix h:  <https://example.org/heatingSystem#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+
+h:SpaceHeater a owl:Class .
+h:heatedBy a owl:ObjectProperty ;
+             rdfs:subPropertyOf bot:containsElement ;
+             rdfs:range h:SpaceHeater .
+B.3 Flat from Open Smart Home Data Set
+The following example describes a flat in a multi family dwelling modeled in the Open Smart Home data set (OSH) the data set is available here.
+
+Example 8
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dog: <http://elite.polito.it/ontologies/dogont.owl#> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix osh: <https://w3id.org/ibp/osh/OpenSmartHomeDataSet#> .
+@prefix : <https://w3id.org/ibp/osh/OpenSmartHomeDataSet#> .
+
+[] rdf:type owl:Ontology ;
+    dcterms:title "Excerpt of the Open Smart Home Data set ontology."@en ;
+    rdfs:seeAlso <https://github.com/TechnicalBuildingSystems/OpenSmartHomeData> 
+    dcterms:license <http://creativecommons.org/licenses/by-sa/4.0> .
+
+:Site1  rdf:type owl:NamedIndividual ,
+                bot:Site ;
+        rdfs:label "Site of the building"@en ;       
+        bot:hasBuilding :Building1 .
+        
+:Level1 rdf:type owl:NamedIndividual ,
+                    bot:Storey ;
+        rdfs:label "Ground floor of the building"@en .
+
+:Level2 rdf:type owl:NamedIndividual ,
+                    bot:Storey ;
+        rdfs:label "First floor of the building"@en .
+        
+:Building1 rdf:type owl:NamedIndividual ,
+                        bot:Building ;
+        rdfs:label "Real building with smart home system."@en ;
+           bot:hasStorey :Level1 ,
+                         :Level2 ;
+           bot:hasSpace  :Kitchen ,
+                         :Lobby ,
+                         :Room1 ,
+                         :Room2 ,
+                         :Room3 ,
+                         :Toilet ,
+                         :RoomBeforeToilet ,
+                         :Staircase ,
+                         :Bathroom ;
+        geo:lat "49.460899" ;
+        geo:long "11.069208" ;
+        geo:alt "300" .
+
+# Rooms without sensors
+:Lobby rdf:type owl:NamedIndividual ,
+                  bot:Space ,
+                  dog:Lobby ;
+        rdfs:label "Lobby in flat with no sensors"@en .
+:RoomBeforeToilet rdf:type owl:NamedIndividual ,
+                  bot:Space ,
+                  dog:Room .
+
+:Staircase rdf:type owl:NamedIndividual ,
+                  bot:Space .
+                         
+# Kitchen
+:Kitchen rdf:type owl:NamedIndividual ,
+                  bot:Space ,
+                  dog:Kitchen ,
+                  sosa:FeatureOfInterest ;
+        bot:containsElement :Kitchen-temp-Sensor ,
+                            :Kitchen-tempT-Sensor ,
+                            :Kitchen-humid-Sensor ,
+                            :Kitchen-brigh-Sensor ,
+                            :Kitchen-tempS-Actuator ,
+                            :Kitchen-heater .
+
+# Room1
+:Room1 rdf:type owl:NamedIndividual ,
+                  bot:Space ,
+                  dog:Bedroom ,
+                  sosa:FeatureOfInterest ;
+        bot:containsElement :Room1-temp-Sensor ,
+                            :Room1-tempT-Sensor ,
+                            :Room1-humid-Sensor ,
+                            :Room1-brigh-Sensor ,
+                            :Room1-tempS-Actuator ,
+                            :Room1-heater .
+# Room2
+:Room2 rdf:type owl:NamedIndividual ,
+                  bot:Space ,
+                  dog:Livingroom ,
+                  sosa:FeatureOfInterest ;
+        bot:containsElement :Room2-temp-Sensor ,
+                            :Room2-tempT-Sensor ,
+                            :Room2-humid-Sensor ,
+                            :Room2-brigh-Sensor ,
+                            :Room2-tempS-Actuator ,
+                            :Room2-heater .
+
+# Room3
+:Room3 rdf:type owl:NamedIndividual ,
+                  bot:Space ,
+                  dog:Livingroom ,
+                  sosa:FeatureOfInterest ;
+        bot:containsElement :Room3-temp-Sensor ,
+                            :Room3-outTemp-OutSensor ,
+                            :Room3-tempTli-Sensor ,
+                            :Room3-tempTre-Sensor ,
+                            :Room3-humid-Sensor ,
+                            :Room3-brigh-Sensor ,
+                            :Room3-tempS-Actuator ,
+                            :Room3-heater .
+
+# Bathroom
+:Bathroom rdf:type owl:NamedIndividual ,
+                  bot:Space ,
+                  dog:Bathroom ,
+                  sosa:FeatureOfInterest ;
+        bot:containsElement :Bathroom-temp-Sensor ,
+                            :Bathroom-tempT-Sensor ,
+                            :Bathroom-humid-Sensor ,
+                            :Bathroom-brigh-Sensor ,
+                            :Bathroom-tempS-Actuator ,
+                            :Bathroom-heater .
+
+# Toilet
+:Toilet rdf:type owl:NamedIndividual ,
+                  bot:Space ,
+                  dog:Bathroom ,
+                  sosa:FeatureOfInterest ;
+        bot:containsElement :Toilet-temp-Sensor ,
+                            :Toilet-tempT-Sensor ,
+                            :Toilet-humid-Sensor ,
+                            :Toilet-brigh-Sensor ,
+                            :Toilet-tempS-Actuator ,
+                            :Toilet-heater .

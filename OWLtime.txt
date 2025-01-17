@@ -1,0 +1,176 @@
+Temporal information is important in most real world applications. For example, the date is always part of an online order. When you rent a car it is for specific dates. Events in the world occur at specific times and usually have a finite duration. Transactions occur in a sequence, with the current state of a system depending on the exact history of all the transactions. Knowledge of the temporal relationships between transactions, events, travel and orders is often critical. OWL-Time has been developed in response to this need, for describing the temporal properties of any resource denoted using a web identifier (URI), including web-pages and real-world things if desired. OWL-Time focusses particularly on temporal ordering relationships. While these are implicit in all temporal descriptions, OWL-Time provides specific predicates to support, or to make explicit the results of, reasoning over the order or sequence of temporal entities.
+
+There is a great deal of relevant existing work, some very closely related. ISO 8601 [iso8601] provides a basis for encoding time position and extent in a character string, using the most common modern calendar-clock system. Datatypes in XML Schema [xmlschema11-2] use a subset of the ISO 8601 format in order to pack multi-element values into a compact literal. Functions and operators on durations, and on dates and times, encoded in these ways are available in XPath and XQuery [xpath-functions-31]. XSLT [xslt20] also provides formatting functions for times and dates, with explicit support for the specified language, calendar and country. Some of the XML Schema datatypes are built-in to OWL2 [owl2-quick-reference], so the XPath and XQuery functions may be used on basic OWL data.
+
+OWL-Time makes use of these encodings, but also provides representations in which the elements of a date and time are put into separately addressable resources, which can help with queries and reasoning applications. OWL-Time also supports other representations of temporal position and duration, including temporal coordinates (scaled position on a continuous temporal axis) and ordinal times (named positions or periods). This includes relaxing the expectation from the original version that dates must use the Gregorian calendar. However, OWL-Time has a particular focus on ordering relations ("temporal topology"), which is not supported explicitly in any of the date-time encodings.
+
+A first-order logic axiomatization of the core of this ontology is available in [hp-04]. This document presents the OWL encodings of the ontology, with some additions.
+
+This version of OWL-Time was developed in the Spatial Data on the Web Working Group (a joint activity involving W3C and the Open Geospatial Consortium). The ontology is based on the draft by Hobbs and Pan [owl-time-20060927], incorporating modifications proposed by Cox [co-15] to support more general temporal positions, along with other minor improvements. The substantial changes are listed in the change-log. The specification document has been completely re-written.
+
+2. Notation and namespaces
+Classes and properties from the Time Ontology are denoted in this specification using Compact URIs [curie].
+
+The namespace for OWL-Time is http://www.w3.org/2006/time#. RDF representations of OWL-Time in various serializations are available at the namespace URI. OWL-Time does not re-use elements from any other vocabularies, but does use some built-in datatypes from OWL and some additional types from XML Schema Part 2.
+
+The table below indicates the full list of namespaces and prefixes used in this document.
+
+Prefix	Namespace
+ex	http://example.org/time/
+geol	http://example.org/geologic/
+greg	http://www.w3.org/ns/time/gregorian#
+owl	http://www.w3.org/2002/07/owl#
+prov	http://www.w3.org/ns/prov#
+rdf	http://www.w3.org/1999/02/22-rdf-syntax-ns#
+rdfs	http://www.w3.org/2000/01/rdf-schema#
+time or
+no prefix	http://www.w3.org/2006/time#
+xsd	http://www.w3.org/2001/XMLSchema#
+Where class descriptions include local restrictions on properties, these are described using the OWL 2 Manchester Syntax [owl2-manchester-syntax].
+
+Examples and other code fragments are serialized using RDF 1.1 Turtle notation [turtle].
+
+3. Principles and vocabulary overview
+This section is non-normative.
+
+3.1 Topological Temporal Relations
+The basic structure of the ontology is based on an algebra of binary relations on intervals (e.g., meets, overlaps, during) developed by Allen [al-84], [af-97] for representing qualitative temporal information, and to address the problem of reasoning about such information.
+
+The ontology starts with a class :TemporalEntity with properties :hasBeginning and :hasEnd that link to the temporal instants that define its limits, and :hasTemporalDuration to describe its extent. There are two subclasses: :Interval and :Instant, and they are the only two subclasses of :TemporalEntity. Intervals are things with extent. Instants are point-like in that they have no interior points, but it is generally safe to think of an instant as an interval with zero length, where the beginning and end are the same.
+
+This idea - that time intervals are the more general case and time instants are just a limited specialization - is the first key contribution of Allen's analysis.
+
+The class :Interval has one subclass :ProperInterval, which corresponds with the common understanding of intervals, in that the beginning and end are distinct, and whose membership is therefore disjoint from :Instant.
+
+UML-style diagram of temporal entity classes
+Figure 1 Core model of temporal entities.
+The class :ProperInterval also has one subclass, :DateTimeInterval. The position and extent of a :DateTimeInterval is an element in a :GeneralDateTimeDescription.
+
+Relations between intervals are the critical logic provided by Allen's analysis, and implemented in the ontology. Relations between intervals can be defined in a relatively straightforward fashion in terms of :before and identity on the beginning and end points. The thirteen elementary relations shown below are the second key contribution of Allen's analysis. These support unambiguous expression of all possible relations between temporal entities, which allows the computation of any relative position or sequence. Note that the standard interval calculus assumes all intervals are proper, so their beginning and end are different.
+
+Schematic of Interval Relations
+Figure 2 Thirteen elementary possible relations between time periods [af-97].
+Two additional relations: In (the union of During, Starts and Finishes) and Disjoint (the union of Before and After) are not shown in the figure but are included in the ontology.
+
+The properties :hasTemporalDuration, :hasBeginning and :hasEnd, together with a fourth generic property :hasTime, support the association of temporal information with any temporal entity, such as an activity or event, or other entity. These provide a standard way to attach time information to things, which may be used directly in applications if suitable, or specialized if needed.
+
+3.2 Temporal reference systems, clocks, calendars
+The duration of a TemporalEntity may be given using the datatype xsd:duration and the position of an Instant may be given using the datatype xsd:dateTimeStamp, which is built in to OWL 2 [owl2-syntax]. These both use the conventional notions of temporal periods (years, months, weeks ... seconds), the Gregorian calendar, and the 24-hour clock. The lexical representations use [iso8601] style notation, but ignoring leap seconds, which are explicitly mandated by the international standard.
+
+While this satisfies most web applications, many other calendars and temporal reference systems are used in particular cultural and scholarly contexts. For example, the Julian calendar was used throughout Europe until the 16th century, and is still used for computing key dates in some orthodox Christian communities. Lunisolar (e.g. Hebrew) and lunar (e.g. Islamic) calendars are currently in use in some communities, and many similar have been used historically. Ancient Chinese calendars as well as the French revolutionary calendar used 10-day weeks. In scientific and technical applications, Julian date counts the number of days since the beginning of 4713 BCE, and Loran-C, Unix and GPS time are based on seconds counted from a specified origin in 1958, 1970 and 1980, respectively, with GPS time represented using a pair of numbers for week number plus seconds into week. Archaeological and geological applications use chronometric scales based on years counted backwards from ‘the present’ (defined as 1950 for radiocarbon dating [rc-14]), or using named periods associated with specified correlation markers ([cr-05], [cr-14], [mf-13]). Dynastic calendars (counting years within eras defined by the reign of a monarch or dynasty) were used in many cultures. In order to support these more general applications, the representation of temporal position and duration must be flexible, and annotated with the temporal reference system in use.
+
+A set of ordered intervals (e.g. named dynasties, geological periods, geomagnetic reversals, tree rings) can make a simple form of temporal reference system that supports logical reasoning, known as an ordinal temporal reference system [iso19108].
+
+Measurement of duration needs a clock. In its most general form a clock is just a regularly repeating physical event ('tick') and a counting mechanism for the 'ticks'. These counts may be used to logically relate two events and to calculate a duration between the events.
+
+A calendar is a set of algorithms that enables clock counts to be converted into practical everyday dates and times related to the movement of astronomical bodies (day, month, year).
+
+Note
+As astronomically based calendars try to fit inconvenient durations into a usable regular system of counting cycles, 'intercalations' are often used to re-align the calendar's repeating patterns with astronomical events. These intercalations may be of different durations depending on the calendar, such as leap seconds, leap days, or even a group of days. Leap days are explicit and leap seconds implicit in the Gregorian calendar, which underlies the model used in several classes in OWL-Time. A general treatment of intercalations is beyond the scope of this ontology.
+
+For many purposes it is convenient to make temporal calculations in terms of clock durations that exceed everyday units such as days, weeks, months and years, using a representation of temporal position in a temporal coordinate system [iso19108], or temporal coordinate reference system [iso-19111-2019], [ogc-topic-2], i.e. on a number line with a specified origin, such as Julian date, or Unix time. This may be converted to calendar units when necessary for human consumption.
+
+Nevertheless, in practice much temporal information is not well-defined, in that there may be no clear statement about the assumed underlying calendar and clock.
+
+3.3 Time position
+OWL 2 has two built-in datatypes relating to time: xsd:dateTime and xsd:dateTimeStamp [owl2-syntax]. Other XSD types such as xsd:date, xsd:gYear and xsd:gYearMonth [xmlschema11-2] are also commonly used in OWL applications. These provide for a compact representation of time positions using the conventional Gregorian calendar and 24-hour clock, with timezone offset from UTC.
+
+Four classes in the ontology support an explicit description of temporal position. :TemporalPosition is the common super-class, with a property :hasTRS to indicate the temporal reference system in use. :TimePosition has properties to alternatively describe the position using a number (i.e. a temporal coordinate), or a nominal value (e.g. geologic time period, dynastic name, archeological era). :GeneralDateTimeDescription has a set of properties to specify a date-time using calendar and clock elements. Its subclass :DateTimeDescription fixes the temporal reference system to the Gregorian calendar.
+
+UML-style diagram of classes for temporal position
+Figure 3 Classes for temporal position.
+Following Allen's first key idea described above, even a time position has a finite extent, corresponding to the precision or temporal unit used. Thus, a :GeneralDateTimeDescription or :DateTimeDescription has a duration corresponding to the value of its :unitType.
+
+3.4 Duration
+The duration of an interval (or temporal sequence) can have many different descriptions. An interval can be 1 day 2 hours, or 26 hours, or 1560 minutes, and so on. It is useful to be able to talk about these descriptions in a convenient way as independent objects, and to talk about their equivalences. The extent of an interval can be given using multiple duration descriptions or individual durations (e.g., 2 days, 48 hours) , but these must all describe the same amount of time.
+
+Four classes support the description of the duration of an entity. :TemporalDuration is the common super-class. :Duration has properties to describe the duration using a scaled number (i.e. a temporal quantity). :GeneralDurationDescription has a set of properties to specify a duration using calendar and clock elements, the definitions of which are given in the associated TRS description. Its subclass :DurationDescription fixes the temporal reference system to the Gregorian calendar, so the :hasTRS property may be omitted on individuals from this class.
+
+:TemporalUnit is a standard duration which is used to scale a length of time, and to capture its granularity or precision.
+
+UML representation of Temporal Duration and sub-classes
+Figure 4 Classes for temporal duration.
+We use two different sets of properties for :GeneralDateTimeDescription or :DateTimeDescription, and :GeneralDurationDescription or :DurationDescription, because their ranges are different. For example, :year (in :DateTimeDescription) has a range of xsd:gYear which is a position in the Gregorian calendar, while :years (in :DurationDescription) has a range of xsd:decimal so that you can say "duration of 2.5 years".
+
+
+Items in italics were added in the 2017 revision of OWL-Time and are not yet widely used. These may be considered features at risk.
+
+A.1 Classes (subclass relations)
+:TemporalEntity
+:Instant
+:Interval
+:ProperInterval
+:DateTimeInterval
+:TemporalPosition
+:TimePosition
+:GeneralDateTimeDescription
+:DateTimeDescription
+:MonthOfYear
+:TemporalDuration
+:Duration
+:GeneralDurationDescription
+:DurationDescription
+:TemporalUnit
+:TRS
+:TimeZone
+:DayOfWeek
+A.2 Properties (sorted by domain value)
+Property Name	Domain	Range
+:hasTime		:TemporalEntity
+:hasBeginning	:TemporalEntity	:Instant
+:hasEnd	:TemporalEntity	:Instant
+:hasTemporalDuration	:TemporalEntity	:TemporalDuration
+:hasDuration	:TemporalEntity	:Duration
+:hasDurationDescription	:TemporalEntity	:GeneralDurationDescription
+:hasXSDDuration	:TemporalEntity	xsd:duration
+:before	:TemporalEntity	:TemporalEntity
+:after	:TemporalEntity	:TemporalEntity
+:inside	:Interval	:Instant
+:intervalEquals	:ProperInterval	:ProperInterval
+:intervalDisjoint	:ProperInterval	:ProperInterval
+:intervalAfter	:ProperInterval	:ProperInterval
+:intervalBefore	:ProperInterval	:ProperInterval
+:intervalMeets	:ProperInterval	:ProperInterval
+:intervalMetBy	:ProperInterval	:ProperInterval
+:intervalOverlaps	:ProperInterval	:ProperInterval
+:intervalOverlappedBy	:ProperInterval	:ProperInterval
+:intervalStarts	:ProperInterval	:ProperInterval
+:intervalStartedBy	:ProperInterval	:ProperInterval
+:intervalFinishes	:ProperInterval	:ProperInterval
+:intervalFinishedBy	:ProperInterval	:ProperInterval
+:intervalContains	:ProperInterval	:ProperInterval
+:intervalDuring	:ProperInterval	:ProperInterval
+:intervalIn	:ProperInterval	:ProperInterval
+:hasDateTimeDescription	:DateTimeInterval	:GeneralDateTimeDescription
+:xsdDateTime (deprecated)	:DateTimeInterval	xsd:dateTime
+:inTemporalPosition	:Instant	:TemporalPosition
+:inTimePosition	:Instant	:TimePosition
+:inDateTime	:Instant	:GeneralDateTimeDescription
+:inXSDDate	:Instant	xsd:date
+:inXSDDateTime (deprecated)	:Instant	xsd:dateTime
+:inXSDDateTimeStamp	:Instant	xsd:dateTimeStamp
+:inXSDgYearMonth	:Instant	xsd:gYearMonth
+:inXSDgYear	:Instant	xsd:gYear
+:numericDuration	:Duration	xsd:decimal
+:unitType	:Duration or :GeneralDateTimeDescription	:TemporalUnit
+:years	:GeneralDurationDescription	xsd:decimal
+:months	:GeneralDurationDescription	xsd:decimal
+:weeks	:GeneralDurationDescription	xsd:decimal
+:days	:GeneralDurationDescription	xsd:decimal
+:hours	:GeneralDurationDescription	xsd:decimal
+:minutes	:GeneralDurationDescription	xsd:decimal
+:seconds	:GeneralDurationDescription	xsd:decimal
+:numericPosition	:TimePosition	xsd:decimal
+:nominalPosition	:TimePosition	xsd:string
+:timeZone	:GeneralDateTimeDescription	:TimeZone
+:year	:GeneralDateTimeDescription	
+:month	:GeneralDateTimeDescription	
+:day	:GeneralDateTimeDescription	
+:hour	:GeneralDateTimeDescription	xsd:nonNegativeInteger
+:minute	:GeneralDateTimeDescription	xsd:nonNegativeInteger
+:second	:GeneralDateTimeDescription	xsd:decimal
+:week	:GeneralDateTimeDescription	xsd:nonNegativeInteger
+:dayOfYear	:GeneralDateTimeDescription	xsd:nonNegativeInteger
+:dayOfWeek	:GeneralDateTimeDescription	:DayOfWeek
+:monthOfYear	:GeneralDateTimeDescription	:MonthOfYear
+:hasTRS	:TemporalPosition or :GeneralDurationDescription	:TRS

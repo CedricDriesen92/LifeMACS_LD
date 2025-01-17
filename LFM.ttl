@@ -1,0 +1,190 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix lfm: <https://w3id.org/lfm#> .
+@prefix bot: <https://w3id.org/bot#> .
+@prefix opm: <http://www.w3.org/ns/opm#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix dot: <https://w3id.org/dot#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+
+# Ontology Definition
+lfm: rdf:type owl:Ontology ;
+    dcterms:title "LifeMACS Ontology"@en ;
+    dcterms:description "Ontology for the LifeMACS project, focused on life-cycle methodology for assessment of concrete structures."@en ;
+    dcterms:created "2024-04-17"^^xsd:date ;
+    owl:versionInfo "1.0.0" ;
+    owl:imports bot: ;
+    owl:imports opm: ;
+    owl:imports sosa: ;
+    owl:imports dot: ;
+    owl:imports time: .
+
+# Classes
+
+# Bayesian Model Classes
+lfm:BayesianModel rdf:type owl:Class ;
+    rdfs:label "Bayesian Model"@en ;
+    rdfs:comment "A probabilistic model using Bayesian inference."@en .
+
+lfm:ProbabilityDistribution rdf:type owl:Class ;
+    rdfs:label "Probability Distribution"@en ;
+    rdfs:comment "Statistical distribution representing uncertainty in parameters."@en .
+
+lfm:Parameter rdf:type owl:Class ;
+    rdfs:label "Parameter"@en ;
+    rdfs:comment "A parameter in a model or measurement."@en .
+
+# Concrete-specific Classes
+lfm:ConcreteElement rdf:type owl:Class ;
+    rdfs:subClassOf bot:Element ;
+    rdfs:label "Concrete Element"@en ;
+    rdfs:comment "A structural element made of concrete."@en .
+
+lfm:Reinforcement rdf:type owl:Class ;
+    rdfs:subClassOf bot:Element ;
+    rdfs:label "Reinforcement"@en ;
+    rdfs:comment "Steel reinforcement in concrete elements."@en .
+
+# Measurement and Testing Classes
+lfm:MeasurementMethod rdf:type owl:Class ;
+    rdfs:label "Measurement Method"@en ;
+    rdfs:comment "Method used to obtain measurements."@en .
+
+lfm:CoreSample rdf:type owl:Class ;
+    rdfs:subClassOf sosa:Sample ;
+    rdfs:label "Core Sample"@en ;
+    rdfs:comment "A concrete core sample taken from a structure."@en .
+
+lfm:LoadTest rdf:type owl:Class ;
+    rdfs:label "Load Test"@en ;
+    rdfs:comment "A structural load test performed on the structure."@en .
+
+# Model Classes
+lfm:FiniteElementModel rdf:type owl:Class ;
+    rdfs:label "Finite Element Model"@en ;
+    rdfs:comment "FE model for structural analysis."@en .
+
+lfm:DegradationModel rdf:type owl:Class ;
+    rdfs:label "Degradation Model"@en ;
+    rdfs:comment "Model describing material degradation over time."@en .
+
+# Properties
+
+# Bayesian Properties
+lfm:hasProbabilityDistribution rdf:type owl:ObjectProperty ;
+    rdfs:domain lfm:Parameter ;
+    rdfs:range lfm:ProbabilityDistribution ;
+    rdfs:label "has probability distribution"@en .
+
+lfm:hasModelParameter rdf:type owl:ObjectProperty ;
+    rdfs:domain lfm:BayesianModel ;
+    rdfs:range lfm:Parameter ;
+    rdfs:label "has model parameter"@en .
+
+# Measurement Properties
+lfm:hasMeasurementMethod rdf:type owl:ObjectProperty ;
+    rdfs:domain sosa:Observation ;
+    rdfs:range lfm:MeasurementMethod ;
+    rdfs:label "has measurement method"@en .
+
+lfm:hasUncertainty rdf:type owl:ObjectProperty ;
+    rdfs:domain sosa:Observation ;
+    rdfs:range lfm:ProbabilityDistribution ;
+    rdfs:label "has uncertainty"@en .
+
+# Structural Properties
+lfm:hasReinforcement rdf:type owl:ObjectProperty ;
+    rdfs:domain lfm:ConcreteElement ;
+    rdfs:range lfm:Reinforcement ;
+    rdfs:label "has reinforcement"@en .
+
+lfm:hasCorrosionLevel rdf:type owl:DatatypeProperty ;
+    rdfs:domain lfm:Reinforcement ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "has corrosion level"@en .
+
+# Model Properties
+lfm:hasFiniteElementModel rdf:type owl:ObjectProperty ;
+    rdfs:domain bot:Element ;
+    rdfs:range lfm:FiniteElementModel ;
+    rdfs:label "has finite element model"@en .
+
+lfm:hasDegradationModel rdf:type owl:ObjectProperty ;
+    rdfs:domain bot:Element ;
+    rdfs:range lfm:DegradationModel ;
+    rdfs:label "has degradation model"@en .
+
+# Time-related Properties
+lfm:hasValidityPeriod rdf:type owl:ObjectProperty ;
+    rdfs:range time:Interval ;
+    rdfs:label "has validity period"@en .
+
+# Cross-ontology Relationships
+
+# BOT-DOT Relations
+lfm:hasDamageAssessment rdf:type owl:ObjectProperty ;
+    rdfs:domain bot:Element ;
+    rdfs:range dot:Damage ;
+    rdfs:label "has damage assessment"@en ;
+    rdfs:comment "Links a BOT element to its damage assessment in DOT."@en .
+
+# BOT-SOSA Relations
+lfm:hasMonitoringSetup rdf:type owl:ObjectProperty ;
+    rdfs:domain bot:Element ;
+    rdfs:range sosa:Platform ;
+    rdfs:label "has monitoring setup"@en ;
+    rdfs:comment "Links a BOT element to its sensor platform."@en .
+
+lfm:hasSensorNetwork rdf:type owl:ObjectProperty ;
+    rdfs:domain bot:Zone ;
+    rdfs:range sosa:Platform ;
+    rdfs:label "has sensor network"@en ;
+    rdfs:comment "Links a BOT zone to its sensor network platform."@en .
+
+# BOT-OPM Relations
+lfm:hasPropertyState rdf:type owl:ObjectProperty ;
+    rdfs:domain bot:Element ;
+    rdfs:range opm:PropertyState ;
+    rdfs:label "has property state"@en ;
+    rdfs:comment "Links a BOT element to its property states in OPM."@en .
+
+# DOT-SOSA Relations
+lfm:hasDamageMonitoring rdf:type owl:ObjectProperty ;
+    rdfs:domain dot:Damage ;
+    rdfs:range sosa:Observation ;
+    rdfs:label "has damage monitoring"@en ;
+    rdfs:comment "Links a damage assessment to its observations."@en .
+
+# SOSA-OPM Relations
+lfm:observationState rdf:type owl:ObjectProperty ;
+    rdfs:domain sosa:Observation ;
+    rdfs:range opm:PropertyState ;
+    rdfs:label "observation state"@en ;
+    rdfs:comment "Links a sensor observation to its property state."@en .
+
+# Time Integration
+lfm:hasTimeInterval rdf:type owl:ObjectProperty ;
+    rdfs:range time:Interval ;
+    rdfs:label "has time interval"@en ;
+    rdfs:comment "Links any temporal entity to its time interval."@en .
+
+# IFC Mapping Properties
+lfm:hasIfcRepresentation rdf:type owl:ObjectProperty ;
+    rdfs:label "has IFC representation"@en ;
+    rdfs:comment "Links to the corresponding IFC entity."@en .
+
+# Data Properties
+lfm:confidence rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:decimal ;
+    rdfs:label "confidence"@en ;
+    rdfs:comment "Confidence level in a measurement or prediction."@en .
+
+lfm:timestamp rdf:type owl:DatatypeProperty ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "timestamp"@en ;
+    rdfs:comment "Timestamp of a measurement or event."@en .
