@@ -138,7 +138,8 @@ class IFCtoTTLConverter:
             # Add element type
             self.g.add((element_uri, RDF.type, self.BOT.Element))
             self.g.add((element_uri, RDF.type, self.LFM.ConcreteElement))
-            
+            self.g.add((element_uri, self.LFM.hasIfcGlobalId, Literal(element.GlobalId)))
+    
             # Add IFC representation
             ifc_class = element.is_a()
             self.g.add((element_uri, self.LFM.hasIfcRepresentation, 
@@ -167,64 +168,13 @@ class IFCtoTTLConverter:
                             self.g.add((element_uri, self.LFM.hasPropertyState, 
                                       prop_state))
 
-    def convert_sensors(self, ifc_file, uri_map: Dict[str, URIRef]):
-        """
-        Convert IFC sensors to SOSA sensor concepts
-        Args:
-            ifc_file: The loaded IFC file object
-            uri_map: Dictionary mapping IFC GlobalIds to URIs
-        """
-        sensors = ifc_file.by_type("IfcSensor")
-        print(f"Found {len(sensors)} sensors")
-        
-        for sensor in sensors:
-            sensor_uri = self.generate_uri("sensor")
-            uri_map[sensor.GlobalId] = sensor_uri
-            print(f"\nProcessing sensor: {sensor.GlobalId}")
-            
-            # Add sensor type
-            self.g.add((sensor_uri, RDF.type, self.SOSA.Sensor))
-            
-            # Get all property sets for the sensor
-            if hasattr(sensor, "IsDefinedBy"):
-                for definition in sensor.IsDefinedBy:
-                    if definition.is_a("IfcRelDefinesByProperties"):
-                        property_set = definition.RelatingPropertyDefinition
-                        if property_set.is_a('IfcPropertySet'):
-                            print(f"Found property set: {property_set.Name}")
-                            if property_set.Name == "Text":
-                                for prop in property_set.HasProperties:
-                                    print(f"- Property: {prop.Name}")
-                                    if prop.Name == "SensorID" and hasattr(prop, "NominalValue"):
-                                        print(f"Found SensorID: {prop.NominalValue.wrappedValue}")
-                                        self.g.add((sensor_uri, RDFS.label, 
-                                                  Literal(prop.NominalValue.wrappedValue)))
-                                        
-                                    if prop.Name == "SensorValueT" and hasattr(prop, "NominalValue"):
-                                        print(f"Found SensorValueT: {prop.NominalValue.wrappedValue}")
-                                        observation_uri = self.generate_uri("observation")
-                                        self.g.add((observation_uri, RDF.type, self.SOSA.Observation))
-                                        self.g.add((observation_uri, self.SOSA.madeBySensor, sensor_uri))
-                                        self.g.add((observation_uri, self.SOSA.hasSimpleResult, 
-                                                  Literal(prop.NominalValue.wrappedValue)))
-                                        
-                                        time_uri = self.generate_uri("instant")
-                                        self.g.add((time_uri, RDF.type, self.TIME.Instant))
-                                        self.g.add((time_uri, self.TIME.inXSDDateTimeStamp, 
-                                                  Literal(datetime.datetime.now().isoformat(), 
-                                                  datatype=XSD.dateTimeStamp)))
-                                        self.g.add((observation_uri, self.SOSA.resultTime, time_uri))
-
     def convert_damage(self, ifc_file, uri_map: Dict[str, URIRef]):
         """
-        Convert damage-related IFC properties to DOT damage concepts
-        Args:
-            ifc_file: The loaded IFC file object
-            uri_map: Dictionary mapping IFC GlobalIds to URIs
+        Convert damage-related IFC properties to DOT damage concepts,
+        but store numeric properties as a NormalDistribution by default.
         """
         damage_count = 0
         proxies = ifc_file.by_type("IfcBuildingElementProxy")
-        print(f"\nChecking {len(proxies)} IfcBuildingElementProxy elements for damage")
         
         for element in proxies:
             crack_data = {}  # Store all crack-related properties
@@ -253,26 +203,130 @@ class IFCtoTTLConverter:
             # If we found a crack_id, create the damage entity with all properties
             if 'crack_id' in crack_data:
                 damage_count += 1
-                print(f"\nProcessing damage: {crack_data['crack_id']}")
                 
                 damage_uri = self.generate_uri("damage")
                 self.g.add((damage_uri, RDF.type, self.DOT.Damage))
                 self.g.add((damage_uri, RDFS.label, Literal(crack_data['crack_id'])))
+                self.g.add((damage_uri, self.LFM.hasIfcGlobalId, Literal(element.GlobalId)))
                 
                 # Link to host element if found
                 if 'host_guid' in crack_data and crack_data['host_guid'] in uri_map:
                     self.g.add((uri_map[crack_data['host_guid']], self.LFM.hasDamageAssessment, damage_uri))
                 
-                # Add crack dimensions as properties
+                # For each property, create a PropertyState -> NormalDistribution
                 for prop_name in ["Crack Length", "Crack Width", "Crack Depth"]:
                     if prop_name in crack_data:
+                        raw_value_str = crack_data[prop_name]
+                        
+                        # Attempt to parse the numeric value for the mean
+                        try:
+                            mean_val = float(raw_value_str)
+                        except ValueError:
+                            # If not numeric, just store as a string in OPM for fallback
+                            prop_state = self.generate_uri("property_state")
+                            self.g.add((prop_state, RDF.type, self.OPM.PropertyState))
+                            self.g.add((prop_state, self.OPM.propertyName, Literal(prop_name)))
+                            self.g.add((prop_state, self.OPM.value, Literal(raw_value_str)))
+                            self.g.add((damage_uri, self.LFM.hasPropertyState, prop_state))
+                            continue
+                        
+                        # NEW PART: create a NormalDistribution
+                        dist_uri = self.generate_uri("normalDist")
+                        self.g.add((dist_uri, RDF.type, self.LFM.NormalDistribution))
+                        
+                        # We'll set mean = parsed numeric, std dev = 10% of mean or a min floor
+                        std_dev_val = mean_val * 0.1
+                        if std_dev_val < 0.1:
+                            std_dev_val = 0.1  # minimal floor for std dev
+                            
+                        self.g.add((dist_uri, self.LFM.mean, Literal(mean_val, datatype=XSD.float)))
+                        self.g.add((dist_uri, self.LFM.standardDeviation, Literal(std_dev_val, datatype=XSD.float)))
+                        
+                        # Link the distribution via a property state
                         prop_state = self.generate_uri("property_state")
                         self.g.add((prop_state, RDF.type, self.OPM.PropertyState))
                         self.g.add((prop_state, self.OPM.propertyName, Literal(prop_name)))
-                        self.g.add((prop_state, self.OPM.value, Literal(crack_data[prop_name])))
+                        
+                        # Instead of opm:value, we point to hasProbabilityDistribution
+                        self.g.add((prop_state, self.LFM.hasProbabilityDistribution, dist_uri))
+                        
+                        # Finally, link the property state to the damage instance
                         self.g.add((damage_uri, self.LFM.hasPropertyState, prop_state))
-        
+
         print(f"\nTotal damage instances found: {damage_count}")
+
+
+    def convert_sensors(self, ifc_file, uri_map: Dict[str, URIRef]):
+        """
+        Convert IFC sensors to SOSA sensor concepts,
+        but store numeric sensor measurements as a NormalDistribution by default.
+        """
+        sensors = ifc_file.by_type("IfcSensor")
+        print(f"Found {len(sensors)} sensors")
+        
+        for sensor in sensors:
+            sensor_uri = self.generate_uri("sensor")
+            uri_map[sensor.GlobalId] = sensor_uri
+            
+            # Add sensor type
+            self.g.add((sensor_uri, RDF.type, self.SOSA.Sensor))
+            self.g.add((sensor_uri, self.LFM.hasIfcGlobalId, Literal(sensor.GlobalId)))
+            
+            # Get all property sets for the sensor
+            if hasattr(sensor, "IsDefinedBy"):
+                for definition in sensor.IsDefinedBy:
+                    if definition.is_a("IfcRelDefinesByProperties"):
+                        property_set = definition.RelatingPropertyDefinition
+                        if property_set.is_a('IfcPropertySet'):
+                            if property_set.Name == "Text":
+                                for prop in property_set.HasProperties:
+                                    if (prop.Name == "SensorID" 
+                                        and hasattr(prop, "NominalValue")):
+                                        self.g.add((sensor_uri, RDFS.label, 
+                                                Literal(prop.NominalValue.wrappedValue)))
+                                        
+                                    elif (prop.Name == "SensorValueT" 
+                                        and hasattr(prop, "NominalValue")):
+                                        
+                                        # NEW PART: interpret this numeric reading as a NormalDistribution
+                                        obs_uri = self.generate_uri("observation")
+                                        self.g.add((obs_uri, RDF.type, self.SOSA.Observation))
+                                        self.g.add((obs_uri, self.SOSA.madeBySensor, sensor_uri))
+                                        
+                                        # Attempt to parse float
+                                        raw_val_str = prop.NominalValue.wrappedValue
+                                        try:
+                                            mean_val = float(raw_val_str)
+                                        except ValueError:
+                                            # fallback: store as literal
+                                            self.g.add((obs_uri, self.SOSA.hasSimpleResult, 
+                                                    Literal(raw_val_str)))
+                                        else:
+                                            # create normalDist
+                                            dist_uri = self.generate_uri("normalDist")
+                                            self.g.add((dist_uri, RDF.type, self.LFM.NormalDistribution))
+                                            
+                                            # Example: 5% of mean as std. dev for sensor
+                                            std_dev_val = mean_val * 0.05
+                                            if std_dev_val < 0.01:
+                                                std_dev_val = 0.01
+                                            
+                                            self.g.add((dist_uri, self.LFM.mean, 
+                                                        Literal(mean_val, datatype=XSD.float)))
+                                            self.g.add((dist_uri, self.LFM.standardDeviation, 
+                                                        Literal(std_dev_val, datatype=XSD.float)))
+                                            
+                                            # We still store it under an "observation property state" or direct link
+                                            # For example:
+                                            self.g.add((obs_uri, self.LFM.hasProbabilityDistribution, dist_uri))
+                                        
+                                        # Add time stamp
+                                        time_uri = self.generate_uri("instant")
+                                        self.g.add((time_uri, RDF.type, self.TIME.Instant))
+                                        now_str = datetime.datetime.now().isoformat()
+                                        self.g.add((time_uri, self.TIME.inXSDDateTimeStamp, 
+                                                Literal(now_str, datatype=XSD.dateTimeStamp)))
+                                        self.g.add((obs_uri, self.SOSA.resultTime, time_uri))
 
     def convert(self, ifc_file_path: str, output_path: str):
         """
