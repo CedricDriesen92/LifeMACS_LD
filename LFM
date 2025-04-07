@@ -1,0 +1,33 @@
+| Name | Description |
+|------|-------------|
+| **Classes** | |
+| BayesianModel | A probabilistic model using Bayesian inference. |
+| ProbabilityDistribution | Statistical distribution representing uncertainty in parameters. |
+| Parameter | A parameter in a model or measurement. |
+| ConcreteElement | A structural element made of concrete. |
+| Reinforcement | Steel reinforcement in concrete elements. |
+| MeasurementMethod | Method used to obtain measurements. |
+| CoreSample | A concrete core sample taken from a structure. |
+| LoadTest | A structural load test performed on the structure. |
+| FiniteElementModel | FE model for structural analysis. |
+| DegradationModel | Model describing material degradation over time. |
+| **Properties** | |
+| hasProbabilityDistribution | has probability distribution |
+| hasModelParameter | has model parameter |
+| hasMeasurementMethod | has measurement method |
+| hasUncertainty | has uncertainty |
+| hasReinforcement | has reinforcement |
+| hasCorrosionLevel | has corrosion level |
+| hasFiniteElementModel | has finite element model |
+| hasDegradationModel | has degradation model |
+| hasValidityPeriod | has validity period |
+| hasDamageAssessment | Links a BOT element to its damage assessment in DOT. |
+| hasMonitoringSetup | Links a BOT element to its sensor platform. |
+| hasSensorNetwork | Links a BOT zone to its sensor network platform. |
+| hasPropertyState | Links a BOT element to its property states in OPM. |
+| hasDamageMonitoring | Links a damage assessment to its observations. |
+| observationState | Links a sensor observation to its property state. |
+| hasTimeInterval | Links any temporal entity to its time interval. |
+| hasIfcRepresentation | Links to the corresponding IFC entity. |
+| confidence | Confidence level in a measurement or prediction. |
+| timestamp | Timestamp of a measurement or event. |
