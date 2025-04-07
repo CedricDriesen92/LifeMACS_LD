@@ -50,11 +50,6 @@ lfm:Reinforcement rdf:type owl:Class ;
     rdfs:label "Reinforcement"@en ;
     rdfs:comment "Steel reinforcement in concrete elements."@en .
 
-# Measurement and Testing Classes
-lfm:MeasurementMethod rdf:type owl:Class ;
-    rdfs:label "Measurement Method"@en ;
-    rdfs:comment "Method used to obtain measurements."@en .
-
 lfm:CoreSample rdf:type owl:Class ;
     rdfs:subClassOf sosa:Sample ;
     rdfs:label "Core Sample"@en ;
@@ -86,11 +81,6 @@ lfm:hasModelParameter rdf:type owl:ObjectProperty ;
     rdfs:range lfm:Parameter ;
     rdfs:label "has model parameter"@en .
 
-# Measurement Properties
-lfm:hasMeasurementMethod rdf:type owl:ObjectProperty ;
-    rdfs:domain sosa:Observation ;
-    rdfs:range lfm:MeasurementMethod ;
-    rdfs:label "has measurement method"@en .
 
 lfm:hasUncertainty rdf:type owl:ObjectProperty ;
     rdfs:domain sosa:Observation ;
