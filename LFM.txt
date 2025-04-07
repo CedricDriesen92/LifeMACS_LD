@@ -14,7 +14,6 @@
 | **Properties** | |
 | hasProbabilityDistribution | has probability distribution |
 | hasModelParameter | has model parameter |
-| hasMeasurementMethod | has measurement method |
 | hasUncertainty | has uncertainty |
 | hasReinforcement | has reinforcement |
 | hasCorrosionLevel | has corrosion level |
