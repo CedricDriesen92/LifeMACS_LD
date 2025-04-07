@@ -6,7 +6,6 @@
 | Parameter | A parameter in a model or measurement. |
 | ConcreteElement | A structural element made of concrete. |
 | Reinforcement | Steel reinforcement in concrete elements. |
-| MeasurementMethod | Method used to obtain measurements. |
 | CoreSample | A concrete core sample taken from a structure. |
 | LoadTest | A structural load test performed on the structure. |
 | FiniteElementModel | FE model for structural analysis. |
